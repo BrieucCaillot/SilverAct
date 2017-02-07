@@ -8,3 +8,166 @@
 #notes            : Only working on search engine
 ============================================================================*/
 
+/* ROBOTO */ 
+
+@font-face {
+    font-family: Roboto-Black;
+    src: url(../polices/roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: Roboto-BlackItalic;
+    src: url(../polices/roboto/Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../polices/roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-BoldCondensed;
+    src: url(../polices/roboto/Roboto-BoldCondensed.ttf);
+}
+
+@font-face {
+    font-family: Roboto-BoldCondensedItalic;
+    src: url(../polices/roboto/Roboto-BoldCondensedItalic.ttf);
+}
+
+@font-face {
+    font-family: BoldItalic;
+    src: url(../polices/roboto/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Condensed;
+    src: url(../polices/roboto/Roboto-Condensed.ttf);
+}
+
+@font-face {
+    font-family: CondensedItalic;
+    src: url(../polices/roboto/Roboto-CondensedItalic.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(../polices/roboto/Roboto-Italic.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../polices/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-LightItalic;
+    src: url(../polices/roboto/Roboto-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../polices/roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-MediumItalic;
+    src: url(../polices/roboto/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../polices/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(../polices/roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: Roboto-ThinItalic;
+    src: url(../polices/roboto/Roboto-ThinItalic.ttf);
+}
+
+/* GOTHAM */ 
+
+@font-face {
+    font-family: Gotham-Black;
+    src: url(../polices/Gotham/Gotham-Black.ttf);
+}
+
+@font-face {
+    font-family: Gotham-BlackItalic;
+    src: url(../polices/Gotham/Gotham-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: Gotham-Bold;
+    src: url(../polices/Gotham/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: Gotham-BoldItalic;
+    src: url(../polices/Gotham/Gotham-BoldItalic.otf);
+}
+
+@font-face {
+    font-family: Gotham-Book;
+    src: url(../polices/Gotham/Gotham-Book.otf);
+}
+
+@font-face {
+    font-family: Gotham-BookItalic;
+    src: url(../polices/Gotham/Gotham-BookItalic.otf);
+}
+
+@font-face {
+    font-family: Gotham-Light;
+    src: url(../polices/Gotham/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: Gotham-LightItalic;
+    src: url(../polices/Gotham/Gotham-LightItalic.otf);
+}
+
+@font-face {
+    font-family: Gotham-Medium;
+    src: url(../polices/Gotham/Gotham-Medium.otf);
+}
+
+@font-face {
+    font-family: Gotham-MediumItalic;
+    src: url(../polices/Gotham/Gotham-MediumItalic.otf);
+}
+
+@font-face {
+    font-family: Gotham-Thin;
+    src: url(../polices/Gotham/Gotham-Thin.otf);
+}
+
+@font-face {
+    font-family: Gotham-ThinItalic;
+    src: url(../polices/Gotham/Gotham-ThinItalic.otf);
+}
+
+@font-face {
+    font-family: Gotham-Ultra;
+    src: url(../polices/Gotham/Gotham-Ultra.otf);
+}
+
+@font-face {
+    font-family: Gotham-UltraItalic;
+    src: url(../polices/Gotham/Gotham-UltraItalic.otf);
+}
+
+@font-face {
+    font-family: Gotham-XLight;
+    src: url(../polices/Gotham/Gotham-XLight.otf);
+}
+
+@font-face {
+    font-family: Gotham-XLightItalic;
+    src: url(../polices/Gotham/Gotham-XLightItalic.otf);
+}
