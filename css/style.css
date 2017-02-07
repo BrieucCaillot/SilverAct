@@ -171,3 +171,86 @@
     font-family: Gotham-XLightItalic;
     src: url(../polices/Gotham/Gotham-XLightItalic.otf);
 }
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+#firstblock {
+    position: relative;
+    background: url(../images/firstblock/video.png) no-repeat;
+    background-size: 100% 100%;
+    height: 37em;
+}
+
+#firstblock #header #menunav {
+    background-color: #fff;
+    opacity: 0.5;
+    padding-left: 3em;
+    height: 8em;
+}
+
+#firstblock #header #menunav img:first-child{
+    padding: 0.5em;
+}
+
+#firstblock #header #menunav #telephone {
+    font-family: Roboto-Bold;
+    position: absolute;
+    top: 1%;
+    left: 22%;
+}
+
+#firstblock #header #menunav #mail {
+    font-family: Roboto-Bold;
+    position: absolute;
+    top: 1%;
+    left: 65.5%;
+}
+
+#firstblock #header #menunav #facebook {
+    p
+}
+
+#firstblock #header #menunav nav {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 49em;
+}
+
+
+#firstblock #header #menunav #facebook {
+    position: absolute;
+    top: 5%;
+    left: 84%;
+}
+
+#firstblock #header #menunav #twitter {
+    position: absolute;
+    top: 5%;
+    left: 89.5%;
+}
+
+#firstblock #header #menunav nav {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#firstblock #header #menunav nav ul li {
+    color: #148fad;
+    font-family: Gotham-Medium;
+    display: inline;
+    list-style-type: none;
+    margin: 0em 4em 0em 0em;
+    cursor: pointer;
+}
