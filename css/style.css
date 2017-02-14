@@ -8,6 +8,18 @@
 #notes            : Only working on search engine
 ============================================================================*/
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* POLICES */
+
+
 @font-face {
     font-family: Gotham-Light;
     src: url(../police/Gotham/Gotham-Light.otf);
@@ -18,81 +30,257 @@
     src: url(../police/Gotham/Gotham-Medium.otf);
 }
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: #fff;
-}
+/* FIRSTBLOCK */
 
 
 #firstblock {
     position: relative;
-    background: url(../images/firstblock/video.png) no-repeat;
-    background-size: 100% 100%;
-    height: 37em;
 }
 
-#firstblock #header #menunav {
-    background-color: #fff;
-    opacity: 0.5;
-    padding-left: 3em;
+#header {
     height: 8em;
-}
-
-#firstblock #header #menunav img:first-child{
-    padding: 0.5em;
-}
-
-#firstblock #header #menunav #telephone {
-    font-family: 'Roboto', sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 8em;
     position: absolute;
-    top: 1%;
-    left: 22%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
 }
 
-#firstblock #header #menunav #mail {
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    top: 1%;
-    left: 65.5%;
+#video {
+    width: 100%;
+    z-index: 2;
 }
 
+#logo {
+    width: 16%;
+    padding: 10px;
+    padding-left: 3%;
+}
 
-#firstblock #header #menunav nav {
+#menu {
+    width: 61%;
+    height: 100%;
     position: absolute;
-    top: 18%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 49em;
+    border: 2px solid white;
+    border-bottom: none;
+    border-top: none;
 }
 
-#firstblock #header #menunav #facebook {
-    position: absolute;
-    top: 5%;
-    left: 84%;
+#telephone {
+    font-family: 'Roboto', sans-serif;
+    width: 11em;
+    padding: 1em;
 }
 
-#firstblock #header #menunav #twitter {
-    position: absolute;
-    top: 5%;
-    left: 89.5%;
+#telephone p {
+    font-family: Roboto-Bold;
+    float: right;
+    padding-top: 9px;
+    color: #ef7915;
+    font-size: 18px;
 }
 
-#firstblock #header #menunav nav {
-    position: absolute;
-    top: 18%;
-    left: 50%;
+#mail p {
+    font-family: Roboto-Bold;
+    float: right;
+    padding-top: 9px;
+    color: #ef7915;
+    font-size: 18px;
+}
+
+#mail {
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    width: 11em;
+    position: absolute;;
+    right: 2%;
+    top: 10%;
+}
+
+/* NAV MENU */
+
+
+#navigation {
     transform: translate(-50%, -50%);
+    width: 100.3%;;;
+    height: 48%;
+    left: 50%;
+    position: absolute;
+    top: 75%;
+    border-top: 2px solid white;;
 }
 
-#firstblock #header #menunav nav ul li {
+#navigation nav {
+    position: relative;
+}
+
+#navigation ul {
     color: #148fad;
     font-family: Gotham-Medium;
-    display: inline;
     list-style-type: none;
-    margin: 0em 4em 0em 0em;
     cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+
+#navigation nav {
+    position: relative;
+}
+
+
+#navigation ul {
+    color: #148fad;
+    font-family: Gotham-Medium;
+    list-style-type: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+#navigation ul li {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    font-size: 18px;
+}
+
+/*ACCUEIL*/
+
+#navigation ul li:nth-child(1) {
+    width: 16.5%;
+    border-right: 2px solid white;
+}
+
+#navigation ul li:nth-child(1) a{
+    text-decoration: none;
+    color: #148fad;
+    position: absolute;
+    top: 35%;
+    left: 21%; 
+}
+
+/* ACTIVITÉ */
+
+#navigation ul li:nth-child(2) {
+    width: 16%;  
+    border-right: 2px solid white;
+    text-decoration: none;
+    color: #148fad;
+}
+
+#navigation ul li:nth-child(2) a {
+    text-decoration: none;
+    color: #148fad;
+    position: absolute;
+    top: 35%;
+    left: 15%; 
+}
+
+/* ÉVÉNEMENTS */
+
+#navigation ul li:nth-child(3) {
+    width: 23%;  
+    border-right: 2px solid white;
+    text-decoration: none;
+    color: #148fad;
+}
+
+#navigation ul li:nth-child(3) a {
+    text-decoration: none;
+    color: #148fad;
+    position: absolute;
+    top: 35%;
+    left: 17%; 
+}
+
+/* FONCTIONNEMENT */
+
+#navigation ul li:nth-child(4) {
+    width: 25%;  
+    border-right: 2px solid white;
+    text-decoration: none;
+    color: #148fad;
+}
+
+#navigation ul li:nth-child(4) a {
+    text-decoration: none;
+    color: #148fad;
+    position: absolute;
+    top: 35%;
+    left: 7%; 
+}
+
+/* CONTACT */
+
+#navigation ul li:nth-child(5) {
+    width: 15%;  
+    text-decoration: none;
+    color: #148fad;
+}
+
+#navigation ul li:nth-child(5) a {
+    text-decoration: none;
+    color: #148fad;
+    position: absolute;
+    top: 35%;
+    left: 17%; 
+}
+
+/* RESEAUX SOCIAUX */
+
+#social {
+    width: 19.3%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+#facebook {
+    position: absolute;
+    top: 2em;;
+    right: 52%;
+}
+
+#twitter {
+    float: right;
+    position: absolute;
+    top: 2em;;
+    right: 4.5em;
+}
+
+/* SECOND BLOCK */
+
+#secondblock {
+    height: 47em;
+    position: relative;
+}
+
+#secondblock h1 {
+    font-family: Gotham-Light;
+    font-size: 55px;
+    line-height: 72px;
+    text-align: center;
+    color: #ef7915;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20em;
+}
+
+#secondblock img {
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
