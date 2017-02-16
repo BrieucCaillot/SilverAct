@@ -30,11 +30,23 @@ body {
     src: url(../police/Gotham/Gotham-Medium.otf);
 }
 
+header,
+nav,
+a,
+img,
+li {
+    transition: .7s all;
+    -moz-transition: .7s all;
+    -webkit-transition: .7s all;
+    -o-transition: .7s all;
+}
+
 /* FIRSTBLOCK */
 
 
 #firstblock {
     position: relative;
+    height: 8em;
 }
 
 #header {
@@ -55,10 +67,9 @@ body {
 }
 
 #logo {
-    width: 19.5%;
-    height: 100%;
     padding: 10px;
     padding-left: 3.5%;
+    width: 15%;
 }
 
 #menu {
@@ -152,6 +163,48 @@ body {
     height: 100%;
     display: inline-block;
     font-size: 18px;
+}
+
+/* SWIPER TON RIGHT */
+
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /*ACCUEIL*/
@@ -255,34 +308,156 @@ body {
 #twitter {
     float: right;
     position: absolute;
-    top: 2em;;
+    top: 2em;
     right: 4.5em;
 }
 
 /* SECOND BLOCK */
 
 #secondblock {
-    height: 47em;
     position: relative;
+    height: 63em;
 }
 
-#secondblock h1 {
-    font-family: Gotham-Light;
-    font-size: 55px;
-    line-height: 72px;
-    text-align: center;
-    color: #ef7915;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20em;
+#secondblock #left {
+    width: 46%;
+    height: inherit;
+    position: relative;
+    float: left;
 }
 
-#secondblock img {
+#secondblock #left h1 {
+    font-family: Gotham-Medium;
+    color: #148fad;
+    font-size: 47px;
     position: absolute;
-    top: 76%;
+    top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 68%;
+}
+
+#secondblock #left p {
+    font-size: 20px;
+    font-family: Roboto;
+    line-height: 23px;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68%;;
+}
+
+#secondblock #right {
+    width: inherit;
+    height: 100%;
+    border-left: 4px solid #ef790f;
+    position: relative;
+    margin: 0% 0% 0% 5.3%;
+    float: left;
+}
     
+#secondblock #right h2 {
+    font-family: Gotham-Medium;
+    color: #148fad;
+    font-size: 27px;
+    line-height: 31px;
+}
+
+#secondblock #right p {
+    line-height: 21px;
+    font-family: Roboto;
+    padding-top: 2%;
+    font-size: 15px;
+}
+
+#bulles {
+    font-family: Gotham-Bold;
+    text-align: center;
+    font-size: 30px;
+    color: #ef790f;
+    float: left;;
+    width: 3%;
+    height: inherit;
+    position: relative;;
+}
+
+#bulles1 {
+    border: 4px solid #ef790f;
+    height: 120px;
+    width: 120px;
+    background-color: #fff;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 20%;
+    left: 280%;
+    z-index: 2;
+}
+
+#bulles2 {
+    border: 4px solid #ef790f;
+    height: 120px;
+    width: 120px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 39%;
+    left: 280%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#bulles3 {
+    border: 4px solid #ef790f;
+    height: 120px;
+    width: 120px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 57%;
+    left: 280%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#bulles4 {
+    border: 4px solid #ef790f;
+    height: 120px;
+    width: 120px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 75%;
+    left: 280%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#bulles li span {
+    text-align: center;;
+    position: absolute;;
+    top: 50%;;
+    left: 50%;;
+    transform: translate(-50%, -50%);
+}
+
+#secondblock #right #premier {
+    padding-left: 5em;
+    padding-top: 7em;
+}
+
+#secondblock #right #deuxieme{
+    padding-top: 3em;
+    padding-left: 5em;
+}
+
+#secondblock #right #troisieme{
+    padding-top: 3em;
+    padding-left: 5em;
+}
+
+#secondblock #right #quatrieme {
+    padding-top: 3em;
+    padding-left: 5em;
 }
