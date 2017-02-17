@@ -10,10 +10,13 @@ $(document).ready(function() {
 			$("#logo").css("padding-left", "8.5%");
 			$("#telephone").hide();
 			$("#mail").hide();
-			$("#facebookimg").attr("src", "../images/firstblock/facebookfixed.png");
-			$("#twitterimg").attr("src", "../images/firstblock/twitterfixed.png");
+			$("#facebookimg").attr("src", "../images/firstblock/facebook.svg");
+			$("#twitterimg").attr("src", "../images/firstblock/twitter.svg");
 			$("#facebook").css("top", "0.75em");
+			$("#facebook").css("width", "16%");
 			$("#twitter").css("top", "0.75em");
+			$("#twitter").css("width", "16%");
+			$("#twitter").css("right", "4.5em");
 			$("#navigation").css("top", "49%");
 			$("#navigation").css("border", "");
 			$("#navigation").css("height", "99%");
@@ -25,10 +28,13 @@ $(document).ready(function() {
 			$("#logo").css("padding-left", "3.5%");
 			$("#telephone").show();
 			$("#mail").show();
-			$("#facebookimg").attr("src", "../images/firstblock/facebook.png");
-			$("#twitterimg").attr("src", "../images/firstblock/twitter.png");
+			$("#facebookimg").attr("src", "../images/firstblock/facebook.svg");
+			$("#twitterimg").attr("src", "../images/firstblock/twitter.svg");
 			$("#facebook").css("top", "2em");
+			$("#facebook").css("width", "23%");
 			$("#twitter").css("top", "2em");
+			$("#twitter").css("width", "23%");
+			$("#twitter").css("right", "3.5em");
 			$("#navigation").css("top", "");
 			$("#navigation").css("height", "");
 
