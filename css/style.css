@@ -22,18 +22,18 @@ body {
 
 @font-face {
     font-family: Gotham-Light;
-    src: url(../police/Gotham/Gotham-Light.otf),
-    url("../police/Gotham/Gotham-Light.eot") format("eot"),
-    url("../police/Gotham/Gotham-Light.woff") format("woff"),
-    url("../police/Gotham/Gotham-Light.ttf") format("truetype");
+    src: url(../polices/Gotham/Gotham-Light.otf),
+    url("../polices/Gotham/Gotham-Light.eot") format("eot"),
+    url("../polices/Gotham/Gotham-Light.woff") format("woff"),
+    url("../polices/Gotham/Gotham-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Gotham-Medium";
-  src: url(../police/Gotham/Gotham-Medium.otf),
-  url("../police/Gotham/Gotham-Medium.eot") format("eot"),
-  url("../police/Gotham/Gotham-Medium.woff") format("woff"),
-  url("../police/Gotham/Gotham-Medium.ttf") format("truetype");
+    font-family: "Gotham-Medium";
+    src: url(../polices/Gotham/Gotham-Medium.otf),
+    url("../polices/Gotham/Gotham-Medium.eot") format("eot"),
+    url("../polices/Gotham/Gotham-Medium.woff") format("woff"),
+    url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
 }
 
 /* FIRSTBLOCK - HEADER */
