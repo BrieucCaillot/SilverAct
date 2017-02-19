@@ -1,42 +1,57 @@
 
 $(document).ready(function() {
-	$(document).on("scroll", function() {
+    
+    //SCROLL MENU 
+		$(document).on("scroll", function() {
 
-		if($(document).scrollTop()>100) {
-			$("#header").css("position", "fixed");
-			$("#header").css("height", "4em");
-			$("#logoimg").attr("src", "../images/firstblock/silveractfixed.png");
-			$("#logo").css("width", "3%");
-			$("#logo").css("padding-left", "8.5%");
+		if($(document).scrollTop()>50) {
+			$("header").css("position", "fixed");
+			$("header").css("height", "60px");
+            $("header").css("background", "white");
+            $("header").css("border-bottom", "2px solid #d1d3d4");
+
+            $("#secondblock").css("top", "100px");
+
+			$("#logoimg").attr("src", "../images/firstblock/silveractfixed.svg");
+            $("#logoimg").css("width", "20%");
+            
+			$("#logo").css("width", "15%");
+            $("#logo").css("height", "60px");
+            
 			$("#telephone").hide();
 			$("#mail").hide();
-			$("#facebookimg").attr("src", "../images/firstblock/facebook.svg");
-			$("#twitterimg").attr("src", "../images/firstblock/twitter.svg");
-			$("#facebook").css("top", "0.75em");
-			$("#facebook").css("width", "16%");
-			$("#twitter").css("top", "0.75em");
-			$("#twitter").css("width", "16%");
-			$("#twitter").css("right", "4.5em");
+            
+			$("#img-social").css("width", "40%");
+            $("#social").css("height", "60px");
+            
 			$("#navigation").css("top", "49%");
-			$("#navigation").css("border", "");
+			$("#navigation").css("border", "none");
 			$("#navigation").css("height", "99%");
+            
 		} else {
-			$("#header").css("position", "absolute");
-			$("#header").css("height", "8em");
-			$("#logoimg").attr("src", "../images/firstblock/logo.png");
+            
+			$("header").css("position", "relative");
+			$("header").css("height", "126px");
+            $("header").css("background", "white");
+            $("header").css("border-bottom", "2px solid #d1d3d4");
+
+            $("#secondblock").css("top", "0px");
+            
+			$("#logoimg").attr("src", "../images/firstblock/logo.svg");
+            $("#logoimg").css("width", "65%");
+            
 			$("#logo").css("width", "15%");
-			$("#logo").css("padding-left", "3.5%");
+            $("#logo").css("height", "126px");
+            
 			$("#telephone").show();
 			$("#mail").show();
-			$("#facebookimg").attr("src", "../images/firstblock/facebook.svg");
-			$("#twitterimg").attr("src", "../images/firstblock/twitter.svg");
-			$("#facebook").css("top", "2em");
-			$("#facebook").css("width", "23%");
-			$("#twitter").css("top", "2em");
-			$("#twitter").css("width", "23%");
-			$("#twitter").css("right", "3.5em");
-			$("#navigation").css("top", "");
-			$("#navigation").css("height", "");
+            
+			$("#img-social").css("width", "50%");
+            $("#social").css("height", "126px");
+            
+			$("#navigation").css("top", "49%");
+			$("#navigation").css("border-top", "2px solid #d1d3d4");
+			$("#navigation").css("height", "48%");
 
 		}
 	});

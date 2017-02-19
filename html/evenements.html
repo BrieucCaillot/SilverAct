@@ -1,3 +1,13 @@
+<!--==========================================================================
+#title            : SILVER ACT'S WEBSITE
+#description      : Silver Act Évenements Page
+#author           : Brieuc CAILLOT, Eva PAMFIL, Anthony DUPRÉ
+#date             : 2017 02 19
+#version          : V2
+#usage            : HTML
+#notes            : Only working on search engine
+============================================================================-->
+
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
@@ -7,152 +17,175 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script type="text/javascript" src="../javascript/scriptevenements.js"></script>
-        <title>Silver Act - Page évenements</title>
+        <title>Silver Act' - Évenements</title>
     </head>
     
     <body>
+        <header>
+            <div id="logo">
+                <a href="../index.html"><img id="logoimg" src="../images/firstblock/logo.svg" alt="SilverAct'"></a>
+            </div>
 
-        <div id="firstblock"></div>
-            
-            <div id="header">
+            <div id="menu">
 
-                <div id="logo">
-                    <a href="../index.html"><img id="logoimg" src="../images/firstblock/logo.png"></a>
+                <div id="telephone">
+                    <a href="tel:0782824168"><img id="telephoneimg" src="../images/firstblock/telephone.svg" alt="">
+                    <p>07 82 82 41 68</p></a>
                 </div>
 
-                <div id="menu">
+                <div id="mail">
+                    <a href="mailto:contact@silveract.fr"><img id="mailimg" src="../images/firstblock/mail.svg" alt="">
+                    <p>Envoyer un mail</p></a>
+                </div>
 
-                    <div id="telephone">
-                        <a href=""><img src="../images/firstblock/telephone.svg" alt="">
-                        <p>07 82 82 41 68</p></a>
-                    </div>
+                <nav id="navigation">
+                    <ul>
+                        <li class="hvr-sweep-to-right">
+                            <a href="../index.html" class="hvr-sweep-to-right-2">ACCUEIL</a>   
+                        </li>
 
-                    <div id="mail">
-                        <a href=""><img src="../images/firstblock/mail.svg" alt="">
-                        <p>Envoyer un mail</p></a>
-                    </div>
-
-                    <div id="navigation">
-                        <nav>
-                            <ul>
-                                <li class="hvr-sweep-to-right">
-                                    <a href="../index.html">
-                                        ACCUEIL 
-                                    </a>   
-                                </li>
-
-                                <li class="hvr-sweep-to-right">
-                                    <a href="#">
-                                        ACTIVITÉ 
-                                    </a>
-                                </li>
+                        <li class="hvr-sweep-to-right">
+                            <a href="#" class="hvr-sweep-to-right-2">ACTIVITÉ</a>
+                        </li>
                                 
-                                <li class="hvr-sweep-to-right">
-                                    <a href="#">
-                                        ÉVENEMENTS
-                                    </a>
-                                </li>
+                        <li class="hvr-sweep-to-right">
+                            <a href="evenements.html" class="hvr-sweep-to-right-2">ÉVENEMENTS</a>
+                        </li>
 
-                                <li class="hvr-sweep-to-right">
-                                    <a href="#">
-                                        FONCTIONNEMENT 
-                                    </a>
-                                </li>
+                        <li class="hvr-sweep-to-right">
+                            <a href="#" class="hvr-sweep-to-right-2">FONCTIONNEMENT</a>
+                        </li>
 
-                                <li class="hvr-sweep-to-right">
-                                    <a href="#">
-                                        CONTACT
-                                    </a>
-                                </li>
-                        </nav>
-                </div>
+                        <li class="hvr-sweep-to-right">
+                            <a href="#" class="hvr-sweep-to-right-2">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                    
             </div>
 
             <div id="social">
-
-                    <div id="facebook">
-                        <a href=""><img id="facebookimg" src="../images/firstblock/facebook.svg" alt=""></a>
+                    <div id="img-social">
+                        <a href="#"><img src="../images/firstblock/facebook.svg" alt="facebook"></a>
+                        <a href="#"><img src="../images/firstblock/twitter.svg" alt="twitter"></a>
                     </div>
-
-                    <div id="twitter">
-                        <a href=""><img id="twitterimg" src="../images/firstblock/twitter.svg" alt=""></a>
-                    </div>
-
                 </div>
-            </div>
-        </div>
-
-        <div id="secondblock">
-            <div id="left">
-                <h1>LES ÉVENEMENTS</h1>
-                <p> 
-                    Silver’Act’ propose de façon ponctuelle<br>différentes sorties culturelles ou ludiques<br>organisées de façon à ce que l’accès soit<br>simplifié et sécurisé. L’achat des billets, le<br>déplacement, l’encadrement et le retour au<br> domicile sont planifiés et pris en charge par<br> Silver’Act en étroite collaboration avec chaque<br> participants afin de palier à tout les besoins<br>de l’humain.
-                </p>
-            </div>
-
-            <div id="bulles">
-                <ul>
-                    <li id="bulles1">
-                        <span>
-                            19 FEV
-                        </span>
-                    </li>            
-                    
-                    <li id="bulles2" ">
-                        <span>
-                           09 MAR
-                        </span>
-                    </li>
-
-                    <li id="bulles3">
-                        <span>
-                            17 AVR
-                        </span>
-                    </li>
-
-                    <li id="bulles4">
-                        <span>
-                            25 MAI
-                        </span>                        
-                    </li>
-                </ul>
-            </div>
-
-            <div id="right">
-                <div id="premier">
-                    <h2>
-                        COURS DE CUISINE POUR<br>SENIOR AVEC UN GRAND<br>CHEF FRANÇAIS !
-                    </h2>
-                    <p>
-                        Yannick Alléno, Chef Français et étoilé propriétaire de nombreux restaurants<br>éponymes propose aux partenaires de Silver’Act de partager son savoir faire<br> durant toute une matinée dans une cuisine louée pour l’occasion située à<br>Malakoff (92) et suivit par une dégustation collective des mets cuisinés !
-                    </p>
-                </div>
-
-                <div id="deuxieme">
-                    <h2>
-                        TOURNOI DE BRIDGE
-                    </h2>
-                    <p>
-                        M.Bessis Thomas, premier joueur de Bridge Français participera à ce tournoi<br>organisé à l’espace André Maigné en Val de Marne (94). Joueurs débutants et<br> avancés y trouveront amusement et challenge, avec de nombreux lots à la clé !<br>
-                    </p>
-                </div>
-
-                <div id="troisieme">
-                    <h2>
-                        PRESTATION PRIVÉE<br> DU CIRQUE DU SOLEIL
-                    </h2>
+                
+            </header>
+            
+           
+        <div id="content">
+            <div id="secondblock">
+                <div id="left">
+                    <h1>LES ÉVENEMENTS</h1>
                     <p> 
-                        Silver’Act propose une présentation inédite dans une salle de Versailles adaptée<br>aux besoins des seniors d’un de ses spectacles les mieux noté depuis sa<br> création. Venez voltiger avec les équilibristes et acrobates les plus doués<br>du monde du spectacle !
+                        Silver’Act’ propose de façon ponctuelle<br> différentes sorties culturelles ou ludiques<br> organisées de façon à ce que l’accès soit<br> simplifié et sécurisé. L’achat des billets, le<br> déplacement, l’encadrement et le retour au<br> domicile sont planifiés et pris en charge par<br> Silver’Act en étroite collaboration avec chaque<br> participants afin de palier à tout les besoins<br> de l’humain.
                     </p>
                 </div>
 
-                <div id="quatrieme">
-                    <h2>
-                        ONE MAN SHOW
-                    </h2>
-                    <p>
-                        Rire est bon pour la santé, et votre santé est notre priorité ! Assistez à une<br>prestation de divers étoiles montantes du One Man Show en France tels que<br>Baptiste Lecaplain et Ahmed Sylla.
-                    </p>
+                <div id="bulles">
+                    <ul>
+                        <li id="bulles1">
+                            <span>
+                                19 FEV
+                            </span>
+                        </li>            
+                        
+                        <li id="bulles2" >
+                            <span>
+                               09 MAR
+                            </span>
+                        </li>
+
+                        <li id="bulles3">
+                            <span>
+                                17 AVR
+                            </span>
+                        </li>
+
+                        <li id="bulles4">
+                            <span>
+                                25 MAI
+                            </span>                        
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="right">
+                    <div id="premier">
+                        <h2>
+                            COURS DE CUISINE POUR SENIOR AVEC UN GRAND CHEF FRANÇAIS !
+                        </h2>
+                        <p>
+                            Yannick Alléno, Chef Français et étoilé propriétaire de nombreux restaurants éponymes propose aux partenaires de Silver’Act de partager son savoir faire durant toute une matinée dans une cuisine louée pour l’occasion située à Malakoff (92) et suivit par une dégustation collective des mets cuisinés !
+                        </p>
+                    </div>
+
+                    <div id="deuxieme">
+                        <h2>
+                            TOURNOI DE BRIDGE
+                        </h2>
+                        <p>
+                            M.Bessis Thomas, premier joueur de Bridge Français participera à ce tournoi organisé à l’espace André Maigné en Val de Marne (94). Joueurs débutants et avancés y trouveront amusement et challenge, avec de nombreux lots à la clé !
+                        </p>
+                    </div>
+
+                    <div id="troisieme">
+                        <h2>
+                            PRESTATION PRIVÉE<br>DU CIRQUE DU SOLEIL
+                        </h2>
+                        <p> 
+                            Silver’Act propose une présentation inédite dans une salle de Versailles adaptée aux besoins des seniors d’un de ses spectacles les mieux noté depuis sa création. Venez voltiger avec les équilibristes et acrobates les plus doués du monde du spectacle !
+                        </p>
+                    </div>
+
+                    <div id="quatrieme">
+                        <h2>
+                            ONE MAN SHOW
+                        </h2>
+                        <p>
+                            Rire est bon pour la santé, et votre santé est notre priorité ! Assistez à une prestation de divers étoiles montantes du One Man Show en France tels que Baptiste Lecaplain et Ahmed Sylla.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <footer>
+            <div id="left-block">
+                <div id="mention">
+                    <p>Toutes nos<br>prestations sont<br> toutes déductibles<br>des impôts !</p>
+                    <p><a>Mentions légales</a></p>
+                </div>
+                
+                <div id="socialfooter">
+                    <div id="img-social-footer">
+                       <ul>
+                           <li>Retrouvez-nous<br> sur les réseaux sociaux !</li>
+                           <li><img src="../images/fourthblock/facebook.svg"><img src="../images/fourthblock/twitter.svg"></li>
+                       </ul>
+                    </div>
+                </div>
+               
+                <div id="localisation">
+                    <h4>SILVER ACT'</h4>
+                    <p>77 rue de Prony</p>
+                    <p>75017 PARIS</p>
+
+                    <ul id="img-footer">
+                        <li><img src="../images/fourthblock/telephone.svg"></li>
+                        <li><img src="../images/fourthblock/mail.svg"></li>
+                    </ul>
+                    
+                    <p id="contact"><a>Envoyer un mail</a><br><a>07 82 82 41 68</a></p>
+               </div>
+           </div>
+           <div id="right-block">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.6765973035117!2d2.2987758150501643!3d48.883441406897425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f9617917cc3%3A0xa1c4ed5b1cbdbf99!2s77+Rue+de+Prony%2C+75017+Paris!5e0!3m2!1sfr!2sfr!4v1487262680072" width="100%" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
+           </div>
+       </footer>
+
+    </body>
+</html>
+
+

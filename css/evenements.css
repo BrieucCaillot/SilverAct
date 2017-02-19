@@ -1,9 +1,9 @@
 /*==========================================================================
-#title            : SILVER ACT
-#description      : Silver Act Website from PSD
-#author           : 
-#date             : 20160207
-#version          : Constantly on progress
+#title            : SILVER ACT'S WEBSITE
+#description      : Silver Act Évenements Page
+#author           : Brieuc CAILLOT, Eva PAMFIL, Anthony DUPRÉ
+#date             : 2017 02 19
+#version          : V2
 #usage            : CSS
 #notes            : Only working on search engine
 ============================================================================*/
@@ -30,16 +30,7 @@ body {
     src: url(../police/Gotham/Gotham-Medium.otf);
 }
 
-header,
-nav,
-a,
-img,
-li {
-    transition: .7s all;
-    -moz-transition: .7s all;
-    -webkit-transition: .7s all;
-    -o-transition: .7s all;
-}
+
 
 /* FIRSTBLOCK */
 
@@ -49,39 +40,38 @@ li {
     height: 8em;
 }
 
-#header {
-    height: 8em;
-    background-color: white;
-    height: 8em;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 3;
+header {
+    width: 100%; 
+    height: 126px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative; 
+    top: 0px;
+    z-index: 90;
     border-bottom: 2px solid #d1d3d4;
-}
-
-#video {
-    width: 100%;
-    z-index: 2;
-}
+} 
 
 #logo {
-    padding: 10px;
-    padding-left: 3.5%;
-    width: 15%;
+    float: left; 
+    width: 15%; 
+    height: 126px; 
+    position: relative; 
+    border-right: 2px solid #d1d3d4; 
+}
+
+#logo img {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-50%) translateY(-50%); 
+    width: 65%; 
 }
 
 #menu {
-    width: 61%;
-    height: 100%;
+    width: 70%; 
+    height: 100%; 
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid #d1d3d4;
-    border-bottom: none;
-    border-top: none;
+    transform: translateX(-50%); 
 }
 
 #telephone {
@@ -129,53 +119,50 @@ li {
 
 
 #navigation {
-    transform: translate(-50%, -50%);
-    width: 100.3%;;;
+    width: 99.9%; 
     height: 48%;
-    left: 50%;
-    position: absolute;
-    top: 75%;
-    border-top: 2px solid #d1d3d4;;
+    border-top: 2px solid #d1d3d4; 
+    bottom: 0px; 
 }
 
 #navigation nav {
     position: relative;
-}
-
-#navigation ul {
-    color: #148fad;
-    font-family: Gotham-Medium;
-    list-style-type: none;
-    cursor: pointer;
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-}
-
-
-#navigation nav {
-    position: relative;
-}
-
-
-#navigation ul {
-    color: #148fad;
-    font-family: Gotham-Medium;
-    list-style-type: none;
-    cursor: pointer;
-    display: inline-block;
-    height: 101%;
-    width: 100%;
 }
 
 #navigation ul li {
-    position: relative;
+    display: table-cell; 
+    list-style: none; 
     height: 100%;
-    display: inline-block;
-    font-size: 18px;
+    width: 1%;
+    border-right: 2px solid #d1d3d4;
+    position: relative; 
+    margin-left: -2px;
+    box-sizing: border-box;
 }
 
-/* SWIPER TON RIGHT */
+#navigation ul li:first-child {
+    margin: 0px; 
+}
+
+#navigation ul li:last-child {
+    border: none; 
+}
+
+#navigation ul li a {
+    color: #148fad;
+    text-decoration: none;
+    font-family: Gotham-Medium;
+    position: relative;
+    text-align: center;
+    display: block;
+    padding: 22px; 
+}
+
+#navigation ul li a:hover {
+    color: white; 
+}
+
+/* SWIPER TON RIGHT li */
 
 .hvr-sweep-to-right {
   display: inline-block;
@@ -197,7 +184,7 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098D1;
+  background: #148fad;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -217,122 +204,53 @@ li {
   transform: scaleX(1);
 }
 
-/*ACCUEIL*/
-
-#navigation ul li:nth-child(1) {
-    width: 16.5%;
-    border-right: 2px solid #d1d3d4;
-}
-
-#navigation ul li:nth-child(1) a{
-    text-decoration: none;
-    color: #148fad;
-    position: absolute;
-    top: 35%;
-    left: 21%; 
-}
-
-/* ACTIVITÉ */
-
-#navigation ul li:nth-child(2) {
-    width: 16%;
-    text-decoration: none;
-    color: #148fad;
-    border-right: 2px solid #d1d3d4;
-}
-
-#navigation ul li:nth-child(2) a {
-    text-decoration: none;
-    color: #148fad;
-    position: absolute;
-    top: 35%;
-    left: 15%; 
-}
-
-/* ÉVÉNEMENTS */
-
-#navigation ul li:nth-child(3) {
-    width: 23%;  
-    border-right: 2px solid #d1d3d4;
-    text-decoration: none;
-    color: #148fad;
-}
-
-#navigation ul li:nth-child(3) a {
-    text-decoration: none;
-    color: #148fad;
-    position: absolute;
-    top: 35%;
-    left: 17%; 
-}
-
-/* FONCTIONNEMENT */
-
-#navigation ul li:nth-child(4) {
-    width: 25%;  
-    border-right: 2px solid #d1d3d4;
-    text-decoration: none;
-    color: #148fad;
-}
-
-#navigation ul li:nth-child(4) a {
-    text-decoration: none;
-    color: #148fad;
-    position: absolute;
-    top: 35%;
-    left: 7%; 
-}
-
-/* CONTACT */
-
-#navigation ul li:nth-child(5) {
-    width: 15%;  
-    text-decoration: none;
-    color: #148fad;
-}
-
-#navigation ul li:nth-child(5) a {
-    text-decoration: none;
-    color: #148fad;
-    position: absolute;
-    top: 35%;
-    left: 17%; 
-}
 
 /* RESEAUX SOCIAUX */
 
 #social {
-    width: 19.5%;
-    height: 99.8%;
-    position: absolute;
-    top: -1%;
-    right: 0%;
+    float: right; 
+    width: 15%; 
+    height: 127px; 
+    position: relative;
+    border-left: 2px solid #d1d3d4; 
 }
 
-#facebook {
-    position: absolute;
-    top: 2em;
-    right: 55%;
-    width: 23%;
+#img-social {
+    width: 50%; 
+    height: auto; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-50%) translateY(-50%); 
+    display: flex; 
 }
 
-#twitter {
-    float: right;
-    position: absolute;
-    top: 2em;
-    right: 3.5em;
-    width: 23%;
+#img-social img {
+    width: 100%;
+}
+
+#img-social>a:first-child {
+    margin-right: 12%; 
 }
 
 /* SECOND BLOCK */
 
+#content{
+    width: 1200px;
+    height: auto;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
 #secondblock {
     position: relative;
     height: 63em;
+    width: 100%;
 }
 
 #secondblock #left {
-    width: 46%;
+    width: 53%;
     height: inherit;
     position: relative;
     float: left;
@@ -344,28 +262,28 @@ li {
     font-size: 47px;
     position: absolute;
     top: 32%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    width: 68%;
+    width: 69%;
 }
 
 #secondblock #left p {
-    font-size: 20px;
+    font-size: 22px;
     font-family: Roboto;
-    line-height: 23px;
+    line-height: 27px;
     position: absolute;
-    top: 49%;
-    left: 50%;
+    top: 51%;
+    left: 43%;
     transform: translate(-50%, -50%);
-    width: 68%;;
+    width: 75%;
+    color: #148fad;
 }
 
 #secondblock #right {
-    width: inherit;
+    width: 45%;
     height: 100%;
     border-left: 4px solid #ef790f;
     position: relative;
-    margin: 0% 0% 0% 5.3%;
     float: left;
 }
     
@@ -381,6 +299,7 @@ li {
     font-family: Roboto;
     padding-top: 2%;
     font-size: 15px;
+    color: #148fad;
 }
 
 #bulles {
@@ -389,7 +308,6 @@ li {
     font-size: 30px;
     color: #ef790f;
     float: left;;
-    width: 3%;
     height: inherit;
     position: relative;;
 }
@@ -402,7 +320,7 @@ li {
     border-radius: 100%;
     transform: translate(-50%, -50%);
     position: absolute;
-    top: 20%;
+    top: 21%;
     left: 280%;
     z-index: 2;
 }
@@ -455,21 +373,134 @@ li {
 }
 
 #secondblock #right #premier {
-    padding-left: 5em;
-    padding-top: 7em;
+    padding-left: 6em;
+    padding-top: 9em;
 }
 
 #secondblock #right #deuxieme{
     padding-top: 3em;
-    padding-left: 5em;
+    padding-left: 6em;
 }
 
 #secondblock #right #troisieme{
     padding-top: 3em;
-    padding-left: 5em;
+    padding-left: 6em;
 }
 
 #secondblock #right #quatrieme {
     padding-top: 3em;
-    padding-left: 5em;
+    padding-left: 6em;
+}
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    top: 1080px;
+    height: 270px;
+    width: 100%;
+    background-color: #044759;
+}
+
+#left-block {
+   width: 50%;
+   float: left;
+}
+
+#right-block {
+   float: right;
+   width: 50%;
+}
+
+#mention {
+   float: left;
+   width: 36%;
+   height: 225px;
+   border-right: solid 1px white;
+   margin-top: 40px;
+}
+
+#mention p {
+   text-align: center;
+   font-family: Gotham-Medium;
+   font-size: 20px;
+   color: #ef7915 ;
+   line-height: 28px;
+   padding-top: 18px;
+}
+
+#mention a {
+   text-align: center;
+   font-family: Gotham-Light;
+   color: white;
+   font-size: 13px;
+   text-decoration: underline;
+}
+
+#socialfooter {
+   float: left;
+   margin-top: 80px;
+}
+
+#socialfooter ul {
+   list-style-type: none;
+   text-align: center;
+   font-family: Gotham-Medium;
+   font-size: 16px;
+   color: white;
+   margin-left: 15px;
+}
+
+#socialfooter li img {
+   margin-top: 30px;
+   margin-right: 15px;
+}
+
+#img-social-footer ul li:last-child img:first-child {
+    width: 53px;
+    margin-left: 14px;
+}
+
+#img-social-footer ul li:last-child img:last-child {
+    width: 53px;
+    margin-left: 8px;
+}
+
+#img-footer li img {
+  width: 2.5em;
+}
+
+#localisation {
+   float: left;
+   margin-top: 40px;
+   margin-left: 25px;
+   color: white;
+   font-family: roboto;
+}
+
+#localisation ul {
+   list-style-type: none;
+}
+
+#img-footer{
+   float: left;
+}
+
+#img-footer li {
+   margin-top: 20px; 
+}
+
+#localisation h4{
+   font-family: Gotham-Medium;
+   margin-bottom: 25px;
+   font-size: 22px;
+}
+
+#contact{
+   font-family: Roboto;
+   font-weight: bold;
+   line-height: 60px;
+   margin-top: 10px;
+   margin-left: 50px;
+   font-size: 15px;  
 }
