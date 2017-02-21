@@ -297,7 +297,7 @@ header{
 #thirdblock {
   position: relative;
   width: 100%;
-  height: 1500px;
+  height: 1600px;
 }
 
 #thirdblock h2{
@@ -311,7 +311,7 @@ header{
 
 .carte {
     height: 530px;
-    width: 30%;
+    width: 390px;
     border: solid 2px #e6e6e6;
     border-radius: 10px;
     margin: 20px;
@@ -364,55 +364,74 @@ header{
     font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 15px;
 }
 .boutton{
-    display: inline;
-    text-align: center;
-    font-family: Gotham-light;
-    color: #ef7915;
+    width: 180px;
+    height: 25px;
+    margin: 50px auto;
+    margin-top: -0.1px;
+    padding-left: 10px;
     
     
 }
-.boutton button{
+ .boutton-plus{
+    display: inline;
+    text-align: center;
+    font-family: Gotham-light, sans-serif;
+    color: #ef7915;
+    width: 180px; 
+    height: 25px; 
+}
+        
+.texte-plus1 {
     display: inline;
     font-size: 17px;
     text-align: center;
-    font-family: Gotham-light;
+    font-family: Gotham-light, sans-serif;
     color: #ef7915;
-    border: none;
     background-color: white;
-    margin-left: 150px;
-    
-    
+    margin-left: 35px;
 }
-
-.fleche {
+        
+.texte-plus2 {
+    font-size: 17px;
+    text-align: center;
+    font-family: Gotham-light, sans-serif;
+    color: white;
+    margin-top: 3px;
+}
+        
+.fleche-left {
     position: relative;
     height: 25px;
     width: 25px;
     border: solid 2px #ef7915;
-    border-radius: 25px; 
+    border-radius: 25px;
     margin-bottom: -25px;
-    margin-left: 113px;
     margin-top: 5px;
-    
-    
 }
-.fleche:hover {
-    width: 180px; 
-    
+        
+.fleche-left:hover {
+    -webkit-animation: width 0.5s forwards ease;
+    animation: width 0.5s ease forwards;
+}
+        
+
+@-webkit-keyframes width {
+    from {width: 25px;}
+    to {width: 180px;}
 }
 
-.fleche img {
+.fleche-left img {
     position: absolute;
     height: 12px;
     width: auto;
-    top : 50%; 
-    left : 50%; 
-    margin-top : -6px; 
-    margin-left : -3px; 
+    top : 50%;
+    left : 12px;
+    margin-top : -6px;
+    margin-left : -3px;
 }
-
 
 
 .a-down{
@@ -423,25 +442,37 @@ header{
     top: 460px;
 }
 .carre-carte{
+   overflow-x: hidden;
     position: relative;
-    height: 600px;
+    height: 800px;
     width: 100%;
     margin-top: 20px;
 }
 #carte-pic{
+    
     position: absolute;
-    left: 13%;
+    left: -50%;
+    width: 390px;
     transform:rotate(-10deg); 
 -ms-transform:rotate(-10deg); /* Internet Explorer */
 -moz-transform:rotate(-10deg); /* Firefox */
 -webkit-transform:rotate(-10deg); /* Safari et Chrome */ 
 -o-transform:rotate(-10deg); /* Opera */
 }
+.rotate-carte{
+    transform:rotate(0deg); 
+-ms-transform:rotate(0deg); /* Internet Explorer */
+-moz-transform:rotate(0deg); /* Firefox */
+-webkit-transform:rotate(0deg); /* Safari et Chrome */ 
+-o-transform:rotate(0deg); /* Opera */
+}
+
 #carte-coeur{
-    margin-top: -30px;
+  
+
     position: absolute;
     float: right;
-    right: 13%; 
+    right: -50%; 
     transform:rotate(5deg); 
 -ms-transform:rotate(5deg); /* Internet Explorer */
 -moz-transform:rotate(5deg); /* Firefox */
@@ -449,8 +480,9 @@ header{
 -o-transform:rotate(5deg); /* Opera */
 }
 #carte-treffle{
+    
     position: absolute;
-    left: 13%;
+    left: -50%;
     transform:rotate(10deg); 
 -ms-transform:rotate(10deg); /* Internet Explorer */
 -moz-transform:rotate(10deg); /* Firefox */
@@ -458,15 +490,313 @@ header{
 -o-transform:rotate(10deg); /* Opera */
 }
 #carte-carreau{
-    margin-top: -35px;
+    
+    
     position: absolute;
     float: right;
-    right: 13%;
+    right: -50%;
     transform:rotate(-10deg); 
 -ms-transform:rotate(-10deg); /* Internet Explorer */
 -moz-transform:rotate(-10deg); /* Firefox */
 -webkit-transform:rotate(-10deg); /* Safari et Chrome */ 
 -o-transform:rotate(-10deg); /* Opera */
+    
+}
+ 
+/*ANIMATION*/
+
+.animate_card{
+    -webkit-animation: card-rotate 0.5s forwards;
+}
+
+@-webkit-keyframes card-rotate {
+    0%{-webkit-transform: rotate(-10deg);transform: rotate(-10deg);}
+    20%{-webkit-transform: rotate(-8deg);transform: rotate(-8deg);}
+    40%{-webkit-transform: rotate(-6deg);transform: rotate(-6deg);}
+    60%{-webkit-transform: rotate(-4deg);transform: rotate(-4deg);}
+    80%{-webkit-transform: rotate(-2deg);transform: rotate(-2deg);}
+    100%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+}
+.animate_card1{
+    -webkit-animation: card-rotate1 0.5s forwards;
+}
+
+@-webkit-keyframes card-rotate1 {
+    0%{-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+    20%{-webkit-transform: rotate(8deg);transform: rotate(8deg);}
+    40%{-webkit-transform: rotate(6deg);transform: rotate(6deg);}
+    60%{-webkit-transform: rotate(4deg);transform: rotate(4deg);}
+    80%{-webkit-transform: rotate(2deg);transform: rotate(2deg);}
+    100%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+}
+.animate_card2{
+    -webkit-animation: card-rotate2 0.5s forwards;
+}
+
+@-webkit-keyframes card-rotate2 {
+    0%{-webkit-transform: rotate(5deg);transform: rotate(5deg);}
+    20%{-webkit-transform: rotate(4deg);transform: rotate(4deg);}
+    40%{-webkit-transform: rotate(3deg);transform: rotate(3deg);}
+    60%{-webkit-transform: rotate(2deg);transform: rotate(2deg);}
+    80%{-webkit-transform: rotate(1deg);transform: rotate(1deg);}
+    100%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+}
+
+/*BIG CARD PIC*/
+.big-img{
+    width: auto;
+    height: 530px;
+    float: left;
+}
+#big-card-pic{
+    width: 1100px;
+    height: 530px;
+    display: none;
+}
+.big-card-text{
+    height: 175px;
+    width: 420px;
+    float: left;
+    font-family: roboto;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 40px;
+    
+}
+.big-card-text h3{
+    font-family: Gotham-Medium;
+    color: #148fad;
+    font-size: 22px;
+}
+.big-card-text h4{
+    font-family: Gotham-Light;
+    color: #148fad;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.big-card-text span{
+    color:  #ef7915
+}
+.plus{
+    font-size: 28px;
+    margin-left: 200px;
+}
+.big-card-place{
+    margin-left: 40px;
+    float: left;
+    width: 420px;
+    
+}
+.place-text{
+    float: left;
+    margin-top: 20px;
+    margin-left: 60px;
+    font-family: Gotham-Light;
+    color: #ef7915;
+    font-family: 16px;
+}
+.place{
+    float: left;
+    height: 80px;
+    width: auto;
+}
+
+/**/
+.price{
+    float: left;
+    margin-left: 40px;
+    margin-top: 100px;
+    width: 100px;
+    height: auto;
+}
+.price-text{
+    color: #148fad;
+    font-family: gotham-light;
+    font-size: 14px;
+}
+.price-text span{
+    font-family: gotham-medium;
+    font-size: 28px;
+    padding-top: 10px;
+    padding-bottom:  10px;
+    
+}
+
+ /*BOUTTON : RETOUR*/
+
+
+
+.boutton-retour{
+     float: left;
+    margin-top: 24px;
+    width: 90px;
+    height: 25px;
+   
+ 
+    
+}
+
+        .boutton-back-{
+            display: inline;
+            text-align: center;
+            font-family: Gotham-light, sans-serif;
+            color: #ef7915;
+        }
+        
+        .texte-back1 {
+            margin-right: 35px;
+            display: inline;
+            font-size: 17px;
+            text-align: center;
+            font-family: Gotham-light, sans-serif;
+            color: #ef7915;
+            
+        }
+        
+        .fleche-right {
+           position: relative;
+           height: 25px;
+           width: 25px;
+           border: solid 2px #ef7915;
+           border-radius: 25px;
+           margin-bottom: -25px;
+           float: right;  
+        }
+        
+        .fleche-right:hover {
+           -webkit-animation: width-right 0.5s forwards ease;
+           animation: width-right 0.5s ease forwards;
+        }
+        
+
+        @-webkit-keyframes width-right {
+           from {width: 25px;}
+           to {width: 110px;}
+        }
+
+        .fleche-right img {
+           position: absolute;
+           height: 12px;
+           width: auto;
+           top : 50%;
+           left : 12px;
+           margin-top : -6px;
+           margin-left : -4px;
+        }
+/*CARD JOKER*/
+       
+.joker{
+    position: relative;
+    float: right;
+    width: 250px;
+    height: 250px;
+    margin-top: -8px;
+    margin-right: 35px;
+    border: solid 2px #e6e6e6;
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: none;
+}
+.small-joker{
+    margin: 10px;
+    height: 45px;
+    width: auto;
+}
+.big-joker{
+    width: auto;
+    left: 50%;
+    height: 90px;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-top: 15px; 
+}
+
+.select{
+    text-align: center;
+    color: #ef7915;
+    margin-top: 50px;
+    font-family: Gotham-light;
+}
+.joker label{
+    text-align: center;
+}
+
+fieldset {
+    border: none; 
+}
+
+.button-radio  input[type="checkbox"]{
+    display : none;
+ }
+.button-radio  div{
+    margin: 10px 0px;
+}
+.button-radio  .label-radio{
+    position : relative;
+    left: 20px;
+    padding-left: 25px;
+    margin-left : 0px;
+    font-family: Roboto; 
+    color : #044759;
+    font-size: 15px;
+   
+ }
+.button-radio  .label-radio:before{
+    content : '';
+    display : block;
+    position : absolute;
+    width : 15px;
+    height : 15px;
+    border-radius : 12px;
+    border : 1px solid #a6a6a6 ;
+    top : 0px;
+ }
+.button-radio .label-radio:after{
+    content: '';
+    display: none;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 2px;
+    left: 2px;
+    background-color: #148fad;
+    border-radius: 15px;
+ }
+.button-radio  input[type="checkbox"]:checked+.label-radio:after{
+    display : block;
+ }
+/*BIG CARD COEUR*/
+#big-card-coeur{
+    display: none;
+}
+/*BIG CARD TREFLE*/
+#big-card-trefle{
+    display: none;
+}
+/*BIG CARD CARREAU*/
+#big-card-carreau{
+    display: none;
+}
+
+/*ANIMATION SCROLL*/
+
+.animate-left{
+    -webkit-animation: deplacement 0.5s forwards;
+            animation: deplacement 0.5s forwards;
+}
+@-webkit-keyframes deplacement {
+    from{left: -50%;}
+    to{left: 13%;}
+}
+
+.animate-right{
+    -webkit-animation: deplacement-coeur 0.5s forwards;
+            animation: deplacement-coeur 0.5s forwards;
+}
+@-webkit-keyframes deplacement-coeur {
+    from{right: -50%;}
+    to{right: 13%;}
 }
 
 /* FOURTHBLOCK - FOOTER */

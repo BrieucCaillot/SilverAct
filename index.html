@@ -23,6 +23,7 @@
         <!--SCRIPT-->
         <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script type="text/javascript" src="javascript/scripthome.js"></script>
+        <script type="text/javascript" src='javascript/plug-in.js'></script>
         
         <title>Silver Act' - Accueil</title>
     </head>
@@ -97,122 +98,332 @@
 
         <!-- THIRDBLOCK - CARTES-->
         <div id="thirdblock">
-            <h2>NOTRE CARRÉ D'AS</h2>
+            <h2>NOTRE CARRE D'AS</h2>
             <div class="carre-carte">
                 <div id="carte-pic" class="carte">
-                    <div class="a-top">
-                        <ul class="liste">
-                            <li>A</li>
-                            <li><img class="small" src="images/thirdblock/pic-informatique%20.png"></li>
-                        </ul>
+                   <div id="small-pic">
+                        <div class="a-top">
+                            <ul class="liste">
+                                <li>A</li>
+                                <li><img class="small" src="images/thirdblock/pic-informatique%20.png"></li>
+                            </ul>
+                        </div>
+                        <h3 class="titre">PIC<br>DE L'INTERNET</h3>
+
+                        <img  class="picto" src="images/thirdblock/pic-informatique%20.png" alt="Cours d'informatique">
+                        <p class="texte">Apprenez les rudiments du digital afin de rester au contact de vos proches via internet et découvrez <br>l’univers du numérique. </p>
+
+                        <div class="boutton">    
+                            <a id="boutton-pic" class="boutton-plus"> 
+                                <div id="fleche-pic" class="fleche-left">
+                                    <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
+                                </div>
+                                <p id="texte-pic" class="texte-plus1">En savoir plus</p> 
+                            </a>
+                        </div>
+
+                        <div class="a-down">
+                            <ul class="liste">
+                                <li>A</li>
+                                <li><img class="small" src="images/thirdblock/pic-informatique%20.png"></li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3 class="titre">PIC<br>DE L'INTERNET</h3>
+                    
+                    <!--BIG CARTE PIC-->
+                    <div id="big-card-pic">
+                        <img class="big-img"src="images/thirdblock/carte-informatique.png">
+                        <div class="big-card-text">
+                            <h3>PIC DE L'INTERNET</h3>
+                            <h4>L'atelier :</h4>
+                             <p>Nous vous proposons sur la forme de cours personnalisé d'apprendre et de perfectionner la maitrise des outils du numérique sous forme de divertissement. SilverAct' vous permet d’acquérir et de découvrir les notions essentielles: <span>l'informatique,  navigation sur internet, réseaux sociaux, envoie de mail, etc.</span><br><span class="plus">+</span></p>
+                        </div>
+                        <div class="big-card-place">
+                            <img class='place'src='images/thirdblock/places.png'><p class='place-text'>2 places pour aller voir<br>des expositions ou musées !</p>
+                        </div>
+                        <div class="price">
+                            <p class='price-text'>A partir de<br><span>80 €</span> Déductible des impôts</p>
+                            <div class='boutton-retour'id="boutton-retour-pic"><a class='boutton-back'><div class='fleche-right'><img src='images/thirdblock/fleche-left.svg'></div><p class='texte-back1'>Retour</p></a></div>
 
-                    <img  class="picto" src="images/thirdblock/pic-informatique%20.png" alt="Cours d'informatique">
-                    <p class="texte">Apprenez les rudiments du digital afin de rester au contact de vos proches via internet et découvrez <br>l’univers du numérique. </p>
+                        </div>
+                        <div class="joker">
+                            <img class='small-joker' src='images/thirdblock/Joker-small.png'><img class='big-joker' src='images/thirdblock/Joker.png'>
 
-                    <div class="boutton">
-                        <a><div class="fleche">
-                                <img src="images/thirdblock/flecheright.png">
-                            </div>
-                        </a>
-                        <button>En savoir plus</button>
-                    </div>
+                            <p class="select">Notre sélection :</p>
 
-                    <div class="a-down">
-                        <ul class="liste">
-                            <li>A</li>
-                            <li><img class="small" src="images/thirdblock/pic-informatique%20.png"></li>
-                        </ul>
+                            <form>
+                               <fieldset class="button-radio">
+
+                                   <div>
+                                        <input type="checkbox" value="musée des arts et metiers" name="museum" id="arts" required checked="checked">
+                                        <label for="arts" class="label-radio">Musée des arts et métiers</label><br>
+
+                                        <input type="checkbox" value="cité des sciences" name="scienctist" id="science" required>
+                                        <label for="science" class="label-radio">Cité des sciences</label><br>
+
+                                        <input type="checkbox" value="exposition du moment" name="exposition" id="exposition" required>
+                                        <label for="exposition" class="label-radio">Exposition</label>
+                                    </div>
+                                </fieldset>
+                            </form>
+
+                            <div class="boutton">    
+                                    <a id="boutton-contact-pic" class="boutton-plus"> 
+                                        <div id="fleche-carreau" class="fleche-left">
+                                            <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
+                                        </div>
+                                        <p  class="texte-plus1">Contactez-nous</p> 
+                                    </a>
+                                </div>
+
+                        </div>
                     </div>
                 </div>
 
                  <div id="carte-coeur" class="carte">
-                    <div class="a-top">
-                        <ul class="liste">
-                            <li>A</li>
-                            <li><img class="small" src="images/thirdblock/muse-coeur.png"></li>
-                        </ul>
-                    </div>
-                    <h3 class="titre">AU COEUR<br>DE L'HISTOIRE</h3>
+                    <div id="small-coeur">
+                        <div class="a-top">
+                            <ul class="liste">
+                                <li>A</li>
+                                <li><img class="small" src="images/thirdblock/muse-coeur.png"></li>
+                            </ul>
+                        </div>
+                        <h3 class="titre">AU COEUR<br>DE L'HISTOIRE</h3>
 
-                    <img  class="picto" src="images/thirdblock/muse-coeur.png" alt="Visite de musées">
-                    <p class="texte">Voyagez à travers l’histoire grâce à une visite privée dans les célèbres sites, musées qui font la richesse <br>de notre héritage culturel. </p>
+                        <img  class="picto" src="images/thirdblock/muse-coeur.png" alt="Visite de musées">
+                        <p class="texte">Voyagez à travers l’histoire grâce à une visite privée dans les célèbres sites, musées qui font la richesse <br>de notre héritage culturel. </p>
 
-                    <div class="boutton">
-                        <a><div class="fleche">
-                                <img src="images/thirdblock/flecheright.png">
-                            </div>
-                        </a>
-                        <button>En savoir plus</button>
-                    </div>
+                         <div class="boutton">    
+                            <a id="boutton-coeur" class="boutton-plus"> 
+                                <div id="fleche-coeur" class="fleche-left">
+                                    <img id="coeur-fleche" src="images/thirdblock/fleche-right.svg">
+                                </div>
+                                <p id="texte-coeur" class="texte-plus1">En savoir plus</p> 
+                            </a>
+                        </div>
 
-                    <div class="a-down">
-                        <ul class="liste">
-                            <li>A</li>
-                            <li><img class="small" src="images/thirdblock/muse-coeur.png"></li>
-                        </ul>
+                        <div class="a-down">
+                            <ul class="liste">
+                                <li>A</li>
+                                <li><img class="small" src="images/thirdblock/muse-coeur.png"></li>
+                            </ul>
+                        </div>
+                     </div>
+                    
+                    <!-- BIG CARD-COEUR-->
+                    
+                    <div id="big-card-coeur">
+                        <img class="big-img"src="images/thirdblock/carte-muse.png">
+                        <div class="big-card-text">
+                            <h3>AU COEUR DE L'HISTOIRE</h3>
+                            <h4>L'atelier :</h4>
+                             <p>SilverAct' vous dévoile tous les secrets de l'histoire de Paris et sa région. Vous serez accompagnez d'un guipe privé et qualifié pour approfondir votre culture et votre savoir. Partez avec un ouvrage retraçant l'histoire du lieu que vous avez choisi.<br><span class="plus">+</span></p>
+                        </div>
+                        <div class="big-card-place">
+                            <img class='place'src='images/thirdblock/places.png'><p class='place-text'>2 places pour aller voir<br>des expositions ou musées !</p>
+                        </div>
+                        <div class="price">
+                            <p class='price-text'>A partir de<br><span>80 €</span> Déductible des impôts</p>
+                            <div class='boutton-retour'id="boutton-retour-coeur"><a class='boutton-back'><div class='fleche-right'><img src='images/thirdblock/fleche-left.svg'></div><p class='texte-back1'>Retour</p></a></div>
+
+                        </div>
+                        <div class="joker">
+                            <img class='small-joker' src='images/thirdblock/Joker-small.png'><img class='big-joker' src='images/thirdblock/Joker.png'>
+
+                            <p class="select">Notre sélection :</p>
+
+                            <form>
+                               <fieldset class="button-radio">
+
+                                   <div>
+                                        <input type="checkbox" value="musée des arts et metiers" name="museum" id="arts" required checked="checked">
+                                        <label for="arts" class="label-radio">Musée d'Orsay</label><br>
+
+                                        <input type="checkbox" value="cité des sciences" name="scienctist" id="science" required>
+                                        <label for="science" class="label-radio">Le Louvre</label><br>
+
+                                        <input type="checkbox" value="exposition du moment" name="exposition" id="exposition" required>
+                                        <label for="exposition" class="label-radio">Musée de la Photographie</label>
+                                    </div>
+                                </fieldset>
+                            </form>
+
+                            <div class="boutton">    
+                                    <a class="boutton-plus" id="boutton-contact-coeur"> 
+                                        <div id="fleche-carreau" class="fleche-left">
+                                            <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
+                                        </div>
+                                        <p class="texte-plus1">Contactez-nous</p> 
+                                    </a>
+                                </div>
+
+                        </div>
                     </div>
+                    
+                    
                 </div>
             </div>
             <div class="carre-carte">
                  <div id="carte-treffle" class="carte">
-                    <div class="a-top">
-                        <ul class="liste">
-                            <li>A</li>
-                            <li><img class="small" src="images/thirdblock/treffle-joueur.png"></li>
-                        </ul>
+                   <div id="small-trefle">
+                        <div class="a-top">
+                            <ul class="liste">
+                                <li>A</li>
+                                <li><img class="small" src="images/thirdblock/treffle-joueur.png"></li>
+                            </ul>
+                        </div>
+                        <h3 class="titre">TREFLE<br>JOUEUR</h3>
+
+                        <img  class="picto" src="images/thirdblock/treffle-joueur.png" alt="Sortie théâtre">
+                        <p class="texte">Jouez le temps d’un acte les personnages de vos pièces préférées et assitez à la représentation<br> de votre choix.  </p>
+
+                         <div class="boutton">    
+                            <a id="boutton-treffle" class="boutton-plus"> 
+                                <div id="fleche-treffle" class="fleche-left">
+                                    <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
+                                </div>
+                                <p id="texte-treffle" class="texte-plus1">En savoir plus</p> 
+                            </a>
+                        </div>
+
+                        <div class="a-down">
+                            <ul class="liste">
+                                <li>A</li>
+                                <li><img class="small" src="images/thirdblock/treffle-joueur.png"></li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3 class="titre">TREFFLE<br>JOUEUR</h3>
 
-                    <img  class="picto" src="images/thirdblock/treffle-joueur.png" alt="Sortie théâtre">
-                    <p class="texte">Jouez le temps d’un acte les personnages de vos pièces préférées et assitez à la représentation<br> de votre choix.  </p>
+                    <!--BIG CARTE TREFLE-->
+                    <div id="big-card-trefle">
+                        <img class="big-img"src="images/thirdblock/THEATRE.png">
+                        <div class="big-card-text">
+                            <h3>TREFLE JOUEUR</h3>
+                            <h4>L'atelier :</h4>
+                             <p>Nous vous faisons profitez d'un échange privilégiez autour d'une initiation scénique  avec un comédien ou un chanteur d'opéra qualifié. Passionné d’Apollinaire, Rimbaud ou autre poète ? Nous vous donnons aussi l'occasion de réciter leurs textes de manière dynamique. <br><span class="plus">+</span></p>
+                        </div>
+                        <div class="big-card-place">
+                            <img class='place'src='images/thirdblock/places.png'><p class='place-text'>2 places pour aller voir<br>au théâtre ou a l'opéra !</p>
+                        </div>
+                        <div class="price">
+                            <p class='price-text'>A partir de<br><span>80 €</span> Déductible des impôts</p>
+                            <div class='boutton-retour'id="boutton-retour-trefle"><a class='boutton-back'><div class='fleche-right'><img src='images/thirdblock/fleche-left.svg'></div><p class='texte-back1'>Retour</p></a></div>
 
-                    <div class="boutton">
-                        <a><div class="fleche">
-                                <img src="images/thirdblock/flecheright.png">
-                            </div>
-                        </a>
-                        <button>En savoir plus</button>
-                    </div>
+                        </div>
+                        <div class="joker">
+                            <img class='small-joker' src='images/thirdblock/Joker-small.png'><img class='big-joker' src='images/thirdblock/Joker.png'>
 
-                    <div class="a-down">
-                        <ul class="liste">
-                            <li>A</li>
-                            <li><img class="small" src="images/thirdblock/treffle-joueur.png"></li>
-                        </ul>
+                            <p class="select">Notre sélection :</p>
+
+                            <form>
+                               <fieldset class="button-radio">
+
+                                   <div>
+                                        <input type="checkbox" value="le lac des cygnes" name="lac des cygnes" id="arts" required checked="checked">
+                                        <label for="arts" class="label-radio">Le Lac des cygnes</label><br>
+
+                                        <input type="checkbox" value="nos disques" name="disques" id="science" required>
+                                        <label for="science" class="label-radio">Nos disques sont rayés</label><br>
+
+                                        <input type="checkbox" value="moi et francois B" name="exposition" id="exposition" required>
+                                        <label for="exposition" class="label-radio">Moi et François B</label>
+                                    </div>
+                                </fieldset>
+                            </form>
+
+                            <div class="boutton">    
+                                    <a id="boutton-contact-trefle" class="boutton-plus"> 
+                                        <div id="fleche-carreau" class="fleche-left">
+                                            <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
+                                        </div>
+                                        <p class="texte-plus1">Contactez-nous</p> 
+                                    </a>
+                                </div>
+
+                        </div>
                     </div>
                 </div>
 
                 <div id="carte-carreau" class="carte">
-                    <div class="a-top">
-                        <ul class="liste">
-                            <li>A</li>
-                            <li><img class="small" src="images/thirdblock/carreau-artiste.png"></li>
-                        </ul>
-                    </div>
-                    <h3 class="titre">CARREAU<br>DES ARTISTES</h3>
+                    <div id="small-carreau">
+                        <div class="a-top">
+                            <ul class="liste">
+                                <li>A</li>
+                                <li><img class="small" src="images/thirdblock/carreau-artiste.png"></li>
+                            </ul>
+                        </div>
+                        <h3 class="titre">CARREAU<br>DES ARTISTES</h3>
 
-                    <img  class="picto" src="images/thirdblock/carreau-artiste.png" alt="Atelier créatif">
-                    <p class="texte">Libérez votre esprit créatif à travers le dessin et la peinture et découvrez vos artiste préférez à <br>l’occasion d’une exposition. </p>
+                        <img  class="picto" src="images/thirdblock/carreau-artiste.png" alt="Atelier créatif">
+                        <p class="texte">Libérez votre esprit créatif à travers le dessin et la peinture et découvrez vos artistes préférés à <br>l’occasion d’une exposition. </p>
 
-                    <div class="boutton">
-                        <a><div class="fleche">
-                            <img src="images/thirdblock/flecheright.png">
-                            </div>
-                        </a>
-                        <button>En savoir plus</button>
-                    </div>
+                         <div class="boutton" id="boutton-carreau">    
+                            <a class="boutton-plus"> 
+                                <div class="fleche-left">
+                                    <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
+                                </div>
+                                <p id="texte-carreau" class="texte-plus1">En savoir plus</p> 
+                            </a>
+                        </div>
 
-                    <div class="a-down">
-                        <ul class="liste">
-                            <li>A</li>
-                            <li><img class="small" src="images/thirdblock/carreau-artiste.png"></li>
-                        </ul>
+                        <div class="a-down">
+                            <ul class="liste">
+                                <li>A</li>
+                                <li><img class="small" src="images/thirdblock/carreau-artiste.png"></li>
+                            </ul>
+                        </div>
+                    </div>                 
+                    
+                    <!--BIG CARTE CARREAU-->
+                    <div id="big-card-carreau">
+                        <img class="big-img"src="images/thirdblock/carte-artiste.png">
+                        <div class="big-card-text">
+                            <h3>CARREAU DES ARTISTES</h3>
+                            <h4>L'atelier :</h4>
+                             <p>Apprenez à regarder le monde différemment en reproduisant ce qui vous entoure ou en créant votre œuvre personnelle  Nous vous proposons de stimuler votre créativité  avec des ateliers artistiques ou le dessin et la peinture n'auront plus de secret pour vous. <br><span class="plus">+</span></p>
+                        </div>
+                        <div class="big-card-place">
+                            <img class='place'src='images/thirdblock/places.png'><p class='place-text'>2 places pour aller voir<br>des expositions ou musés !</p>
+                        </div>
+                        <div class="price">
+                            <p class='price-text'>A partir de<br><span>80 €</span> Déductible des impôts</p>
+                            <div class='boutton-retour'id="boutton-retour-carreau"><a class='boutton-back'><div class='fleche-right'><img src='images/thirdblock/fleche-left.svg'></div><p class='texte-back1'>Retour</p></a></div>
+
+                        </div>
+                        <div class="joker">
+                            <img class='small-joker' src='images/thirdblock/Joker-small.png'><img class='big-joker' src='images/thirdblock/Joker.png'>
+
+                            <p class="select">Notre sélection :</p>
+
+                            <form>
+                               <fieldset class="button-radio">
+
+                                   <div>
+                                        <input type="checkbox" value="exposition" name="expo" id="maggrit" required checked="checked">
+                                        <label for="arts" class="label-radio">Exposition Maggrit</label><br>
+
+                                        <input type="checkbox" value="museum" name="Orsay" id="museum-orsay" required>
+                                        <label for="museum" class="label-radio">Musée d'Orsay </label><br>
+
+                                        <input type="checkbox" value="moi et francois B" name="exposition" id="exposition" required>
+                                        <label for="exposition" class="label-radio">Moi et François B</label>
+                                    </div>
+                                </fieldset>
+                            </form>
+
+                            <div class="boutton">    
+                                    <a id="boutton-contact-carreau" class="boutton-plus"> 
+                                        <div id="fleche-carreau" class="fleche-left">
+                                            <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
+                                        </div>
+                                        <p class="texte-plus1">Contactez-nous</p> 
+                                    </a>
+                                </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-            
         </div>
 
         <!--FOOTER - FOURTHBLOCK-->
