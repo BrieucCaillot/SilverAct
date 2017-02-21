@@ -21,7 +21,7 @@ $(document).ready(function() {
 			$("#telephone").hide();
 			$("#mail").hide();
             
-			$("#img-social").css("width", "40%");
+			$("#img-social").css("width", "50%");
             $("#social").css("height", "60px");
             
 			$("#navigation").css("top", "49%");
