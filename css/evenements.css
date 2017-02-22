@@ -7,7 +7,7 @@
 #usage            : CSS
 #notes            : Only working on search engine
 ============================================================================*/
-
+ 
 * {
     padding: 0;
     margin: 0;
@@ -156,11 +156,15 @@ header {
 #navigation ul li a {
     color: #148fad;
     text-decoration: none;
-    font-family: Gotham-Medium;
+    font-family: Gotham-Light;
     position: relative;
     text-align: center;
     display: block;
     padding: 22px; 
+}
+
+#navigation ul li a:focus {
+    font-family: Gotham-Medium;
 }
 
 #navigation ul li a:hover {
@@ -257,12 +261,12 @@ header {
 
 #secondblock {
     position: relative;
-    height: 65em;
+    height: 62em;
     width: 100%;
 }
 
 #secondblock #left {
-    width: 52%;
+    width: 49%;
     height: inherit;
     position: relative;
     float: left;
@@ -293,13 +297,20 @@ header {
     color: #044759;
 }
 
+#secondblock #trait {
+    height: 100%;
+    position: absolute;
+    left: 53%;
+    border-right: 3px solid #ef7915;
+    width: 13px;
+}
+
 #secondblock #right {
-    width: 47%;
-    height: 94%;
-    border-left: 4px solid #ef790f;
+    width: 50%;
+    height: 85%;
     position: relative;
+    overflow: scroll;
     float: left;
-    overflow: scroll;;;
 }
     
 #secondblock #right h2 {
@@ -333,12 +344,10 @@ header {
     width: 120px;
     background-color: #fff;
     border-radius: 100%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    position: absolute;
-    top: 25%;
-    left: 280%;
     z-index: 2;
+    position: absolute;
+    top: 26%;
+    left: 50%;
 }
 
 #secondblock #right #bulles2 {
@@ -348,10 +357,7 @@ header {
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 53%;
-    left: 280%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    top: 61%;
     z-index: 2;
 }
 
@@ -362,10 +368,7 @@ header {
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 75%;
-    left: 280%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    top: 93%;
     z-index: 2;
 }
 
@@ -376,10 +379,7 @@ header {
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 96%;
-    left: 280%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    top: 122%;
     z-index: 2;
 }
 
@@ -390,10 +390,7 @@ header {
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 115%;
-    left: 280%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    top: 149%;
     z-index: 2;
 }
 
@@ -407,29 +404,34 @@ header {
 }
 
 #secondblock #right #premier {
-    padding-left: 6em;
+    padding-left: 11em;
     padding-top: 9em;
+    padding-right: 2em;
 }
 
 #secondblock #right #deuxieme{
     padding-top: 4em;
-    padding-left: 6em;
+    padding-left: 11em;
+    padding-right: 2em;
 }
 
 #secondblock #right #troisieme{
     padding-top: 4em;
-    padding-left: 6em;
+    padding-left: 11em;
+    padding-right: 2em;
 }
 
 #secondblock #right #quatrieme {
     padding-top: 4em;
-    padding-left: 6em;
+    padding-left: 11em;
+    padding-right: 2em;
 }
 
 #secondblock #right #cinquieme {
     padding-top: 4em;
-    padding-left: 6em;
-    padding-bottom: 9em;
+    padding-left: 11em;
+    padding-bottom: 3em;
+    padding-right: 2em;
 }
 
 /* FOOTER */
@@ -543,4 +545,18 @@ footer {
    margin-top: 10px;
    margin-left: 50px;
    font-size: 15px;  
+}
+
+#contact a:first-child {
+    font-family: Roboto-Bold;
+    text-decoration: none;
+    color: #fff;;
+    font-size: 18px;
+}
+
+#contact a:last-child {
+    font-family: Roboto-Bold;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
 }

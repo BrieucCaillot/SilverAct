@@ -42,6 +42,7 @@ body{
     height: 8em;  
 }
 
+/* HEADER - FIRSTBLOCK */
 
 header{
     width: 100%;
@@ -164,19 +165,22 @@ header{
 }
 
 
-#navigation ul li a{
+#navigation ul li a {
     color: #148fad;
     text-decoration: none;
-    font-family: Gotham-Medium;
+    font-family: Gotham-Light;
     position: relative;
     text-align: center;
     display: block;
-    padding: 22px;  
+    padding: 22px; 
 }
 
+#navigation ul li a:focus {
+    font-family: Gotham-Medium;
+}
 
-#navigation ul li a:hover{
-    color: white;  
+#navigation ul li a:hover {
+    color: white; 
 }
 
 
@@ -272,6 +276,7 @@ header{
             transform: translateX(-50%);  
 }
 
+/* SECONDBLOCK */
 
 #secondblock {
     position: relative;
@@ -312,6 +317,12 @@ header{
     margin-top: 2%;  
 }
 
+#secondblock #left a span {
+    color: #ef7915;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 #secondblock #right{
     width: 50%;
     height: 100%;
@@ -335,9 +346,12 @@ header{
 }
 
 #secondblock #right img {
-    position: absolute;
-    right: -20%;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 6%; */;
 }
+
+/* FOOTER */
 
 footer{
     position: absolute;
@@ -445,10 +459,24 @@ footer{
 }
 
 #contact{
-    font-family: Roboto;
-    font-weight: bold;
-    line-height: 60px;
-    margin-top: 10px;
-    margin-left: 50px;
-    font-size: 15px;  
+   font-family: Roboto;
+   font-weight: bold;
+   line-height: 60px;
+   margin-top: 10px;
+   margin-left: 50px;
+   font-size: 15px;  
+}
+
+#contact a:first-child {
+    font-family: Roboto-Bold;
+    text-decoration: none;
+    color: #fff;;
+    font-size: 18px;
+}
+
+#contact a:last-child {
+    font-family: Roboto-Bold;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
 }
