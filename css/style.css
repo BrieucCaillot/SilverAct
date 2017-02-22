@@ -248,18 +248,10 @@ header{
 }
 
 /* SECOND BLOCK - DESCRIPTION */
+
 #secondblock {
     height: 49em;
     position: relative;
-}
-
-#presentation {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 1100px;
-    height: auto;
 }
 
 #secondblock h1 {
@@ -267,15 +259,22 @@ header{
     font-size: 55px;
     line-height: 72px;
     text-align: center;
-    color: #ef7915 ;
+    color: #ef7915;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 20em;
 }
 
 #secondblock img {
-    position: relative;
-    width: 3%;
+    position: absolute;
+    top: 76%;
     left: 50%;
-    margin-top: 40px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 3%;
 }
 
 /* ANIMATION CSS */
@@ -298,7 +297,7 @@ header{
 #thirdblock {
   position: relative;
   width: 100%;
-  height: 1375px;
+  height: 1600px;
 }
 
 #thirdblock h2{
@@ -307,7 +306,7 @@ header{
     font-weight: normal;
     font-size: 35px;
     text-align: center;
-  
+    margin-bottom: 100px;
 }
 
 .carte {
@@ -315,7 +314,7 @@ header{
     width: 390px;
     border: solid 2px #e6e6e6;
     border-radius: 10px;
-    
+    margin: 20px;
     position: relative;
     box-shadow: 10px 10px 20px #b9b9b9 ; 
     
@@ -442,39 +441,24 @@ header{
     left: 340px;
     top: 460px;
 }
-
-
-#first-card{
+.carre-carte{
+   overflow-x: hidden;
     position: relative;
-    margin: 0 auto;
-    width: 1200px;
-    height: 610px;
-    overflow: hidden;
-    padding-top: 50px;
+    height: 800px;
+    width: 100%;
+    margin-top: 20px;
 }
-
-#second-card{
-    position: relative;
-    margin: 0 auto;
-    width: 1200px;
-    height: 610px;
-    overflow: hidden;
-    padding-top: 60px;
-}
-
 #carte-pic{
+    
     position: absolute;
     left: -50%;
-    top: 10px;
     width: 390px;
-    float: left;
     transform:rotate(-10deg); 
 -ms-transform:rotate(-10deg); /* Internet Explorer */
 -moz-transform:rotate(-10deg); /* Firefox */
 -webkit-transform:rotate(-10deg); /* Safari et Chrome */ 
 -o-transform:rotate(-10deg); /* Opera */
 }
-
 .rotate-carte{
     transform:rotate(0deg); 
 -ms-transform:rotate(0deg); /* Internet Explorer */
@@ -484,34 +468,33 @@ header{
 }
 
 #carte-coeur{
+  
+
     position: absolute;
     float: right;
-    right: -50%;
+    right: -50%; 
     transform:rotate(5deg); 
 -ms-transform:rotate(5deg); /* Internet Explorer */
 -moz-transform:rotate(5deg); /* Firefox */
 -webkit-transform:rotate(5deg); /* Safari et Chrome */ 
 -o-transform:rotate(5deg); /* Opera */
 }
-
 #carte-treffle{
+    
     position: absolute;
     left: -50%;
- 
-    width: 390px;
-    float: left;
     transform:rotate(10deg); 
 -ms-transform:rotate(10deg); /* Internet Explorer */
 -moz-transform:rotate(10deg); /* Firefox */
 -webkit-transform:rotate(10deg); /* Safari et Chrome */ 
 -o-transform:rotate(10deg); /* Opera */
 }
-
 #carte-carreau{
+    
+    
     position: absolute;
     float: right;
     right: -50%;
-
     transform:rotate(-10deg); 
 -ms-transform:rotate(-10deg); /* Internet Explorer */
 -moz-transform:rotate(-10deg); /* Firefox */
@@ -607,7 +590,7 @@ header{
 }
 .place-text{
     float: left;
-
+    margin-top: 20px;
     margin-left: 60px;
     font-family: Gotham-Light;
     color: #ef7915;
@@ -803,11 +786,8 @@ fieldset {
             animation: deplacement 0.5s forwards;
 }
 @-webkit-keyframes deplacement {
-    from{left: -50%;
-        position: absolute;
-    }
-    to{left: 100px;
-    position: relative;}
+    from{left: -50%;}
+    to{left: 13%;}
 }
 
 .animate-right{
@@ -815,20 +795,8 @@ fieldset {
             animation: deplacement-coeur 0.5s forwards;
 }
 @-webkit-keyframes deplacement-coeur {
-    from{right: -50%;
-    position: absolute;
-    }
-    to{right: 100px;
-    position: relative;}
-}
-/*ANIMATION DEPLACEMENT TRANSITION SMAL CARD*/
-.animate-mouve-small-card{
-    -webkit-animation: mouve-small-card  0.5s forwards;
-            animation: mouve-small-card 0.5s forwards;
-}
-@-webkit-keyframes mouve-small-card {
-    from{left: 5%;}
-    to{left: 710px;}
+    from{right: -50%;}
+    to{right: 13%;}
 }
 
 /* FOURTHBLOCK - FOOTER */
@@ -941,25 +909,11 @@ footer {
 
 #contact{
    font-family: Roboto;
-    
    font-weight: bold;
    line-height: 60px;
    margin-top: 10px;
    margin-left: 50px;
    font-size: 15px;  
-}
-#contact a{
-    text-decoration: none;
-    color: white;
-}
-/*IFRAME*/
-.overlay {
-   background:transparent; 
-   position:relative; 
-   width:100%;
-   height:270px; /* your iframe height */
-   top:270px;  /* your iframe height */
-   margin-top:-270px;  /* your iframe height */
 }
 
 
