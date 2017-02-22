@@ -1,87 +1,107 @@
 <!--==========================================================================
-#title            : SILVER ACT
-#description      : Silver Act Website from PSD
-#author           : 
-#date             : 20160207
-#version          : Constantly on progress
+#title            : SILVER ACT'S WEBSITE
+#description      : Silver Act Home Page
+#author           : Brieuc CAILLOT, Eva PAMFIL, Anthony DUPRÉ
+#date             : 2017 02 19
+#version          : V2
 #usage            : HTML
 #notes            : Only working on search engine
 ============================================================================-->
 
 <html lang="fr">
     <head>
+        
+        <!--META-->
         <meta charset="UTF-8">
-        <link rel="shortcut icon" href="">
+        
+        <!--LINK-->
+        <link rel="shortcut icon" href="images/firstblock/silveractfixed.png">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         
+        <!--SCRIPT-->
         <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script type="text/javascript" src="javascript/scriptjquery.js"></script>
+        <script type="text/javascript" src="javascript/scripthome.js"></script>
+        <script type="text/javascript" src='javascript/plug-in.js'></script>
         
-        
-        <title>Silver Act</title>
+        <title>Silver Act' - Accueil</title>
     </head>
     
     <body>
-        <div id="firstblock">
-            <div id="header">
-                <div id="menunav">
-                    
-                    <img src="images/firstblock/logo.png">
+        
+        <!-- HEADER -->
+        <header>
+            <div id="logo">
+                <a href="index.html"><img id="logoimg" src="images/firstblock/logo.svg" alt="SilverAct'"></a>
+            </div>
 
-                    <div id="telephone">
-                        <img src="images/firstblock/telephone.png" alt="">
-                        <p>07 82 82 41 68</p>
-                    </div>
+            <div id="menu">
 
-                    <div id="mail">
-                        <img src="images/firstblock/mail.png" alt="">
-                        Envoyer un mail
-                    </div>
-
-                    <div id="facebook">
-                        <img src="images/firstblock/facebook.png" alt="">
-                    </div>
-
-                    <div id="twitter">
-                        <img src="images/firstblock/twitter.png" alt="">
-                    </div>
-
-                    <nav>
-                        <ul>
-                            <li>
-                                ACCUEIL
-                            </li>
-
-                            <li>
-                                ACTIVITÉ
-                            </li>
-
-                            <li>
-                                ÉVENEMENTS
-                            </li>
-
-                            <li>
-                                FONCTIONNEMENT
-                            </li>
-
-                            <li>
-                                CONTACT
-                            </li>
-                        </ul>
-                    </nav>
+                <div id="telephone">
+                    <a href="tel:0782824168"><img id="telephoneimg" src="images/firstblock/telephone.svg" alt="telephone">
+                    <p>07 82 82 41 68</p></a>
                 </div>
+
+                <div id="mail">
+                    <a href="mailto:contact@silveract.fr"><img id="mailimg" src="images/firstblock/mail.svg" alt="mail">
+                    <p>Envoyer un mail</p></a>
+                </div>
+
+                <nav id="navigation">
+                    <ul>
+                        <li class="hvr-sweep-to-right">
+                            <a href="index.html" class="hvr-sweep-to-right-2">ACCUEIL</a>   
+                        </li>
+
+                        <li class="hvr-sweep-to-right">
+                            <a href="#thirdblock" class="hvr-sweep-to-right-2">ACTIVITÉ</a>
+                        </li>
+                                
+                        <li class="hvr-sweep-to-right">
+                            <a href="html/evenements.html" class="hvr-sweep-to-right-2">ÉVENEMENTS</a>
+                        </li>
+
+                        <li class="hvr-sweep-to-right">
+                            <a href="html/fonctionnement.html" class="hvr-sweep-to-right-2">FONCTIONNEMENT</a>
+                        </li>
+
+                        <li class="hvr-sweep-to-right">
+                            <a href="#" class="hvr-sweep-to-right-2">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                    
+            </div>
+
+            <div id="social">
+                <div id="img-social">
+                    <a href="#"><img src="images/firstblock/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="images/firstblock/twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
+        </header>
+
+        <div id="firstblock">
+            <video width="100%" autoplay loop>
+                <source src="images/firstblock/video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        
+        <!-- SECONDBLOCK - DESCRIPTION -->
+      <div id="secondblock">
+           <div id="presentation">
+                <h1>Silver Act’ est spécialisé dans le <br> divertissement des seniors à travers une <br> gamme d‘activité dédiée à la culture.</h1>
+                <img class="element-animation" src="images/secondblock/scroll.svg">
             </div>
             
         </div>
 
-        <div id="secondblock">
-            
-        </div>
-
+        <!-- THIRDBLOCK - CARTES-->
         <div id="thirdblock">
             <h2>NOTRE CARRE D'AS</h2>
-            <div class="carre-carte">
+            <div id="first-card" class="carre-carte">
                 <div id="carte-pic" class="carte">
                    <div id="small-pic">
                         <div class="a-top">
@@ -202,10 +222,10 @@
                              <p>SilverAct' vous dévoile tous les secrets de l'histoire de Paris et sa région. Vous serez accompagnez d'un guipe privé et qualifié pour approfondir votre culture et votre savoir. Partez avec un ouvrage retraçant l'histoire du lieu que vous avez choisi.<br><span class="plus">+</span></p>
                         </div>
                         <div class="big-card-place">
-                            <img class='place'src='images/thirdblock/places.png'><p class='place-text'>2 places pour aller voir<br>des expositions ou musées !</p>
+                            <img class='place'src='images/thirdblock/places.png'><p class='place-text'>Seul ou accompagnés des<br>places pour aller voir des<br>expositions ou musés !</p>
                         </div>
                         <div class="price">
-                            <p class='price-text'>A partir de<br><span>80 €</span> Déductible des impôts</p>
+                            <p class='price-text'>A partir de<br><span>120 €</span> Déductible des impôts</p>
                             <div class='boutton-retour'id="boutton-retour-coeur"><a class='boutton-back'><div class='fleche-right'><img src='images/thirdblock/fleche-left.svg'></div><p class='texte-back1'>Retour</p></a></div>
 
                         </div>
@@ -245,7 +265,7 @@
                     
                 </div>
             </div>
-            <div class="carre-carte">
+            <div id="second-card" class="carre-carte">
                  <div id="carte-treffle" class="carte">
                    <div id="small-trefle">
                         <div class="a-top">
@@ -406,46 +426,45 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-        
+
+        <!--FOOTER - FOURTHBLOCK-->
         <div id="fourthblock">
-            
-        </div>
-        <footer>
-            <div id="left-block">
-                <div id="mention">
-                    <p>Toutes nos prestations<br> sont toutes déductibles<br>  des impôts !</p>
-                    <p><a>Mention légales</a></p>
+        
+            <footer>
+                <div id="left-block">
+                    <div id="mention">
+                        <p>Toutes nos<br>prestations sont<br> toutes déductibles<br>des impôts !</p>
+                        <p><a>Mention légales</a></p>
+                    </div>
+                    <div id="socialfooter">
+                        <div id="img-social-footer">
+                            <ul>
+                               <li>Retrouvez-nous<br> sur les résaux sociaux !</li>
+                               <li><img src="images/firstblock/facebook.svg"><img src="images/firstblock/twitter.svg"></li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                   
+                    <div id="localisation">
+                        <h4>SILVER ACT'</h4>
+                        <p>77 rue de Prony</p>
+                        <p>75017 PARIS</p>
+                        <ul id="img-footer">
+                            <li><img src="images/fourthblock/telephone.svg"></li>
+                            <li><img src="images/fourthblock/mail.svg"></li>
+                        </ul>
+                            <p id="contact"><a href="tel:07828241">07 82 82 41 68</a><br><a href="mailto:contact@silveract.fr">Envoyer un mail</a></p>
+                    </div>
                 </div>
-                <div id="social">
-                    <ul>
-                        <li>Retrouvez-nous<br> sur les résaux sociaux !</li>
-                        <li><img src="images/fourthblock/facebook.png"><img src="images/fourthblock/twitter.png"></li>
-                    </ul>
-                    
+                <div id="right-block">
+                   <div class="overlay" onClick="style.pointerEvents='none'"></div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.6765973035117!2d2.2987758150501643!3d48.883441406897425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f9617917cc3%3A0xa1c4ed5b1cbdbf99!2s77+Rue+de+Prony%2C+75017+Paris!5e0!3m2!1sfr!2sfr!4v1487262680072" width="100%" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-                
-                <div id="localisation">
-                    <h4>SILVER ACT'</h4>
-                    <p>77 rue de Prony</p>
-                    <p>75017 PARIS</p>
-                    <ul id="img-footer">
-                        <li><img src="images/fourthblock/telephone.png"></li>
-                        <li><img src="images/fourthblock/mail.png"></li>
-                    </ul>
-                        <p id="contact"><a>Envoyer un mail</a><br><a>07 82 82 41 68</a></p>
-                </div>
-            </div> 
-            <div id="right-block">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.6765973035117!2d2.2987758150501643!3d48.883441406897425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f9617917cc3%3A0xa1c4ed5b1cbdbf99!2s77+Rue+de+Prony%2C+75017+Paris!5e0!3m2!1sfr!2sfr!4v1487262680072" width="100%" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </footer>
+            </footer>
 
-        
-        
+         </div>
            
-            <script src="javascript/plug-in.js"></script>
     </body>	
-
 </html>
