@@ -100,8 +100,9 @@ $(document).ready(function() {
 
     //BIG CARDS : PIC 
     $("#boutton-pic").click(function() {
-        
         $("#carte-pic").removeClass("animate-left");
+         $("#carte-pic").css("left","5%");
+        
         $("#carte-pic").addClass("animate_card");
         $("#carte-coeur").css("display", "none");
         $("#small-pic").css("display","none");

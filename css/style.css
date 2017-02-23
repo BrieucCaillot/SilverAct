@@ -465,7 +465,6 @@ header{
 #carte-pic{
     position: absolute;
     left: -50%;
-    top: 10px;
     width: 390px;
     float: left;
     transform:rotate(-10deg); 
@@ -497,7 +496,6 @@ header{
 #carte-treffle{
     position: absolute;
     left: -50%;
- 
     width: 390px;
     float: left;
     transform:rotate(10deg); 
