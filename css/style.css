@@ -50,6 +50,14 @@ body {
     url("../polices/Roboto/Roboto-Bold.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "RobotoRegular";
+    src: url(../polices/Roboto/Roboto-Regular.otf),
+    url("../polices/Roboto/Roboto-Regular.eot") format("eot"),
+    url("../polices/Roboto/Roboto-Regular.woff") format("woff"),
+    url("../polices/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
 /* FIRSTBLOCK - HEADER */
 
 #firstblock {
