@@ -23,7 +23,7 @@ body{
 /* GOTHAM */
 
 @font-face {
-    font-family: Gotham-Light;
+    font-family: "Gotham-Light";
     src: url(../polices/Gotham/Gotham-Light.otf),
     url("../polices/Gotham/Gotham-Light.eot") format("eot"),
     url("../polices/Gotham/Gotham-Light.woff") format("woff"),
@@ -46,6 +46,14 @@ body{
     url("../polices/Roboto/Roboto-Bold.eot") format("eot"),
     url("../polices/Roboto/Roboto-Bold.woff") format("woff"),
     url("../polices/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../polices/Roboto/Roboto-Regular.otf),
+    url("../polices/Roboto/Roboto-Regular.eot") format("eot"),
+    url("../polices/Roboto/Roboto-Regular.woff") format("woff"),
+    url("../polices/Roboto/Roboto-Regular.ttf") format("truetype");
 }
 
 #firstblock{

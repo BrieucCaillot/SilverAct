@@ -25,7 +25,7 @@ body {
 /* GOTHAM */
 
 @font-face {
-    font-family: Gotham-Light;
+    font-family: "Gotham-Light";
     src: url(../polices/Gotham/Gotham-Light.otf),
     url("../polices/Gotham/Gotham-Light.eot") format("eot"),
     url("../polices/Gotham/Gotham-Light.woff") format("woff"),
@@ -51,7 +51,7 @@ body {
 }
 
 @font-face {
-    font-family: "RobotoRegular";
+    font-family: "Roboto-Regular";
     src: url(../polices/Roboto/Roboto-Regular.otf),
     url("../polices/Roboto/Roboto-Regular.eot") format("eot"),
     url("../polices/Roboto/Roboto-Regular.woff") format("woff"),
@@ -104,13 +104,12 @@ header{
 }
 
 #telephone {
-    font-family: 'Roboto', sans-serif;
     width: 2em;
     padding: 1em;
 }
 
 #telephone p {
-    font-family: Roboto-Bold;
+    font-family: "Roboto-Bold", sans-serif;
     color: #ef7915;
     font-size: 18px;
     width: 7em;
@@ -120,24 +119,23 @@ header{
     float: left;
 }
 
-#mail p {
-    font-family: Roboto-Bold;
-    color: #ef7915;
-    font-size: 18px;
-    width: 8em;
-    position: absolute;
-    top: 0.4em;
-    right: 0em;;
-}
-
 #mail {
-    font-family: 'Roboto', sans-serif;
     float: right;
     width: 11.7em;
     position: absolute;
     right: 1%;
     top: 10%;
     height: 2em;
+}
+
+#mail p {
+    font-family: "Roboto-Bold", sans-serif;
+    color: #ef7915;
+    font-size: 18px;
+    width: 8em;
+    position: absolute;
+    top: 0.4em;
+    right: 0em;;
 }
 
 #mail img {
@@ -171,15 +169,14 @@ header{
 #navigation ul li a {
     color: #148fad;
     text-decoration: none;
-    font-family: Gotham-Light;
-    position: relative;
+    font-family: "Gotham-Light", sans-serif;
     text-align: center;
     display: block;
     padding: 22px; 
 }
 
 #navigation ul li a:focus {
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
 }
 
 #navigation ul li a:hover {
@@ -270,7 +267,7 @@ header{
 }
 
 #secondblock h1 {
-    font-family: Gotham-Light;
+    font-family: "Gotham-Light", sans-serif;
     font-size: 55px;
     line-height: 72px;
     text-align: center;
@@ -318,7 +315,7 @@ header{
 
 #thirdblock h2{
     color: #148fad;
-    font-family: gotham-medium;
+    font-family: "Gotham-Medium", sans-serif;
     font-weight: normal;
     font-size: 35px;
     text-align: center;
@@ -346,7 +343,7 @@ header{
 .liste li{
     font-size: 25px;
     color: #148fad;
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     
 }
 .small {
@@ -355,7 +352,7 @@ header{
     
 }
 .titre {
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     font-size: 25px;
     color: #148fad;
     text-align: center;
@@ -374,13 +371,13 @@ header{
             transform: translateX(-50%) translateY(-50%);
 }
 .texte{
-    text-align: center;
-    font-family: roboto; 
+    text-align: center; 
     margin-top: 315px;
     font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 15px;
+    font-family: "Roboto-Regular", sans-serif;
 }
 .boutton{
     width: 180px;
@@ -512,7 +509,6 @@ header{
 #carte-treffle{
     position: absolute;
     left: -50%;
- 
     width: 390px;
     float: left;
     transform:rotate(10deg); 
@@ -526,7 +522,6 @@ header{
     position: absolute;
     float: right;
     right: -50%;
-
     transform:rotate(-10deg); 
 -ms-transform:rotate(-10deg); /* Internet Explorer */
 -moz-transform:rotate(-10deg); /* Firefox */
@@ -596,12 +591,12 @@ header{
     
 }
 .big-card-text h3{
-    font-family: Gotham-Medium;
+    font-family: Gotham-Medium, sans-serif;
     color: #148fad;
     font-size: 22px;
 }
 .big-card-text h4{
-    font-family: Gotham-Light;
+    font-family: Gotham-Light, sans-serif;
     color: #148fad;
     font-size: 20px;
     margin-bottom: 20px;
@@ -624,7 +619,7 @@ header{
     float: left;
 
     margin-left: 60px;
-    font-family: Gotham-Light;
+    font-family: Gotham-Light, sans-serif;
     color: #ef7915;
     font-family: 16px;
 }
@@ -644,11 +639,11 @@ header{
 }
 .price-text{
     color: #148fad;
-    font-family: gotham-light;
+    font-family: "Gotham-Light", sans-serif;
     font-size: 14px;
 }
 .price-text span{
-    font-family: gotham-medium;
+    font-family: "Gotham-Medium", sans-serif;
     font-size: 28px;
     padding-top: 10px;
     padding-bottom:  10px;
@@ -672,7 +667,7 @@ header{
         .boutton-back-{
             display: inline;
             text-align: center;
-            font-family: Gotham-light, sans-serif;
+            font-family: "Gotham-light", sans-serif;
             color: #ef7915;
         }
         
@@ -681,7 +676,7 @@ header{
             display: inline;
             font-size: 17px;
             text-align: center;
-            font-family: Gotham-light, sans-serif;
+            font-family: "Gotham-light", sans-serif;
             color: #ef7915;
             
         }
@@ -748,7 +743,7 @@ header{
     text-align: center;
     color: #ef7915;
     margin-top: 50px;
-    font-family: Gotham-light;
+    font-family: "Gotham-light", sans-serif;
 }
 .joker label{
     text-align: center;
@@ -883,7 +878,7 @@ footer {
 
 #mention p{
    text-align: center;
-   font-family: Gotham-Medium;
+   font-family: "Gotham-Medium", sans-serif;
    font-size: 20px;
    padding-top: 40px;
    line-height: 28px;
@@ -892,7 +887,7 @@ footer {
 
 #mention a {
    text-align: center;
-   font-family: Gotham-Light;
+   font-family: "Gotham-Light", sans-serif;
    color: white;
    font-size: 12px;
    text-decoration: underline;
@@ -900,7 +895,7 @@ footer {
 
 #mention #legales p {
     text-align: center;
-    font-family: Gotham-Light;
+    font-family: "Gotham-Light", sans-serif;
     font-size: 14px;
     padding-top: 26px;
     line-height: 28px;
@@ -915,7 +910,7 @@ footer {
 #socialfooter ul {
    list-style-type: none;
    text-align: center;
-   font-family: Gotham-Medium;
+   font-family: "Gotham-Medium", sans-serif;
    font-size: 16px;
    color: white;
    margin-left: 15px;
@@ -946,7 +941,7 @@ footer {
    margin-top: 40px;
    margin-left: 25px;
    color: white;
-   font-family: roboto;
+   font-family: "Roboto-Regular", sans-serif;
 }
 
 #localisation ul {
@@ -962,7 +957,7 @@ footer {
 }
 
 #localisation h4{
-   font-family: Gotham-Medium;
+   font-family: "Gotham-Medium", sans-serif;
    margin-bottom: 25px;
    font-size: 18px;
 }
@@ -977,14 +972,14 @@ footer {
 }
 
 #contact a:first-child {
-    font-family: Roboto-Bold;
+    font-family: "Roboto-Bold", sans-serif;
     text-decoration: none;
     color: #fff;;
     font-size: 18px;
 }
 
 #contact a:last-child {
-    font-family: Roboto-Bold;
+    font-family: "Roboto-Bold", sans-serif;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
