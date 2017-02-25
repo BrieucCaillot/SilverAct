@@ -19,6 +19,8 @@ body {
 
 /* POLICES */
 
+/* GOTHAM */
+
 @font-face {
     font-family: Gotham-Light;
     src: url(../polices/Gotham/Gotham-Light.otf),
@@ -33,6 +35,16 @@ body {
     url("../polices/Gotham/Gotham-Medium.eot") format("eot"),
     url("../polices/Gotham/Gotham-Medium.woff") format("woff"),
     url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
+}
+
+/* ROBOTO */
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../polices/Roboto/Roboto-Bold.otf),
+    url("../polices/Roboto/Roboto-Bold.eot") format("eot"),
+    url("../polices/Roboto/Roboto-Bold.woff") format("woff"),
+    url("../polices/Roboto/Roboto-Bold.ttf") format("truetype");
 }
 
 /* FIRSTBLOCK */
@@ -50,7 +62,7 @@ header {
     position: relative; 
     top: 0px;
     z-index: 90;
-    border-bottom: 2px solid #d1d3d4;
+    border-bottom: 2px solid rgb(209, 211, 212);
 } 
 
 #logo {
@@ -58,7 +70,6 @@ header {
     width: 15%; 
     height: 126px; 
     position: relative; 
-    border-right: 2px solid #d1d3d4; 
 }
 
 #logo img {
@@ -96,6 +107,15 @@ header {
     left: 3.3em;
 }
 
+#mail {
+    float: right;
+    width: 11.7em;
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    height: 2em;
+}
+
 #mail p {
     font-family: Roboto-Bold;
     color: #ef7915;
@@ -106,16 +126,6 @@ header {
     right: 0em;;
 }
 
-#mail {
-    font-family: 'Roboto', sans-serif;
-    float: right;
-    width: 11.7em;
-    position: absolute;
-    right: 1%;
-    top: 10%;
-    height: 2em;
-}
-
 #mail img {
     width: 2em;
 }
@@ -124,10 +134,9 @@ header {
 
 
 #navigation {
-    width: 99.9%; 
-    height: 48%;
-    border-top: 2px solid #d1d3d4; 
-    bottom: 0px; 
+    bottom: 0px;
+    width: 100%;
+    height: 49%; 
 }
 
 #navigation nav {
@@ -139,7 +148,6 @@ header {
     list-style: none; 
     height: 100%;
     width: 1%;
-    border-right: 2px solid #d1d3d4;
     position: relative; 
     margin-left: -2px;
     box-sizing: border-box;
@@ -149,18 +157,23 @@ header {
     margin: 0px; 
 }
 
-#navigation ul li:last-child {
-    border: none; 
+#navigation ul li:nth-child(3) {
+    Background-color: #148fad;
+}
+
+#navigation ul li:nth-child(3) a {
+    font-family: Gotham-Bold;
+    color: #fff;
 }
 
 #navigation ul li a {
-    color: #148fad;
     text-decoration: none;
     font-family: Gotham-Light;
     position: relative;
     text-align: center;
     display: block;
-    padding: 22px; 
+    padding: 22px;
+    color: #148fad; 
 }
 
 #navigation ul li a:focus {
@@ -224,7 +237,7 @@ header {
     width: 15%; 
     height: 127px; 
     position: relative;
-    border-left: 2px solid #d1d3d4; 
+
 }
 
 #img-social {
@@ -298,7 +311,7 @@ header {
 }
 
 #secondblock #trait {
-    height: 100%;
+    height: 110%;
     position: absolute;
     left: 53%;
     border-right: 3px solid #ef7915;
@@ -309,8 +322,9 @@ header {
     width: 50%;
     height: 85%;
     position: relative;
-    overflow: scroll;
     float: left;
+    overflow-y: scroll;
+    margin-top: 7em;
 }
     
 #secondblock #right h2 {
@@ -438,7 +452,7 @@ header {
 
 footer {
     position: absolute;
-    top: 1080px;
+    top: 1190px;
     height: 270px;
     width: 100%;
     background-color: #044759;
@@ -487,10 +501,10 @@ footer {
 #socialfooter ul {
    list-style-type: none;
    text-align: center;
-   font-family: Gotham-Medium;
    font-size: 16px;
    color: white;
    margin-left: 15px;
+   font-family: Gotham-Medium;
 }
 
 #socialfooter li img {

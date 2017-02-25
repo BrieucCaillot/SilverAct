@@ -134,18 +134,15 @@ header{
     width: 2em;  
 }
 
-
 #navigation{
     width: 99.9%;
     height: 48%;
     bottom: 0px;  
 }
 
-
 #navigation nav{
     position: relative;  
 }
-
 
 #navigation ul li{
     display: table-cell;
@@ -155,15 +152,6 @@ header{
     position: relative;
     margin-left: -2px;
     box-sizing: border-box;  
-}
-
-#navigation ul li:nth-child(4) {
-    Background-color: #148fad;
-}
-
-#navigation ul li:nth-child(4) a {
-    font-family: Gotham-Bold;
-    color: #fff;
 }
 
 #navigation ul li:first-child{
@@ -270,7 +258,7 @@ header{
 
 #content{
     width: 1200px;
-    height: auto;
+    height: 4200px;
     left: 50%;
     position: absolute;
     -webkit-transform: translateX(-50%);
@@ -288,7 +276,7 @@ header{
 
 
 #secondblock #left {
-    width: 45%;
+    width: 55%;
     height: inherit;
     position: relative;
     float: left;  
@@ -313,9 +301,8 @@ header{
     font-size: 15px;
     font-family: Roboto;
     line-height: 24px;
-    width: 75%;
     color: #044759;
-    margin-top: 2%;  
+    margin-top: 4%;  
 }
 
 #secondblock #left a span {
@@ -324,39 +311,11 @@ header{
     text-decoration: underline;
 }
 
-#secondblock #right{
-    width: 55%;
-    height: 100%;
-    position: relative;
-    float: left;  
-}
-
-#secondblock #right h2{
-    font-family: Gotham-Medium;
-    color: #148fad;
-    font-size: 27px;
-    line-height: 31px;  
-}
-
-#secondblock #right p{
-    line-height: 21px;
-    font-family: Roboto;
-    padding-top: 2%;
-    font-size: 15px;
-    color: #148fad;  
-}
-
-#secondblock #right img {
-    width: auto;
-    height: 100%;
-    /* margin-top: 6%; */;
-}
-
 /* FOOTER */
 
 footer{
     position: absolute;
-    top: 1080px;
+    top: 4300px;
     height: 270px;
     width: 100%;
     background-color: #044759;  

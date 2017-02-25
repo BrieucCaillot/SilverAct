@@ -1,12 +1,23 @@
 $(document).ready(function() {
+
+    // MODIF CSS MENU ACCUEIL ON CLICK
     
+    $("#navigation ul li:first-child a").click(function() {
+        $(this).css({
+            'background-color' : '#148fad',
+            'font-family' : 'Gotham-Bold',
+            'color' : '#fff'
+        });
+    });
     
-    //SCROll MENU 
+    //SCROll MENU @50
+    
     $(document).on("scroll", function() {
 
         if($(document).scrollTop()>50) {
             $("header").css("position", "fixed");
             $("header").css("height", "60px");
+            $("header").css("background-color", "rgba(255, 255, 255, 0.8)");
             
             $("#logoimg").attr("src", "images/firstblock/silveractfixed.svg");
             $("#logoimg").css("width", "20%");
@@ -19,16 +30,14 @@ $(document).ready(function() {
             
             $("#img-socialimg").css("width", "10%");
             $("#social").css("height", "60px");
-            
-            $("#navigation").css("top", "49%");
-            $("#navigation").css("border", "none");
-            $("#navigation ul li:last-child").css("border", "none");
-            $("#navigation").css("height", "99%");
+
+            $("#navigation").css("margin-top", "0px");
             
         } else {
             
             $("header").css("position", "absolute");
             $("header").css("height", "126px");
+            $("header").css("background-color", "rgba(255, 255, 255, 0.8)");
             
             $("#logoimg").attr("src", "images/firstblock/logo.svg");
             $("#logoimg").css("width", "65%");
@@ -42,13 +51,32 @@ $(document).ready(function() {
             $("#img-socialimg").css("width", "50%");
             $("#social").css("height", "126px");
             
-            $("#navigation").css("top", "49%");
-            $("#navigation").css("border-top", "2px solid white");
-            $("#navigation ul li:last-child").css("border", "none");
-            $("#navigation").css("height", "48%");
+            $("#navigation").css("margin-top", "2px");
 
         }
     });
+
+    // SCROLL MENU @750
+
+    $(document).on("scroll", function() {
+
+        if($(document).scrollTop()>750) {
+
+            $("header").css("background-color", "#fff");
+            $("header").css("border-bottom", "2px solid rgb(209, 211, 212)");
+  
+        } else {
+
+            $("header").css("background-color", "rgba(255, 255, 255, 0.8)");
+            $("header").css("border-bottom", "");
+            $("header").css("z-index", "");
+            
+            
+
+        }
+    });
+
+    // FADE IN - FADE OUT PRESENTATION TEXTE
 
     $(document).on("scroll", function() {
         
@@ -59,39 +87,6 @@ $(document).ready(function() {
         } else {
 
             $("#secondblock h1").fadeOut();
-
-        }
-    });
-
-
-    $(document).on("scroll", function() {
-
-        if($(document).scrollTop()>750) {
-
-            $("header").css("background-color", "#fff");
-            $("header").css("border-bottom", "2px solid #d1d3d4");
-
-            $("#logo").css("border-right", "2px solid #d1d3d4");
-            
-            $("#social").css("border-left", "2px solid #d1d3d4");
-            
-            $("#navigation ul li").css("border-right", "2px solid #d1d3d4");
-            
-            $("#navigation ul li:last-child").css("border", "none");
-  
-        } else {
-
-            $("header").css("background-color", "rgba(255, 255, 255, 0.5)");
-            $("header").css("border-bottom", "");
-            $("header").css("z-index", "");
-            
-            $("#logo").css("border-right", "2px solid #fff");
-            
-            $("#social").css("border-left", "2px solid #fff");
-            
-            $("#navigation ul li").css("border-right", "2px solid #fff");
-            
-            $("#navigation ul li:last-child").css("border", "none");
 
         }
     });
