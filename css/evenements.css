@@ -99,13 +99,13 @@ header {
 }
 
 #telephone {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto-Regular", sans-serif;
     width: 2em;
     padding: 1em;
 }
 
 #telephone p {
-    font-family: Roboto-Bold;
+    font-family: "Roboto-Bold", sans-serif;
     float: left;
     color: #ef7915;
     font-size: 18px;
@@ -125,7 +125,7 @@ header {
 }
 
 #mail p {
-    font-family: Roboto-Bold;
+    font-family: "Roboto-Bold", sans-serif;
     color: #ef7915;
     font-size: 18px;
     width: 8em;
@@ -170,13 +170,13 @@ header {
 }
 
 #navigation ul li:nth-child(3) a {
-    font-family: Gotham-Bold;
+    font-family: "Gotham-Bold", sans-serif;
     color: #fff;
 }
 
 #navigation ul li a {
     text-decoration: none;
-    font-family: Gotham-Light;
+    font-family: "Gotham-Light", sans-serif;
     position: relative;
     text-align: center;
     display: block;
@@ -185,7 +185,7 @@ header {
 }
 
 #navigation ul li a:focus {
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
 }
 
 #navigation ul li a:hover {
@@ -286,6 +286,8 @@ header {
     width: 100%;
 }
 
+/* SECONDBLOCK LEFT */
+
 #secondblock #left {
     width: 49%;
     height: inherit;
@@ -294,7 +296,7 @@ header {
 }
 
 #secondblock #left h1 {
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     color: #148fad;
     font-size: 47px;
     position: absolute;
@@ -307,7 +309,7 @@ header {
 
 #secondblock #left p {
     font-size: 22px;
-    font-family: Roboto;
+    font-family: "Roboto-Regular", sans-serif;
     line-height: 27px;
     position: absolute;
     top: 51%;
@@ -326,6 +328,8 @@ header {
     width: 13px;
 }
 
+/* SECONDBLOCK RIGHT */
+
 #secondblock #right {
     width: 50%;
     height: 85%;
@@ -336,7 +340,7 @@ header {
 }
     
 #secondblock #right h2 {
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     color: #148fad;
     font-size: 27px;
     line-height: 31px;
@@ -344,14 +348,16 @@ header {
 
 #secondblock #right p {
     line-height: 21px;
-    font-family: Roboto;
+    font-family: "Roboto-Regular", sans-serif;
     padding-top: 2%;
     font-size: 15px;
     color: #044759;
 }
 
+/* BULLES ÉVÉNEMENTS */
+
 #secondblock #right #bulles {
-    font-family: Gotham-Bold;
+    font-family: "Gotham-Bold", sans-serif;
     text-align: center;
     font-size: 30px;
     color: #ef790f;
@@ -368,7 +374,7 @@ header {
     border-radius: 100%;
     z-index: 2;
     position: absolute;
-    top: 26%;
+    top: 3%;
     left: 50%;
 }
 
@@ -379,7 +385,7 @@ header {
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 61%;
+    top: 48%;
     z-index: 2;
 }
 
@@ -390,7 +396,7 @@ header {
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 93%;
+    top: 83%;
     z-index: 2;
 }
 
@@ -401,7 +407,7 @@ header {
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 122%;
+    top: 124%;
     z-index: 2;
 }
 
@@ -412,7 +418,7 @@ header {
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 149%;
+    top: 157%;
     z-index: 2;
 }
 
@@ -427,7 +433,6 @@ header {
 
 #secondblock #right #premier {
     padding-left: 11em;
-    padding-top: 9em;
     padding-right: 2em;
 }
 
@@ -454,6 +459,66 @@ header {
     padding-left: 11em;
     padding-bottom: 3em;
     padding-right: 2em;
+}
+
+/* CONTACTEZ NOUS */
+
+.boutton{
+   font-family: Gotham-light, sans-serif;
+   width: 180px;
+   height: 31px;
+   margin: 11px auto;
+   padding-left: 173px;
+   
+   
+}
+
+.boutton-plus{
+   display: inline;
+   text-align: center;
+   color: #ef7915 ;
+   width: 180px;
+   height: 25px;
+   
+}
+       
+.texte-plus1 {
+   display: inline;
+   font-size: 17px;
+   text-align: center;
+   color: #ef7915 ;
+   background-color: white;
+   margin-left: 35px;
+}
+       
+.fleche-left {
+   position: relative;
+   height: 25px;
+   width: 25px;
+   border: solid 2px #ef7915 ;
+   border-radius: 25px;
+   margin-bottom: -25px;
+   margin-top: 5px;
+}
+       
+.fleche-left:hover {
+   -webkit-animation: width 0.5s forwards ease;
+   animation: width 0.5s ease forwards;
+}
+       
+@-webkit-keyframes width {
+   from {width: 25px;}
+   to {width: 180px;}
+}
+
+.fleche-left img {
+   position: absolute;
+   height: 12px;
+   width: auto;
+   top : 50%;
+   left : 12px;
+   margin-top : -6px;
+   margin-left : -3px;
 }
 
 /* FOOTER */
@@ -486,7 +551,7 @@ footer {
 
 #mention p {
    text-align: center;
-   font-family: Gotham-Medium;
+   font-family: "Gotham-Medium", sans-serif;
    font-size: 20px;
    color: #ef7915 ;
    line-height: 28px;
@@ -495,7 +560,7 @@ footer {
 
 #mention a {
    text-align: center;
-   font-family: Gotham-Light;
+   font-family: "Gotham-Light", sans-serif;
    color: white;
    font-size: 13px;
    text-decoration: underline;
@@ -512,7 +577,7 @@ footer {
    font-size: 16px;
    color: white;
    margin-left: 15px;
-   font-family: Gotham-Medium;
+   font-family: "Gotham-Medium", sans-serif;
 }
 
 #socialfooter li img {
@@ -539,7 +604,7 @@ footer {
    margin-top: 40px;
    margin-left: 25px;
    color: white;
-   font-family: roboto;
+   font-family: "Roboto-Regular", sans-serif;
 }
 
 #localisation ul {
@@ -555,13 +620,13 @@ footer {
 }
 
 #localisation h4{
-   font-family: Gotham-Medium;
+   font-family: "Gotham-Medium", sans-serif;
    margin-bottom: 25px;
    font-size: 22px;
 }
 
 #contact{
-   font-family: Roboto;
+   font-family: "Roboto-Regular", sans-serif;
    font-weight: bold;
    line-height: 60px;
    margin-top: 10px;
@@ -570,14 +635,14 @@ footer {
 }
 
 #contact a:first-child {
-    font-family: Roboto-Bold;
+    font-family: "Roboto-Bold", sans-serif;
     text-decoration: none;
     color: #fff;;
     font-size: 18px;
 }
 
 #contact a:last-child {
-    font-family: Roboto-Bold;
+    font-family: "Roboto-Bold", sans-serif;
     text-decoration: none;
     color: #fff;
     font-size: 18px;

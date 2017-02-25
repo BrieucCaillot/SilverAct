@@ -109,7 +109,7 @@ header{
 
 
 #telephone p{
-    font-family: Roboto-Bold;
+    font-family: "Roboto-Bold", sans-serif;
     float: left;
     color: #ef7915;
     font-size: 18px;
@@ -129,7 +129,7 @@ header{
 }
 
 #mail p{
-    font-family: Roboto-Bold;
+    font-family: "Roboto-Bold", sans-serif;
     color: #ef7915;
     font-size: 18px;
     width: 8em;
@@ -149,11 +149,9 @@ header{
     bottom: 0px;  
 }
 
-
 #navigation nav{
     position: relative;  
 }
-
 
 #navigation ul li{
     display: table-cell;
@@ -170,7 +168,7 @@ header{
 }
 
 #navigation ul li:nth-child(4) a {
-    font-family: Gotham-Bold;
+    font-family: "Gotham-Bold", sans-serif;
     color: #fff;
 }
 
@@ -181,7 +179,7 @@ header{
 #navigation ul li a {
     color: #148fad;
     text-decoration: none;
-    font-family: Gotham-Light;
+    font-family: "Gotham-Light", sans-serif;
     position: relative;
     text-align: center;
     display: block;
@@ -189,7 +187,7 @@ header{
 }
 
 #navigation ul li a:focus {
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
 }
 
 #navigation ul li a:hover {
@@ -310,7 +308,7 @@ header{
 
 
 #secondblock #left h2{
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     color: #148fad;
     font-size: 27px;
     margin-top: 9%;
@@ -340,7 +338,7 @@ header{
 }
 
 #secondblock #right h2{
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     color: #148fad;
     font-size: 27px;
     line-height: 31px;  
@@ -348,7 +346,7 @@ header{
 
 #secondblock #right p{
     line-height: 21px;
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     padding-top: 2%;
     font-size: 15px;
     color: #148fad;  
@@ -393,7 +391,7 @@ footer{
 
 #mention p{
     text-align: center;
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     font-size: 20px;
     color: #ef7915;
     line-height: 28px;
@@ -402,7 +400,7 @@ footer{
 
 #mention a{
     text-align: center;
-    font-family: Gotham-Light;
+    font-family: "Gotham-Light", sans-serif;
     color: white;
     font-size: 13px;
     text-decoration: underline;  
@@ -416,7 +414,7 @@ footer{
 #socialfooter ul{
     list-style-type: none;
     text-align: center;
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     font-size: 16px;
     color: white;
     margin-left: 15px;  
@@ -446,7 +444,7 @@ footer{
     margin-top: 40px;
     margin-left: 25px;
     color: white;
-    font-family: roboto;  
+    font-family: "Roboto-Regular", sans-serif;  
 }
 
 #localisation ul{
@@ -462,13 +460,13 @@ footer{
 }
 
 #localisation h4{
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     margin-bottom: 25px;
     font-size: 22px;  
 }
 
 #contact{
-   font-family: Roboto;
+   font-family: "Roboto-Regular", sans-serif;
    font-weight: bold;
    line-height: 60px;
    margin-top: 10px;
@@ -477,14 +475,14 @@ footer{
 }
 
 #contact a:first-child {
-    font-family: Roboto-Bold;
+    font-family: "Roboto-Bold", sans-serif;
     text-decoration: none;
     color: #fff;;
     font-size: 18px;
 }
 
 #contact a:last-child {
-    font-family: Roboto-Bold;
+    font-family: "Roboto-Bold", sans-serif;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
