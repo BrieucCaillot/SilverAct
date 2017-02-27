@@ -1,0 +1,120 @@
+<!--==========================================================================
+#title            : SILVER ACT'S WEBSITE
+#description      : Silver Act Contact Page
+#author           : Brieuc CAILLOT, Eva PAMFIL, Anthony DUPRÉ
+#date             : 2017 02 19
+#version          : V2
+#usage            : HTML
+#notes            : Only working on search engine
+============================================================================-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <!--SCRIPT-->
+        <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script type="text/javascript" src="../javascript/scriptcontact.js"></script>
+</head>
+<body>
+           <!-- HEADER -->
+        <header>
+            <div id="logo">
+                <a href="index.html"><img id="logoimg" src="../images/firstblock/logo.svg" alt="SilverAct'"></a>
+            </div>
+
+            <div id="menu">
+
+                <div id="telephone">
+                    <a href="tel:0782824168"><img id="telephoneimg" src="../images/firstblock/telephone.svg" alt="telephone">
+                    <p>07 82 82 41 68</p></a>
+                </div>
+
+                <div id="mail">
+                    <a href="mailto:contact@silveract.fr"><img id="mailimg" src="../images/firstblock/mail.svg" alt="mail">
+                    <p>Envoyer un mail</p></a>
+                </div>
+
+                <nav id="navigation">
+                    <ul>
+                        <li class="hvr-sweep-to-right">
+                            <a href="../index.html" class="hvr-sweep-to-right-2">ACCUEIL</a>   
+                        </li>
+
+                        <li class="hvr-sweep-to-right">
+                            <a href="#thirdblock" class="hvr-sweep-to-right-2">ACTIVITÉ</a>
+                        </li>
+                                
+                        <li class="hvr-sweep-to-right">
+                            <a href="../html/evenements.html" class="hvr-sweep-to-right-2">ÉVENEMENTS</a>
+                        </li>
+
+                        <li class="hvr-sweep-to-right">
+                            <a href="../html/fonctionnement.html" class="hvr-sweep-to-right-2">FONCTIONNEMENT</a>
+                        </li>
+
+                        <li class="hvr-sweep-to-right">
+                            <a href="contact.html" class="hvr-sweep-to-right-2">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                    
+            </div>
+
+            <div id="social">
+                <div id="img-social">
+                    <a href="#"><img src="../images/firstblock/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="../images/firstblock/twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
+        </header>
+        
+        <h2>NOUS CONTACTER</h2>
+        
+        <div id="content1">
+            
+            <div id="carte-formulaire">
+                <img src="../images/secondblock/formulaire.png">
+                <h3>FORMULAIRE</h3>
+                <form>
+                   <div id="input-name">
+                        <input type="text" placeholder="Nom*" class="name-input">
+                        <input type="text" placeholder="Prénom*" class="name-input">
+                    </div>
+                    <input type="text" placeholder="E-mail*" class="input-base">
+                    <input type="text" placeholder="Téléphone*" class="input-base">
+                       <input type="text" placeholder="Adresse*"class="input-base">
+                    
+                    <select>
+                        <option>Votre Atelier*</option>
+                        <option id="pic-informatique">Pic de l'informatique</option>
+                        <option id="coeur-histoire">Au coeur de l'histoire</option>
+                        <option id="trefle-joueur">Trèfle joueur</option>
+                        <option id="careau-artiste">Carreau des artistes</option>
+                    </select>
+                    <select>
+                        <option>Choix de votre sortie</option>
+                    </select>
+                    <textarea placeholder="Votre message*"></textarea>
+                </form>
+               <div id="button-go"> 
+                        <div id="div-button-go"class="boutton">    
+                            <a class="boutton-plus">
+                            <div id="fleche-left">
+                                <img src="../images/thirdblock/fleche-right.svg">
+                            </div>
+                            <p id="text-button-go" class="texte-plus1">Envoyer</p> 
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+        <div id="content2"></div>
+    
+</body>
+</html>
