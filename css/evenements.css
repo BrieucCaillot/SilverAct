@@ -289,54 +289,53 @@ header {
 /* SECONDBLOCK LEFT */
 
 #secondblock #left {
-    width: 49%;
-    height: inherit;
-    position: relative;
+    width: 48%;
     float: left;
+    height: 27em;
 }
 
 #secondblock #left h1 {
     font-family: "Gotham-Medium", sans-serif;
     color: #148fad;
     font-size: 47px;
-    position: absolute;
-    top: 32%;
-    left: 40%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
     width: 80%;
+    padding-top: 50px;
+    /* position: absolute; */
+    /* top: 13%; */
+    /* left: 40%; */
+    /* -webkit-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); */;
 }
 
 #secondblock #left p {
     font-size: 22px;
     font-family: "Roboto-Regular", sans-serif;
     line-height: 27px;
-    position: absolute;
-    top: 51%;
-    left: 38%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
     width: 75%;
     color: #044759;
+    padding-top: 50px;
 }
 
 #secondblock #trait {
-    height: 110%;
     position: absolute;
-    left: 53%;
+    left: 54%;
     border-right: 3px solid #ef7915;
     width: 13px;
+    height: 127%;
 }
 
 /* SECONDBLOCK RIGHT */
 
 #secondblock #right {
     width: 50%;
-    height: 85%;
     position: relative;
-    float: left;
-    overflow-y: scroll;
+    float: right;
     margin-top: 7em;
+}
+
+.rightransition {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
     
 #secondblock #right h2 {
@@ -525,7 +524,7 @@ header {
 
 footer {
     position: absolute;
-    top: 1190px;
+    top: 1360px;
     height: 270px;
     width: 100%;
     background-color: #044759;
