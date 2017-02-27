@@ -1,5 +1,8 @@
 
 $(document).ready(function() {
+
+	$("header").css("border-bottom", "2px solid rgb(209, 211, 212)");
+	$("#navigation").css("margin-top", "2px");
     
     //SCROLL MENU 
 		$(document).on("scroll", function() {

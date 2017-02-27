@@ -304,21 +304,19 @@ header{
   -ms-transform-origin: 50% 50%;
 }
 
-
-/* THIRDBLOCK - CARTES */
-
 #thirdblock {
   position: relative;
   width: 100%;
-  height: 1375px;
+  height: auto;
 }
 
 #thirdblock h2{
     color: #148fad;
-    font-family: "Gotham-Medium", sans-serif;
+    font-family: gotham-medium;
     font-weight: normal;
     font-size: 35px;
     text-align: center;
+    margin-bottom: 50px;
   
 }
 
@@ -343,7 +341,7 @@ header{
 .liste li{
     font-size: 25px;
     color: #148fad;
-    font-family: "Gotham-Medium", sans-serif;
+    font-family: Gotham-Medium;
     
 }
 .small {
@@ -352,7 +350,7 @@ header{
     
 }
 .titre {
-    font-family: "Gotham-Medium", sans-serif;
+    font-family: Gotham-Medium;
     font-size: 25px;
     color: #148fad;
     text-align: center;
@@ -371,13 +369,14 @@ header{
             transform: translateX(-50%) translateY(-50%);
 }
 .texte{
-    text-align: center; 
+    text-align: center;
+    font-family: roboto; 
     margin-top: 315px;
     font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 15px;
-    font-family: "Roboto-Regular", sans-serif;
+    line-height: 18px;
 }
 .boutton{
     width: 180px;
@@ -477,7 +476,6 @@ header{
 #carte-pic{
     position: absolute;
     left: -50%;
-    top: 10px;
     width: 390px;
     float: left;
     transform:rotate(-10deg); 
@@ -522,6 +520,7 @@ header{
     position: absolute;
     float: right;
     right: -50%;
+
     transform:rotate(-10deg); 
 -ms-transform:rotate(-10deg); /* Internet Explorer */
 -moz-transform:rotate(-10deg); /* Firefox */
@@ -588,15 +587,16 @@ header{
     font-size: 14px;
     margin-top: 30px;
     margin-left: 40px;
+    line-height: 18px;
     
 }
 .big-card-text h3{
-    font-family: Gotham-Medium, sans-serif;
+    font-family: Gotham-Medium;
     color: #148fad;
     font-size: 22px;
 }
 .big-card-text h4{
-    font-family: Gotham-Light, sans-serif;
+    font-family: Gotham-Light;
     color: #148fad;
     font-size: 20px;
     margin-bottom: 20px;
@@ -617,9 +617,9 @@ header{
 }
 .place-text{
     float: left;
-
+    line-height: 21px;
     margin-left: 60px;
-    font-family: Gotham-Light, sans-serif;
+    font-family: Gotham-Light;
     color: #ef7915;
     font-family: 16px;
 }
@@ -639,14 +639,14 @@ header{
 }
 .price-text{
     color: #148fad;
-    font-family: "Gotham-Light", sans-serif;
+    font-family: gotham-light;
     font-size: 14px;
 }
-.price-text span{
-    font-family: "Gotham-Medium", sans-serif;
+.price span{
+    font-family: gotham-medium;
     font-size: 28px;
-    padding-top: 10px;
-    padding-bottom:  10px;
+    line-height: 40px;
+    color: #148fad;
     
 }
 
@@ -656,7 +656,7 @@ header{
 
 .boutton-retour{
      float: left;
-    margin-top: 24px;
+    margin-top: 12px;
     width: 90px;
     height: 25px;
    
@@ -667,7 +667,7 @@ header{
         .boutton-back-{
             display: inline;
             text-align: center;
-            font-family: "Gotham-light", sans-serif;
+            font-family: Gotham-light, sans-serif;
             color: #ef7915;
         }
         
@@ -676,7 +676,7 @@ header{
             display: inline;
             font-size: 17px;
             text-align: center;
-            font-family: "Gotham-light", sans-serif;
+            font-family: Gotham-light, sans-serif;
             color: #ef7915;
             
         }
@@ -743,7 +743,7 @@ header{
     text-align: center;
     color: #ef7915;
     margin-top: 50px;
-    font-family: "Gotham-light", sans-serif;
+    font-family: Gotham-light;
 }
 .joker label{
     text-align: center;
@@ -841,6 +841,178 @@ fieldset {
     to{left: 710px;}
 }
 
+/* NEWS */
+
+#news{
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 100px
+}
+#news h4{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #ef7915;
+    font-family: gotham-light;
+}
+#email{
+    position: absolute;
+    width: 460px;
+    height: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+   margin-top: 15px;
+  
+}
+#email input{
+    height: 40px;
+    float: left;
+    width: 400px;
+    border: solid 2px #e6e6e6;
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+}
+#email button {
+    height: 40px;
+    width: 60px;
+    float: left;
+    background-color: #148fad;
+    border: solid 2px #e6e6e6;
+    border-radius: 0px 5px 5px 0px;
+    border-left: none;
+   
+}
+#email button:hover{
+    background-color: #044759;
+}
+#email button:focus{
+    background-color: #044759;
+}
+#email img{
+    height: 25px;
+    width: auto;
+}
+#news-iframe{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    margin-top: 150px;
+}
+#new1{
+    margin-right: 15px;
+    width: 544px;
+}
+#new1 img{
+    width: 544px;
+    height: 300px;
+}
+#new1 audio {
+    width: 544px;
+}
+#new2{
+    margin-left: 15px;
+}
+#new1 h3{
+    font-family: gotham-medium;
+    color: #148fad;
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#new2 h3{
+     font-family: gotham-medium;
+    color: #148fad;
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#new1 span{
+    font-family: gotham-light;
+    color: #ef7915;
+   
+}
+#new1 p{
+    font-family: roboto;
+    line-height: 25px;
+    
+}
+#new2 span{
+    font-family: gotham-light;
+    color: #ef7915;
+   
+}
+#new2 p{
+    font-family: roboto;
+    line-height: 25px;
+}
+#button-news{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    margin-top: 50px;
+}
+#text-button-news{
+    margin-left: 10px;
+    
+}
+#div-button-news{
+    width: 250px;
+}
+/*Boutton new*/
+ #fleche-left {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border: solid 2px #ef7915;
+    border-radius: 25px;
+    margin-bottom: -25px;
+    margin-top: 5px;
+}
+ #fleche-left img {
+    position: absolute;
+    height: 12px;
+    width: auto;
+    top : 50%;
+    left : 12px;
+    margin-top : -6px;
+    margin-left : -3px;
+}
+#lien-blog{
+    text-decoration: none;
+    
+}
+        
+#fleche-left:hover {
+    -webkit-animation: width-new 0.5s forwards ease;
+    animation: width-new 0.5s ease forwards;
+}
+        
+
+        
+@-webkit-keyframes width-new {
+    from {width: 25px;}
+    to {width: 250px;}
+}
+
+
+
 /* FOURTHBLOCK - FOOTER */
 
 #fourthblock {
@@ -851,6 +1023,7 @@ footer {
     height: 270px;
     width: 100%;
     background-color: #044759;
+    margin-top: 50px;
 }
 
 #left-block {
@@ -863,10 +1036,6 @@ footer {
    width: 50%;
 }
 
-.scrolloff {
-    pointer-events: none;
-}
-
 #mention {
    float: left;
    width: 36%;
@@ -876,30 +1045,21 @@ footer {
    margin-bottom: 25px;
 }
 
-#mention p{
+#mention p {
    text-align: center;
-   font-family: "Gotham-Medium", sans-serif;
+   font-family: Gotham-Medium;
    font-size: 20px;
+   color: #ef7915 ;
    padding-top: 40px;
    line-height: 28px;
-   color: #ef7915;
 }
 
 #mention a {
    text-align: center;
-   font-family: "Gotham-Light", sans-serif;
+   font-family: Gotham-Light;
    color: white;
    font-size: 12px;
    text-decoration: underline;
-}
-
-#mention #legales p {
-    text-align: center;
-    font-family: "Gotham-Light", sans-serif;
-    font-size: 14px;
-    padding-top: 26px;
-    line-height: 28px;
-    color: #fff;
 }
 
 #socialfooter {
@@ -910,7 +1070,7 @@ footer {
 #socialfooter ul {
    list-style-type: none;
    text-align: center;
-   font-family: "Gotham-Medium", sans-serif;
+   font-family: Gotham-Medium;
    font-size: 16px;
    color: white;
    margin-left: 15px;
@@ -941,7 +1101,7 @@ footer {
    margin-top: 40px;
    margin-left: 25px;
    color: white;
-   font-family: "Roboto-Regular", sans-serif;
+   font-family: roboto;
 }
 
 #localisation ul {
@@ -957,13 +1117,14 @@ footer {
 }
 
 #localisation h4{
-   font-family: "Gotham-Medium", sans-serif;
+   font-family: Gotham-Medium;
    margin-bottom: 25px;
    font-size: 18px;
 }
 
 #contact{
    font-family: Roboto;
+    
    font-weight: bold;
    line-height: 60px;
    margin-top: 10px;
@@ -971,19 +1132,23 @@ footer {
    font-size: 15px;  
 }
 
-#contact a:first-child {
-    font-family: "Roboto-Bold", sans-serif;
-    text-decoration: none;
-    color: #fff;;
-    font-size: 18px;
+/*IFRAME*/
+.overlay {
+   background:transparent; 
+   position:relative; 
+   width:100%;
+   height:270px; /* your iframe height */
+   top:270px;  /* your iframe height */
+   margin-top:-270px;  /* your iframe height */
 }
 
-#contact a:last-child {
-    font-family: "Roboto-Bold", sans-serif;
+#contact a {
     text-decoration: none;
-    color: #fff;
-    font-size: 18px;
+    color: white;
 }
+
+
+
 
 /* KEYFRAMES */ 
 
@@ -1068,5 +1233,4 @@ footer {
   100% {
     -webkit-transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
   }
-}
 }
