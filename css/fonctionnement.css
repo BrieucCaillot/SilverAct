@@ -18,30 +18,50 @@ body{
     background-color: #fff;  
 }
 
+/* POLICES */
 
-@font-face{
-    font-family: Gotham-Light;
+/* GOTHAM */
+
+@font-face {
+    font-family: "Gotham-Light";
     src: url(../polices/Gotham/Gotham-Light.otf),
     url("../polices/Gotham/Gotham-Light.eot") format("eot"),
     url("../polices/Gotham/Gotham-Light.woff") format("woff"),
-    url("../polices/Gotham/Gotham-Light.ttf") format("truetype");  
+    url("../polices/Gotham/Gotham-Light.ttf") format("truetype");
 }
 
-
-@font-face{
+@font-face {
     font-family: "Gotham-Medium";
     src: url(../polices/Gotham/Gotham-Medium.otf),
     url("../polices/Gotham/Gotham-Medium.eot") format("eot"),
     url("../polices/Gotham/Gotham-Medium.woff") format("woff"),
-    url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");  
+    url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
 }
 
+/* ROBOTO */
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../polices/Roboto/Roboto-Bold.otf),
+    url("../polices/Roboto/Roboto-Bold.eot") format("eot"),
+    url("../polices/Roboto/Roboto-Bold.woff") format("woff"),
+    url("../polices/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../polices/Roboto/Roboto-Regular.otf),
+    url("../polices/Roboto/Roboto-Regular.eot") format("eot"),
+    url("../polices/Roboto/Roboto-Regular.woff") format("woff"),
+    url("../polices/Roboto/Roboto-Regular.ttf") format("truetype");
+}
 
 #firstblock{
     position: relative;
     height: 8em;  
 }
 
+/* HEADER - FIRSTBLOCK */
 
 header{
     width: 100%;
@@ -58,8 +78,7 @@ header{
     float: left;
     width: 15%;
     height: 126px;
-    position: relative;
-    border-right: 2px solid #d1d3d4;  
+    position: relative;  
 }
 
 
@@ -84,14 +103,13 @@ header{
 
 
 #telephone{
-    font-family: 'Roboto', sans-serif;
     width: 2em;
     padding: 1em;  
 }
 
 
 #telephone p{
-    font-family: Roboto-Bold;
+    font-family: "Roboto-Bold", sans-serif;
     float: left;
     color: #ef7915;
     font-size: 18px;
@@ -101,20 +119,7 @@ header{
     left: 3.3em;  
 }
 
-
-#mail p{
-    font-family: Roboto-Bold;
-    color: #ef7915;
-    font-size: 18px;
-    width: 8em;
-    position: absolute;
-    top: 0.4em;
-    right: 0em;  
-}
-
-
 #mail{
-    font-family: 'Roboto', sans-serif;
     float: right;
     width: 11.7em;
     position: absolute;
@@ -123,6 +128,15 @@ header{
     height: 2em;  
 }
 
+#mail p{
+    font-family: "Roboto-Bold", sans-serif;
+    color: #ef7915;
+    font-size: 18px;
+    width: 8em;
+    position: absolute;
+    top: 0.4em;
+    right: 0em;  
+}
 
 #mail img{
     width: 2em;  
@@ -132,51 +146,52 @@ header{
 #navigation{
     width: 99.9%;
     height: 48%;
-    border-top: 2px solid #d1d3d4;
     bottom: 0px;  
 }
-
 
 #navigation nav{
     position: relative;  
 }
-
 
 #navigation ul li{
     display: table-cell;
     list-style: none;
     height: 100%;
     width: 1%;
-    border-right: 2px solid #d1d3d4;
     position: relative;
     margin-left: -2px;
     box-sizing: border-box;  
 }
 
+#navigation ul li:nth-child(4) {
+    Background-color: #148fad;
+}
+
+#navigation ul li:nth-child(4) a {
+    font-family: "Gotham-Bold", sans-serif;
+    color: #fff;
+}
 
 #navigation ul li:first-child{
     margin: 0px;  
 }
 
-
-#navigation ul li:last-child{
-    border: none;  
-}
-
-
-#navigation ul li a{
+#navigation ul li a {
     color: #148fad;
     text-decoration: none;
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Light", sans-serif;
     position: relative;
     text-align: center;
     display: block;
-    padding: 22px;  
+    padding: 22px; 
 }
 
+#navigation ul li a:focus {
+    font-family: "Gotham-Medium", sans-serif;
+}
 
-#navigation ul li a:hover{
-    color: white;  
+#navigation ul li a:hover {
+    color: white; 
 }
 
 
@@ -234,8 +249,7 @@ header{
     float: right;
     width: 15%;
     height: 127px;
-    position: relative;
-    border-left: 2px solid #d1d3d4;  
+    position: relative;  
 }
 
 
@@ -252,16 +266,13 @@ header{
     width: 50%;  
 }
 
-
 #img-social img{
     width: 100%;  
 }
 
-
 #img-social>a:first-child{
     margin-right: 12%;  
 }
-
 
 #content{
     width: 1200px;
@@ -272,6 +283,7 @@ header{
             transform: translateX(-50%);  
 }
 
+/* SECONDBLOCK */
 
 #secondblock {
     position: relative;
@@ -282,7 +294,7 @@ header{
 
 
 #secondblock #left {
-    width: 50%;
+    width: 45%;
     height: inherit;
     position: relative;
     float: left;  
@@ -296,7 +308,7 @@ header{
 
 
 #secondblock #left h2{
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     color: #148fad;
     font-size: 27px;
     margin-top: 9%;
@@ -312,15 +324,21 @@ header{
     margin-top: 2%;  
 }
 
+#secondblock #left a span {
+    color: #ef7915;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 #secondblock #right{
-    width: 50%;
+    width: 55%;
     height: 100%;
     position: relative;
     float: left;  
 }
 
 #secondblock #right h2{
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     color: #148fad;
     font-size: 27px;
     line-height: 31px;  
@@ -328,16 +346,19 @@ header{
 
 #secondblock #right p{
     line-height: 21px;
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     padding-top: 2%;
     font-size: 15px;
     color: #148fad;  
 }
 
 #secondblock #right img {
-    position: absolute;
-    right: -20%;
+    width: auto;
+    height: 100%;
+    /* margin-top: 6%; */;
 }
+
+/* FOOTER */
 
 footer{
     position: absolute;
@@ -370,7 +391,7 @@ footer{
 
 #mention p{
     text-align: center;
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     font-size: 20px;
     color: #ef7915;
     line-height: 28px;
@@ -379,7 +400,7 @@ footer{
 
 #mention a{
     text-align: center;
-    font-family: Gotham-Light;
+    font-family: "Gotham-Light", sans-serif;
     color: white;
     font-size: 13px;
     text-decoration: underline;  
@@ -393,7 +414,7 @@ footer{
 #socialfooter ul{
     list-style-type: none;
     text-align: center;
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     font-size: 16px;
     color: white;
     margin-left: 15px;  
@@ -423,7 +444,7 @@ footer{
     margin-top: 40px;
     margin-left: 25px;
     color: white;
-    font-family: roboto;  
+    font-family: "Roboto-Regular", sans-serif;  
 }
 
 #localisation ul{
@@ -439,16 +460,30 @@ footer{
 }
 
 #localisation h4{
-    font-family: Gotham-Medium;
+    font-family: "Gotham-Medium", sans-serif;
     margin-bottom: 25px;
     font-size: 22px;  
 }
 
 #contact{
-    font-family: Roboto;
-    font-weight: bold;
-    line-height: 60px;
-    margin-top: 10px;
-    margin-left: 50px;
-    font-size: 15px;  
+   font-family: "Roboto-Regular", sans-serif;
+   font-weight: bold;
+   line-height: 60px;
+   margin-top: 10px;
+   margin-left: 50px;
+   font-size: 15px;  
+}
+
+#contact a:first-child {
+    font-family: "Roboto-Bold", sans-serif;
+    text-decoration: none;
+    color: #fff;;
+    font-size: 18px;
+}
+
+#contact a:last-child {
+    font-family: "Roboto-Bold", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
 }

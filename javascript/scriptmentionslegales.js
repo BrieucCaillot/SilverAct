@@ -1,8 +1,8 @@
 
 $(document).ready(function() {
 
-		$("header").css("border-bottom", "2px solid rgb(209, 211, 212)");
-		$("#navigation").css("margin-top", "2px");
+	$("header").css("border-bottom", "2px solid rgb(209, 211, 212)");
+	$("#navigation").css("margin-top", "2px");
     
     //SCROLL MENU 
 		$(document).on("scroll", function() {
@@ -52,30 +52,4 @@ $(document).ready(function() {
 
 		}
 	});
-			$(window).scroll(function(){   
-			   if ( $(window).scrollTop() > 50 ) {
-			   		extraPadding = $(window).scrollTop() - 50;
-			    	$('#secondblock #left').css( "padding-top", extraPadding );
-			   } else {
-			     	$('#secondblock #left').css( "padding-top", "0" );
-			   }
-			});
-
-			/*var bodyleft = document.getElementsByTagName("body");
-			var left = document.getElementById("left");
-
-			window.onscroll = function(){
-			    if (document.body.scrollTop < 750){
-			        left.style.position = "absolute";
-			        left.style.top = "20em";
-			    }   
-			    else if (document.body.scrollTop >= 750 && document.body.scrollTop <= 1400){
-			        left.style.position = "fixed";
-			        left.style.top = "118px";
-			    }
-			    else if (document.body.scrollTop > 1400){
-			        left.style.position = "absolute";
-			        left.style.top = "170px"; 
-			    }
-	};*/
 });

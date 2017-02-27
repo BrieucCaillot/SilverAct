@@ -20,8 +20,12 @@ body {
     -webkit-box-sizing: content-box; /* Safari/Chrome, autres WebKit */
 }
 
+/* POLICES */
+
+/* GOTHAM */
+
 @font-face {
-    font-family: Gotham-Light;
+    font-family: "Gotham-Light";
     src: url(../polices/Gotham/Gotham-Light.otf),
     url("../polices/Gotham/Gotham-Light.eot") format("eot"),
     url("../polices/Gotham/Gotham-Light.woff") format("woff"),
@@ -36,6 +40,24 @@ body {
     url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
 }
 
+/* ROBOTO */
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../polices/Roboto/Roboto-Bold.otf),
+    url("../polices/Roboto/Roboto-Bold.eot") format("eot"),
+    url("../polices/Roboto/Roboto-Bold.woff") format("woff"),
+    url("../polices/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../polices/Roboto/Roboto-Regular.otf),
+    url("../polices/Roboto/Roboto-Regular.eot") format("eot"),
+    url("../polices/Roboto/Roboto-Regular.woff") format("woff"),
+    url("../polices/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
 /* FIRSTBLOCK - HEADER */
 
 #firstblock {
@@ -45,7 +67,7 @@ body {
 header{
     width: 100%; 
     height: 126px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     position: absolute; 
     top: 0px;
     z-index: 90;
@@ -61,7 +83,6 @@ header{
     width: 15%; 
     height: 126px; 
     position: relative; 
-    border-right: 2px solid white; 
 }
 
 #logo img {
@@ -83,40 +104,38 @@ header{
 }
 
 #telephone {
-    font-family: 'Roboto', sans-serif;
     width: 2em;
     padding: 1em;
 }
 
 #telephone p {
-    font-family: Roboto-Bold;
-    float: left;
+    font-family: "Roboto-Bold", sans-serif;
     color: #ef7915;
     font-size: 18px;
     width: 7em;
     position: absolute;
     top: 1.3em;
     left: 3.3em;
-}
-
-#mail p {
-    font-family: Roboto-Bold;
-    color: #ef7915;
-    font-size: 18px;
-    width: 8em;
-    position: absolute;
-    top: 0.4em;
-    right: 0em;;
+    float: left;
 }
 
 #mail {
-    font-family: 'Roboto', sans-serif;
     float: right;
     width: 11.7em;
     position: absolute;
     right: 1%;
     top: 10%;
     height: 2em;
+}
+
+#mail p {
+    font-family: "Roboto-Bold", sans-serif;
+    color: #ef7915;
+    font-size: 18px;
+    width: 8em;
+    position: absolute;
+    top: 0.4em;
+    right: 0em;;
 }
 
 #mail img {
@@ -129,8 +148,8 @@ header{
 #navigation {
     width: 99.9%; 
     height: 48%;
-    border-top: 2px solid white; 
     bottom: 0px; 
+    margin-top: 2px;
 }
 
 #navigation nav {
@@ -142,28 +161,22 @@ header{
     list-style: none; 
     height: 100%;
     width: 1%;
-    border-right: 2px solid white;
     position: relative; 
     margin-left: -2px;
     box-sizing: border-box;
 }
 
-#navigation ul li:first-child {
-    margin: 0px; 
-}
-
-#navigation ul li:last-child {
-    border: none; 
-}
-
 #navigation ul li a {
     color: #148fad;
     text-decoration: none;
-    font-family: Gotham-Medium;
-    position: relative;
+    font-family: "Gotham-Light", sans-serif;
     text-align: center;
     display: block;
     padding: 22px; 
+}
+
+#navigation ul li a:focus {
+    font-family: "Gotham-Medium", sans-serif;
 }
 
 #navigation ul li a:hover {
@@ -223,7 +236,6 @@ header{
     width: 15%; 
     height: 127px; 
     position: relative;
-    border-left: 2px solid white; 
 }
 
 #img-social {
@@ -248,34 +260,33 @@ header{
 }
 
 /* SECOND BLOCK - DESCRIPTION */
+
 #secondblock {
     height: 49em;
     position: relative;
 }
 
-#presentation {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 1100px;
-    height: auto;
-}
-
 #secondblock h1 {
-    font-family: Gotham-Light;
+    font-family: "Gotham-Light", sans-serif;
     font-size: 55px;
     line-height: 72px;
     text-align: center;
-    color: #ef7915 ;
+    color: #ef7915;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 20em;
 }
 
 #secondblock img {
-    position: relative;
-    width: 3%;
+    position: absolute;
+    top: 76%;
     left: 50%;
-    margin-top: 40px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 3%;
 }
 
 /* ANIMATION CSS */
@@ -292,8 +303,6 @@ header{
   -ms-animation: animationFrames linear 2s infinite;
   -ms-transform-origin: 50% 50%;
 }
-
-/* THIRDBLOCK - CARTES */
 
 #thirdblock {
   position: relative;
@@ -885,11 +894,17 @@ fieldset {
     width: auto;
 }
 #news-iframe{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
 
-    justify-content: center;
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
     margin-top: 150px;
 }
 #new1{
@@ -940,11 +955,17 @@ fieldset {
     line-height: 25px;
 }
 #button-news{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
 
-    justify-content: center;
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
     margin-top: 50px;
 }
 #text-button-news{
