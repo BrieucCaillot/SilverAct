@@ -1,6 +1,8 @@
 $(document).ready(function() {
     
-    
+    $(document).scroll(function() {
+    console.log($(document).scrollTop());
+})
     //SCROll MENU 
 	$(document).on("scroll", function() {
 
@@ -100,6 +102,7 @@ $(document).ready(function() {
 
     //BIG CARDS : PIC 
     $("#boutton-pic").click(function() {
+
         $("#carte-pic").removeClass("animate-left");
          $("#carte-pic").css("left","5%");
         
@@ -108,7 +111,7 @@ $(document).ready(function() {
         $("#small-pic").css("display","none");
         $("#carte-pic").animate({
             width: "1100px",
-        }, 2000, 'easeOutQuint', function () {
+        }, 1500, 'easeInOutCirc', function () {
             $("#big-card-pic").css("display","block");
           
            
@@ -124,7 +127,7 @@ $(document).ready(function() {
         
         $("#carte-pic").animate({
             width: "390px",
-        }, 2000, 'easeOutQuint', function () {
+        }, 1000, 'easeOutQuint', function () {
             $("#small-pic").css("display","block");
             
         });
@@ -140,7 +143,7 @@ $(document).ready(function() {
         $("#small-coeur").css("display","none");
         $("#carte-coeur").animate({
             width: "1100px",
-        }, 2000, 'easeOutQuint', function () {
+        }, 1500, 'easeInOutCirc', function () {
             $("#big-card-coeur").css("display","block");
         });
     });
@@ -155,7 +158,7 @@ $(document).ready(function() {
         
         $("#carte-coeur").animate({
             width: "390px",
-        }, 2000, 'easeOutQuint', function () {
+        }, 1000, 'easeOutQuint', function () {
             $("#small-coeur").css("display","block");
              $("#carte-coeur").addClass("animate-mouve-small-card");
              $("#carte-pic").css("display", "block");
@@ -172,7 +175,7 @@ $(document).ready(function() {
         $("#small-trefle").css("display","none");
         $("#carte-treffle").animate({
             width: "1100px",
-        }, 2000, 'easeOutQuint', function () {
+        }, 1500, 'easeInOutCirc', function () {
             $("#big-card-trefle").css("display","block");
         });
     });
@@ -190,7 +193,7 @@ $(document).ready(function() {
         
         $("#carte-treffle").animate({
             width: "390px",
-        }, 2000, 'easeOutQuint', function () {
+        }, 1000, 'easeOutQuint', function () {
             $("#small-trefle").css("display","block");
              
              
@@ -234,17 +237,17 @@ $(document).ready(function() {
     
         //SCROLL
     window.onscroll = function(){
-       if (document.body.scrollTop >= 1000 && i == 0){
+       if (document.body.scrollTop >= 1350 && i == 0){
             $('#carte-pic').addClass("animate-left");
            ++i;
             };
         
-        if (document.body.scrollTop >= 900 && i == 1){
+        if (document.body.scrollTop >= 1400 && i == 1){
             $('#carte-coeur').addClass("animate-right");
             ++i;
             };
         
-        if (document.body.scrollTop >= 2500 && i == 2){
+        if (document.body.scrollTop >= 1950 && i == 2){
             $('#carte-treffle').addClass("animate-left");
             ++i;
             };

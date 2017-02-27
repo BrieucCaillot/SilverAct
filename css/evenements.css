@@ -298,8 +298,11 @@ header {
     height: 94%;
     border-left: 4px solid #ef790f;
     position: relative;
+
+    overflow-y: scroll;
+
     float: left;
-    overflow: scroll;;;
+    
 }
     
 #secondblock #right h2 {
