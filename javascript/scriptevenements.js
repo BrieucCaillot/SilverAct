@@ -61,21 +61,29 @@ $(document).ready(function() {
 			   }
 			});
 
-			/*var bodyleft = document.getElementsByTagName("body");
-			var left = document.getElementById("left");
-
-			window.onscroll = function(){
-			    if (document.body.scrollTop < 750){
-			        left.style.position = "absolute";
-			        left.style.top = "20em";
-			    }   
-			    else if (document.body.scrollTop >= 750 && document.body.scrollTop <= 1400){
-			        left.style.position = "fixed";
-			        left.style.top = "118px";
-			    }
-			    else if (document.body.scrollTop > 1400){
-			        left.style.position = "absolute";
-			        left.style.top = "170px"; 
-			    }
-	};*/
+	/*window.onscroll = function(){
+      if (document.body.scrollTop < 50 && document.body.scrollTop < 100){
+        console.log('toto')
+           $('#secondblock #left').css({
+               position : "absolute",
+               top : "118px",
+               left : "30px"
+           });
+      }
+       else if (document.body.scrollTop >= 100 && document.body.scrollTop <= 500){
+      	console.log('brieuc tu es moche');
+          $('#left').css({
+               position : "fixed",
+           });
+      }
+      else if (document.body.scrollTop > 500){
+       	  console.log('tata')
+          $('#secondblock #left').css({
+               position : "absolute",
+               top : "780px",
+               left : "30px",
+           });
+      }
+   }*/
+			
 });
