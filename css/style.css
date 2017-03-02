@@ -394,7 +394,8 @@ header{
     color: #ef7915;
     width: 180px; 
     height: 25px; 
-     text-decoration: none;
+    text-decoration: none;
+
 }
         
 .texte-plus1 {
@@ -405,7 +406,6 @@ header{
     color: #ef7915;
     background-color: white;
     margin-left: 35px;
-    
 }
         
 .texte-plus2 {

@@ -95,6 +95,7 @@ $(document).ready(function() {
 
     //BIG CARDS : PIC 
     $("#boutton-pic").click(function() {
+
         $("#carte-pic").css("left", "5%");
         $("#carte-pic").removeClass("animate-left");
         $("#carte-pic").addClass("animate_card");
@@ -112,7 +113,6 @@ $(document).ready(function() {
     //BUTTON BACK PIC
      $("#boutton-retour-pic").click(function() {
          $("#carte-pic").css("margin-left", "100px");
-         
         $("#carte-pic").removeClass("animate_card");
         $("#carte-coeur").css("display", "block");
          $("#big-card-pic").css("display","none");
@@ -144,7 +144,7 @@ $(document).ready(function() {
      $("#boutton-retour-coeur").click(function() {
         
         $("#carte-coeur").removeClass("animate_card2");
-        //$("#carte-coeur").css("left","");
+        
        
          $("#big-card-coeur").css("display","none");
         
