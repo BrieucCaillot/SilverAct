@@ -615,6 +615,8 @@ header{
     color: #ef7915;
     width: 180px; 
     height: 25px; 
+    text-decoration: none;
+
 }
         
 .texte-plus1 {
@@ -1119,7 +1121,6 @@ fieldset {
 
 /* NEWS */
 
-<<<<<<< HEAD
 /*ANIMATION SCROLL*/
 
 .animate-left{
