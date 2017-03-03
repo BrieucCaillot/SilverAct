@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
     // MODIF CSS MENU ACCUEIL ON CLICK
-    
     $("#navigation ul li:first-child a").click(function() {
         $(this).css({
             'background-color' : '#148fad',
@@ -10,112 +9,103 @@ $(document).ready(function() {
         });
     });
     
-    //SCROll MENU @50
+
+    //SCROll MENU @50 
+
     
     $(document).on("scroll", function() {
 
         if($(document).scrollTop()>50) {
             $("header").css("position", "fixed");
             $("header").css("height", "60px");
-            $("header").css("background-color", "rgba(255, 255, 255, 0.8)");
+            
+            $("#content").css("height", "60px");
             
             $("#logoimg").attr("src", "images/firstblock/silveractfixed.svg");
-            $("#logoimg").css("width", "20%");
+            $("#logoimg").css("width", "25%");
             
             $("#logo").css("width", "15%");
             $("#logo").css("height", "60px");
             
-            $("#telephone").hide();
-            $("#mail").hide();
-            
-            $("#img-socialimg").css("width", "10%");
-            $("#social").css("height", "60px");
+            $("#img-head").css("width", "90%");
+            $("#img-head").css("margin", "18px auto");
+            $("header").css("z-index", "200");
 
             $("#navigation").css("margin-top", "0px");
             
         } else {
             
-            $("header").css("position", "absolute");
-            $("header").css("height", "126px");
-            $("header").css("background-color", "rgba(255, 255, 255, 0.8)");
+            $("header").css("position", "relative");
+            $("header").css("height", "95px");
+            
+            $("#content").css("height", "auto");
             
             $("#logoimg").attr("src", "images/firstblock/logo.svg");
-            $("#logoimg").css("width", "65%");
+            $("#logoimg").css("width", "70%");
             
             $("#logo").css("width", "15%");
-            $("#logo").css("height", "126px");
-            
-            $("#telephone").show();
-            $("#mail").show();
-            
-            $("#img-socialimg").css("width", "50%");
-            $("#social").css("height", "126px");
-            
-            $("#navigation").css("margin-top", "2px");
+            $("#logo").css("height", "95px");
 
-        }
-    });
-
-    // SCROLL MENU @750
-
-    $(document).on("scroll", function() {
-
-        if($(document).scrollTop()>750) {
-
-            $("header").css("background-color", "#fff");
-            $("header").css("border-bottom", "2px solid rgb(209, 211, 212)");
-  
-        } else {
-
-            $("header").css("background-color", "rgba(255, 255, 255, 0.8)");
-            $("header").css("border-bottom", "");
+            $("#img-head").css("width", "90%");
+            $("#img-head").css("margin", "35px auto");
             $("header").css("z-index", "");
             
-            
+            $("#navigation").css("margin-top", "0px");
 
         }
-    });
-
-    // FADE IN - FADE OUT PRESENTATION TEXTE
-
-    $(document).on("scroll", function() {
+    }); 
         
-        if($(document).scrollTop()>600) {
-
-            $("#secondblock h1").fadeIn();
-
-        } else {
-
-            $("#secondblock h1").fadeOut();
-
-        }
+    //PLAY
+    
+    $("#play").click(function () {
+        $("#firstblock").css("display","none");
+        $("#thirdblock").css("display","none");
+        $("#news").css("display","none");
+        $("footer").css("display","none");
+        
+        $("#video").css("display","block");
+        $("#video").addClass("open");
+        $("#video").removeClass("close");
+        
+    });
+    
+    //QUIT
+    
+    $("#video img").click(function () {
+        $("#firstblock").css("display","block");
+        $("#thirdblock").css("display","block");
+        $("#news").css("display","block");
+        $("footer").css("display","block"); 
+        
+          
+        $("#video").removeClass("open");
+        $("#video").addClass("close");
+        $("#video").css("display","none");
+      
     });
 
     var i = 0;
 
     //BIG CARDS : PIC 
     $("#boutton-pic").click(function() {
-        
         $("#carte-pic").removeClass("animate-left");
         $("#carte-pic").addClass("animate_card");
+        $("#carte-pic").css("left", "5%");
         $("#carte-coeur").css("display", "none");
         $("#small-pic").css("display","none");
         $("#carte-pic").animate({
-            width: "1100px",
-        }, 2000, 'easeOutQuint', function () {
+                width: "1100px",
+            }, 2000, 'easeOutQuint', function () {
             $("#big-card-pic").css("display","block");
-          
-           
         });
     });
     
     //BUTTON BACK PIC
      $("#boutton-retour-pic").click(function() {
-         $("#carte-pic").css("margin-left", "100px");
         $("#carte-pic").removeClass("animate_card");
         $("#carte-coeur").css("display", "block");
-         $("#big-card-pic").css("display","none");
-        
+        $("#big-card-pic").css("display","none");
+
         $("#carte-pic").animate({
             width: "390px",
         }, 2000, 'easeOutQuint', function () {
@@ -127,7 +117,7 @@ $(document).ready(function() {
     //BIG CARD COEUR
         $("#boutton-coeur").click(function() {
         $("#carte-coeur").removeClass("animate-right");
-         $("#carte-coeur").removeClass("animate-mouve-small-card");
+        $("#carte-coeur").removeClass("animate-mouve-small-card");
         $("#carte-coeur").addClass("animate_card2");
         $("#carte-coeur").css("left", "5%");
         $("#carte-pic").css("display", "none");
@@ -172,24 +162,14 @@ $(document).ready(function() {
     });
     
     //BUTTON BACK TREFLE
-     $("#boutton-retour-trefle").click(function() {
-         
-        
-        $("#carte-treffle").removeClass("animate_card1");
-         $("#carte-carreau").css("display", "block");
-          
-        
-        
-         $("#big-card-trefle").css("display","none");
-        
-        $("#carte-treffle").animate({
+    $("#boutton-retour-trefle").click(function() {    
+    $("#carte-treffle").removeClass("animate_card1");
+    $("#carte-carreau").css("display", "block");
+    $("#big-card-trefle").css("display","none");
+    $("#carte-treffle").animate({
             width: "390px",
         }, 2000, 'easeOutQuint', function () {
-            $("#small-trefle").css("display","block");
-             
-             
-            
-            
+        $("#small-trefle").css("display","block");
         });
     });
     
@@ -209,20 +189,15 @@ $(document).ready(function() {
     });
     
     //BUTTON BACK CARREAU
-     $("#boutton-retour-carreau").click(function() {
-        
-        $("#carte-carreau").removeClass("animate_card1");
-       
-         $("#big-card-carreau").css("display","none");
-        
-        $("#carte-carreau").animate({
-            width: "390px",
-        }, 1000, 'easeOutQuint', function () {
-            $("#small-carreau").css("display","block");
-            $("#carte-carreau").addClass("animate-mouve-small-card");
-             $("#carte-treffle").css("display", "block");
-            
-            
+    $("#boutton-retour-carreau").click(function() {
+    $("#carte-carreau").removeClass("animate_card1");
+    $("#big-card-carreau").css("display","none");
+    $("#carte-carreau").animate({
+        width: "390px",
+    }, 1000, 'easeOutQuint', function () {
+        $("#small-carreau").css("display","block");
+        $("#carte-carreau").addClass("animate-mouve-small-card");
+        $("#carte-treffle").css("display", "block");
         });
     });
     
@@ -248,6 +223,5 @@ $(document).ready(function() {
             ++i;
             };
         };
-
 
 });
