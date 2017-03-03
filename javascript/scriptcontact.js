@@ -54,4 +54,18 @@ $(document).ready(function() {
 
 		}
 	});
+    
+    
+    $('#select-atelier').click(function () {
+        console.log($("#select-atelier").val());
+        $("#select-sortie option").remove();
+        if ($("#select-atelier").val() == "Pic de l'informatique") {
+            $('#select-sortie').append("<option>Choix de votre sortie</option><option>blabla</option>");
+        } else if ($("#select-atelier").val() == "Au coeur de l'histoire") {
+            $('#select-sortie').append("<option>Choix de votre sortie</option><option>toto</option>"); 
+        } else if ($("#select-atelier").val() == "Carreau des artistes") {
+            $('#select-sortie').append("<option>Choix de votre sortie</option><option>tata</option>"); 
+        }
+        
+    });
 });
