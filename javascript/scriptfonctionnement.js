@@ -1,17 +1,7 @@
 $(document).ready(function() {
-
-    // MODIF CSS MENU ACCUEIL ON CLICK
-    $("#navigation ul li:first-child a").click(function() {
-        $(this).css({
-            'background-color' : '#148fad',
-            'font-family' : 'Gotham-Bold',
-            'color' : '#fff'
-        });
-    });
     
     //SCROll MENU @50 
 
-    
     $(document).on("scroll", function() {
 
         if($(document).scrollTop()>50) {
