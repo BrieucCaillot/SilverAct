@@ -35,101 +35,6 @@ body {
     url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
 }
 
-<<<<<<< HEAD
-/* FIRSTBLOCK */
-
-
-#firstblock {
-    position: relative;
-    height: 8em;
-}
-
-header {
-    width: 100%; 
-    height: 126px;
-    background-color: rgba(255, 255, 255, 0.5);
-    position: relative; 
-    top: 0px;
-    z-index: 90;
-    border-bottom: 2px solid #d1d3d4;
-} 
-
-#logo {
-    float: left; 
-    width: 15%; 
-    height: 126px; 
-    position: relative; 
-    border-right: 2px solid #d1d3d4; 
-}
-
-#logo img {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    -webkit-transform: translateX(-50%) translateY(-50%); 
-            transform: translateX(-50%) translateY(-50%); 
-    width: 65%; 
-}
-
-#menu {
-    width: 70%; 
-    height: 100%; 
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); 
-}
-
-#telephone {
-    font-family: 'Roboto', sans-serif;
-    width: 2em;
-    padding: 1em;
-}
-
-#telephone p {
-    font-family: Roboto-Bold;
-    float: left;
-    color: #ef7915;
-    font-size: 18px;
-    width: 7em;
-    position: absolute;
-    top: 1.3em;
-    left: 3.3em;
-}
-
-#mail p {
-    font-family: Roboto-Bold;
-    color: #ef7915;
-    font-size: 18px;
-    width: 8em;
-    position: absolute;
-    top: 0.4em;
-    right: 0em;;
-}
-
-#mail {
-    font-family: 'Roboto', sans-serif;
-    float: right;
-    width: 11.7em;
-    position: absolute;
-    right: 1%;
-    top: 10%;
-    height: 2em;
-}
-
-#mail img {
-    width: 2em;
-}
-
-/* NAV MENU */
-
-
-#navigation {
-    width: 99.9%; 
-    height: 48%;
-    border-top: 2px solid #d1d3d4; 
-    bottom: 0px; 
-=======
 /* FIRSTBLOCK - HEADER */
 
 #firstblock {
@@ -192,7 +97,6 @@ header{
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
->>>>>>> Brieuc
 }
 
 #navigation nav {
@@ -204,33 +108,11 @@ header{
     list-style: none; 
     height: 100%;
     width: 1%;
-<<<<<<< HEAD
-    border-right: 2px solid #d1d3d4;
-    position: relative; 
-    margin-left: -2px;
-    box-sizing: border-box;
-}
-
-#navigation ul li:first-child {
-    margin: 0px; 
-}
-
-#navigation ul li:last-child {
-    border: none; 
-=======
->>>>>>> Brieuc
 }
 
 #navigation ul li a {
     color: #148fad;
     text-decoration: none;
-<<<<<<< HEAD
-    font-family: Gotham-Medium;
-    position: relative;
-    text-align: center;
-    display: block;
-    padding: 22px; 
-=======
     font-family: "Gotham-Light", sans-serif;
     text-align: center;
     display: block;
@@ -241,7 +123,6 @@ header{
 
 #navigation ul li a:focus {
     font-family: "Gotham-light", sans-serif;
->>>>>>> Brieuc
 }
 
 #navigation ul li a:hover {
@@ -250,12 +131,8 @@ header{
 
 /* SWIPER TON RIGHT li */
 
-<<<<<<< HEAD
-.hvr-sweep-to-right {
-=======
 /* Sweep To Top */
 .hvr-sweep-to-top {
->>>>>>> Brieuc
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -267,11 +144,7 @@ header{
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-<<<<<<< HEAD
-.hvr-sweep-to-right:before {
-=======
 .hvr-sweep-to-top:before {
->>>>>>> Brieuc
   content: "";
   position: absolute;
   z-index: -1;
@@ -280,17 +153,10 @@ header{
   right: 0;
   bottom: 0;
   background: #148fad;
-<<<<<<< HEAD
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-=======
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
->>>>>>> Brieuc
   -webkit-transition-property: transform;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
@@ -301,55 +167,17 @@ header{
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-<<<<<<< HEAD
-.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-  color: white;
-}
-.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-=======
 .hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
   color: white;
 }
 .hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
->>>>>>> Brieuc
 }
 
 
 /* RESEAUX SOCIAUX */
 
-<<<<<<< HEAD
-#social {
-    float: right; 
-    width: 15%; 
-    height: 127px; 
-    position: relative;
-    border-left: 2px solid #d1d3d4; 
-}
-
-#img-social {
-    width: 50%; 
-    height: auto; 
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    -webkit-transform: translateX(-50%) translateY(-50%); 
-            transform: translateX(-50%) translateY(-50%); 
-    display: -webkit-box; 
-    display: -ms-flexbox; 
-    display: flex; 
-}
-
-#img-social img {
-    width: 100%;
-}
-
-#img-social>a:first-child {
-    margin-right: 12%; 
-=======
 #head-contact {
     float: right;
     width: 15%;
@@ -372,19 +200,12 @@ header{
 
 #img-head>a {
     margin-right: 13%; 
->>>>>>> Brieuc
 }
 
 /******************************/
 
 
 #content1{
-<<<<<<< HEAD
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-=======
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -393,25 +214,16 @@ header{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
->>>>>>> Brieuc
     
 }
 h2{
     color: #148fad;
-<<<<<<< HEAD
-    font-family: gotham-medium;
-    font-weight: normal;
-=======
     font-family: Gotham-Light, sans-serif;
->>>>>>> Brieuc
     font-size: 35px;
     text-align: center;
     margin-top: 100px;
     margin-bottom: 70px;
-<<<<<<< HEAD
-=======
     font-weight: normal;
->>>>>>> Brieuc
 }
 #carte-formulaire{
     width: 1100px;
@@ -428,11 +240,7 @@ h2{
 }
 #carte-formulaire h3{
     color: #148fad;
-<<<<<<< HEAD
-    font-family: gotham-medium;
-=======
     font-family: Gotham-Light, sans-serif;
->>>>>>> Brieuc
     font-weight: normal;
     font-size: 30px;
     float: left;
@@ -444,10 +252,6 @@ h2{
 }
 
 #carte-formulaire form{
-<<<<<<< HEAD
-    display: flex;
-    flex-direction: column;
-=======
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -455,16 +259,11 @@ h2{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
->>>>>>> Brieuc
     margin-left: 25px;
     float: left;
 }
  
 #input-name {
-<<<<<<< HEAD
-    display: flex;
-    flex-direction: row;
-=======
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -472,7 +271,6 @@ h2{
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
->>>>>>> Brieuc
 }
 
 
@@ -612,12 +410,6 @@ h2{
 }
 
 #content2{
-<<<<<<< HEAD
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-=======
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -626,7 +418,6 @@ h2{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
->>>>>>> Brieuc
     
 }
 
@@ -657,11 +448,7 @@ h2{
 }
 #card-phone span{
     font-size: 25px;
-<<<<<<< HEAD
-    font-family: Gotham-medium;
-=======
     font-family: Gotham-Light, sans-serif;
->>>>>>> Brieuc
     text-align: center;
     display: block;
     color: #148fad;
@@ -715,11 +502,7 @@ h2{
 /*CARD EMAIL */
 #card-email span{
     font-size: 25px;
-<<<<<<< HEAD
-    font-family: Gotham-medium;
-=======
     font-family: Gotham-Light, sans-serif;
->>>>>>> Brieuc
     text-align: center;
     display: block;
     color: #148fad;
@@ -782,12 +565,6 @@ h2{
 }
 
 #content3{
-<<<<<<< HEAD
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-=======
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -796,7 +573,6 @@ h2{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
->>>>>>> Brieuc
 }
 .interlocutor{
     display: block;
@@ -806,11 +582,7 @@ h2{
 }
 .name-interlocutor{
     font-size: 25px;
-<<<<<<< HEAD
-    font-family: Gotham-medium;
-=======
     font-family: Gotham-Light, sans-serif;
->>>>>>> Brieuc
     text-align: center;
     color: #148fad;
     margin-top: 30px;
@@ -820,38 +592,21 @@ h2{
     color: #ef7915;
     font-family: Gotham-light;
     font-style: italic;
-<<<<<<< HEAD
-=======
     line-height: 22px;
->>>>>>> Brieuc
 }
 
 /* FOURTHBLOCK - FOOTER */
 
-<<<<<<< HEAD
-#fourthblock {
-  position: relative;
-}
-
-footer {
-    height: 270px;
-    width: 100%;
-    background-color: #044759;
-    margin-top: 100px;
-=======
 footer {
     height: 337px;
     width: 100%;
     background-color: whitesmoke;
     margin-top: 40px;
->>>>>>> Brieuc
 }
 
 #left-block {
    width: 50%;
    float: left;
-<<<<<<< HEAD
-=======
    height: 100%;
 }
 
@@ -862,23 +617,11 @@ footer {
     position: relative;
     width: 100%;
     height: 100%;
->>>>>>> Brieuc
 }
 
 #right-block {
    float: right;
    width: 50%;
-<<<<<<< HEAD
-}
-
-#mention {
-   float: left;
-   width: 36%;
-   height: 225px;
-   border-right: solid 1px white;
-   margin-top: 25px;
-   margin-bottom: 25px;
-=======
    height: 100%;
 
 }
@@ -910,16 +653,11 @@ footer {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     position: relative;
->>>>>>> Brieuc
 }
 
 #mention p {
    text-align: center;
-<<<<<<< HEAD
-   font-family: Gotham-Medium;
-=======
    font-family: Gotham-Light;
->>>>>>> Brieuc
    font-size: 20px;
    color: #ef7915 ;
    padding-top: 40px;
@@ -929,73 +667,11 @@ footer {
 #mention a {
    text-align: center;
    font-family: Gotham-Light;
-<<<<<<< HEAD
-   color: white;
-=======
    color: #044759;
->>>>>>> Brieuc
    font-size: 12px;
    text-decoration: underline;
 }
 
-<<<<<<< HEAD
-#socialfooter {
-   float: left;
-   margin-top: 80px;
-}
-
-#socialfooter ul {
-   list-style-type: none;
-   text-align: center;
-   font-family: Gotham-Medium;
-   font-size: 16px;
-   color: white;
-   margin-left: 15px;
-}
-
-#socialfooter li img {
-   margin-top: 30px;
-   margin-right: 15px;
-}
-
-#img-social-footer ul li:last-child img:first-child {
-    width: 53px;
-    margin-left: 14px;
-}
-
-#img-social-footer ul li:last-child img:last-child {
-    width: 53px;
-    margin-left: 8px;
-}
-
-#img-footer li img {
-  width: 2.5em;
-}
-
-#localisation {
-   
-   float: left;
-   margin-top: 40px;
-   margin-left: 25px;
-   color: white;
-   font-family: roboto;
-}
-
-#localisation ul {
-   list-style-type: none;
-}
-
-#img-footer{
-   float: left;
-}
-
-#img-footer li {
-   margin-top: 20px; 
-}
-
-#localisation h4{
-   font-family: Gotham-Medium;
-=======
 #localisation {
     float: left;
     margin-left: 7%;
@@ -1039,36 +715,12 @@ footer {
 #localisation h4{
    font-family: Gotham-Light;
 
->>>>>>> Brieuc
    margin-bottom: 25px;
    font-size: 18px;
 }
 
 #contact{
    font-family: Roboto;
-<<<<<<< HEAD
-    
-   font-weight: bold;
-   line-height: 60px;
-   margin-top: 10px;
-   margin-left: 50px;
-   font-size: 15px;  
-}
-
-/*IFRAME*/
-.overlay {
-   background:transparent; 
-   position:relative; 
-   width:100%;
-   height:270px; /* your iframe height */
-   top:270px;  /* your iframe height */
-   margin-top:-270px;  /* your iframe height */
-}
-
-#contact a {
-    text-decoration: none;
-    color: white;
-=======
 
    font-weight: bold;
    line-height: 60px;
@@ -1081,28 +733,4 @@ footer {
     text-decoration: none;
     color: #148fad;
 
->>>>>>> Brieuc
 }
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
