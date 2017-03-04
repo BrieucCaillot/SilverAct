@@ -40,24 +40,6 @@ body {
     url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
 }
 
-/* ROBOTO */
-
-@font-face {
-    font-family: "Roboto-Bold";
-    src: url(../polices/Roboto/Roboto-Bold.otf),
-    url("../polices/Roboto/Roboto-Bold.eot") format("eot"),
-    url("../polices/Roboto/Roboto-Bold.woff") format("woff"),
-    url("../polices/Roboto/Roboto-Bold.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Roboto-Regular";
-    src: url(../polices/Roboto/Roboto-Regular.otf),
-    url("../polices/Roboto/Roboto-Regular.eot") format("eot"),
-    url("../polices/Roboto/Roboto-Regular.woff") format("woff"),
-    url("../polices/Roboto/Roboto-Regular.ttf") format("truetype");
-}
-
 /* FIRSTBLOCK - HEADER */
 
 #firstblock {
@@ -75,7 +57,8 @@ header{
     width: 75%;
     height: auto;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     position: absolute;
 }
 
@@ -95,25 +78,30 @@ header{
     transform: translateX(-50%) translateY(-50%);
     width: 70%;
 
+
 }
 
 #menu {
     width: 70%; 
     height: 100%; 
     position: absolute;
+
     top: 50%; 
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%); 
+
 }
 /* NAV MENU */
+
 
 
 #navigation {
     width: 100%; 
     position: absolute; 
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 #navigation nav {
@@ -175,7 +163,10 @@ header{
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
   -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
@@ -203,6 +194,8 @@ header{
     width: 90%;
     height: auto;
     margin: 35px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -229,7 +222,8 @@ header{
     height: auto;
     left: 50%;
     position: relative;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 #presentation h1 {
@@ -270,7 +264,8 @@ header{
     position: absolute;
     margin-left: 23px;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     width: 200px;
     line-height: normal;
 }
@@ -318,8 +313,68 @@ header{
     border-radius: 25px;
     margin-bottom: -25px;
     margin-top: 5px;
-}
 
+}
+.texte{
+    text-align: center;
+    font-family: roboto; 
+    margin-top: 315px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    line-height: 18px;
+}
+.boutton{
+    width: 180px;
+    height: 25px;
+    margin: 50px auto;
+    margin-top: -0.1px;
+    padding-left: 10px;
+    
+    
+}
+ .boutton-plus{
+    display: inline;
+    text-align: center;
+    font-family: Gotham-light, sans-serif;
+    color: #ef7915;
+    width: 180px; 
+    height: 25px; 
+}
+        
+.texte-plus1 {
+    display: inline;
+    font-size: 17px;
+    text-align: center;
+    font-family: Gotham-light, sans-serif;
+    color: #ef7915;
+    margin-left: 35px;
+}
+        
+.texte-plus2 {
+    font-size: 17px;
+    text-align: center;
+    font-family: Gotham-light, sans-serif;
+    color: white;
+    margin-top: 3px;
+}
+        
+.fleche-left {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border: solid 2px #ef7915;
+    border-radius: 25px;
+    margin-bottom: -25px;
+    margin-top: 5px;
+}
+        
+.fleche-left:hover {
+    -webkit-animation: width 0.5s forwards ease;
+    animation: width 0.5s ease forwards;
+}
+        
 #circle-play:hover {
     -webkit-animation: width-play 0.5s forwards ease;
     animation: width-play 0.5s ease forwards;
@@ -328,6 +383,7 @@ header{
 @-webkit-keyframes width-play {
     from {width: 25px;}
     to {width: 90px;}
+
 }
 
 #button-play {
@@ -336,6 +392,84 @@ header{
     left: 32%;
 }
 
+
+.a-down{
+    position:absolute;
+    margin: 5px;
+    width: 30px;
+    left: 340px;
+    top: 460px;
+}
+
+
+#first-card{
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 610px;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+#second-card{
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 610px;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+#carte-pic{
+    position: absolute;
+    left: -50%;
+    width: 390px;
+    float: left;
+    background-color: white;
+    transform:rotate(-10deg); 
+-ms-transform:rotate(-10deg); /* Internet Explorer */
+-moz-transform:rotate(-10deg); /* Firefox */
+-webkit-transform:rotate(-10deg); /* Safari et Chrome */ 
+-o-transform:rotate(-10deg); /* Opera */
+}
+
+.rotate-carte{
+    transform:rotate(0deg); 
+-ms-transform:rotate(0deg); /* Internet Explorer */
+-moz-transform:rotate(0deg); /* Firefox */
+-webkit-transform:rotate(0deg); /* Safari et Chrome */ 
+-o-transform:rotate(0deg); /* Opera */
+}
+
+#carte-coeur{
+    position: absolute;
+    float: right;
+    right: -50%;
+    background-color: white;
+    transform:rotate(5deg); 
+-ms-transform:rotate(5deg); /* Internet Explorer */
+-moz-transform:rotate(5deg); /* Firefox */
+-webkit-transform:rotate(5deg); /* Safari et Chrome */ 
+-o-transform:rotate(5deg); /* Opera */
+}
+
+#carte-treffle{
+    position: absolute;
+    left: -50%;
+    width: 390px;
+    float: left;
+    background-color: white;
+    transform:rotate(10deg); 
+-ms-transform:rotate(10deg); /* Internet Explorer */
+-moz-transform:rotate(10deg); /* Firefox */
+-webkit-transform:rotate(10deg); /* Safari et Chrome */ 
+-o-transform:rotate(10deg); /* Opera */
+}
+
+#carte-carreau{
+    position: absolute;
+    background-color: white;
+}
 /*VIDEO BLOCK*/
 #video {
     background: whitesmoke;
@@ -353,7 +487,8 @@ header{
     top: 50%;
     left: 50%;
     position: relative;
-    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
 }
 
 #quit {
@@ -389,7 +524,7 @@ header{
 
 #thirdblock h2{
     color: #148fad;
-    font-family: gotham-medium;
+    font-family: Gotham-Light, sans-serif;
     font-weight: normal;
     font-size: 35px;
     text-align: center;
@@ -418,7 +553,7 @@ header{
 .liste li{
     font-size: 25px;
     color: #148fad;
-    font-family: Gotham-Medium;
+    font-family: Gotham;
     
 }
 .small {
@@ -427,7 +562,7 @@ header{
     
 }
 .titre {
-    font-family: Gotham-Medium;
+    font-family: Gotham-Thin;
     font-size: 25px;
     color: #148fad;
     text-align: center;
@@ -472,6 +607,8 @@ header{
     color: #ef7915;
     width: 180px; 
     height: 25px; 
+    text-decoration: none;
+
 }
         
 .texte-plus1 {
@@ -534,7 +671,7 @@ header{
 
 #first-card{
     position: relative;
-    margin: 0 auto;
+    margin: 0px auto;
     width: 1200px;
     height: 610px;
     overflow: hidden;
@@ -828,6 +965,61 @@ header{
 
 fieldset {
     border: none; 
+
+}
+
+.button-radio  input[type="checkbox"]{
+    display : none;
+ }
+.button-radio  div{
+    margin: 10px 0px;
+}
+.button-radio  .label-radio{
+    position : relative;
+    left: 20px;
+    padding-left: 25px;
+    margin-left : 0px;
+    font-family: Roboto; 
+    color : #044759;
+    font-size: 15px;
+   
+ }
+.button-radio  .label-radio:before{
+    content : '';
+    display : block;
+    position : absolute;
+    width : 15px;
+    height : 15px;
+    border-radius : 12px;
+    border : 1px solid #a6a6a6 ;
+    top : 0px;
+ }
+.button-radio .label-radio:after{
+    content: '';
+    display: none;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 2px;
+    left: 2px;
+    background-color: #148fad;
+    border-radius: 15px;
+ }
+.button-radio  input[type="checkbox"]:checked+.label-radio:after{
+    display : block;
+ }
+/*BIG CARD COEUR*/
+#big-card-coeur{
+    display: none;
+}
+/*BIG CARD TREFLE*/
+#big-card-trefle{
+    display: none;
+}
+/*BIG CARD CARREAU*/
+#big-card-carreau{
+    display: none;
+=======
 }
 
 .button-radio  input[type="checkbox"]{
@@ -912,6 +1104,44 @@ fieldset {
 .animate-mouve-small-card{
     -webkit-animation: mouve-small-card  0.5s forwards;
             animation: mouve-small-card 0.5s forwards;
+
+}
+@-webkit-keyframes mouve-small-card {
+    from{left: 5%;}
+    to{left: 710px;}
+}
+
+/* NEWS */
+
+/*ANIMATION SCROLL*/
+
+.animate-left{
+    -webkit-animation: deplacement 0.5s forwards;
+            animation: deplacement 0.5s forwards;
+}
+@-webkit-keyframes deplacement {
+    from{left: -50%;
+        position: absolute;
+    }
+    to{left: 100px;
+    position: relative;}
+}
+
+.animate-right{
+    -webkit-animation: deplacement-coeur 0.5s forwards;
+            animation: deplacement-coeur 0.5s forwards;
+}
+@-webkit-keyframes deplacement-coeur {
+    from{right: -50%;
+    position: absolute;
+    }
+    to{right: 100px;
+    position: relative;}
+}
+/*ANIMATION DEPLACEMENT TRANSITION SMAL CARD*/
+.animate-mouve-small-card{
+    -webkit-animation: mouve-small-card  0.5s forwards;
+            animation: mouve-small-card 0.5s forwards;
 }
 @-webkit-keyframes mouve-small-card {
     from{left: 5%;}
@@ -927,11 +1157,21 @@ fieldset {
     text-align: center;
     margin-top: 100px
 }
+
+#news h2 {
+    color: #148fad;
+    font-family: Gotham-Light, sans-serif;
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 #news h4{
     margin-top: 50px;
     margin-bottom: 50px;
     color: #ef7915;
-    font-family: gotham-light;
+    font-family: Gotham-Light, sans-serif;
 }
 #email{
     position: absolute;
@@ -962,6 +1202,7 @@ fieldset {
 }
 #email button:hover{
     background-color: #044759;
+
 }
 #email button:focus{
     background-color: #044759;
@@ -999,21 +1240,21 @@ fieldset {
     margin-left: 15px;
 }
 #new1 h3{
-    font-family: gotham-medium;
+    font-family: Gotham-Light, sans-serif;
     color: #148fad;
     margin-top: 25px;
     font-size: 20px;
     margin-bottom: 10px;
 }
 #new2 h3{
-     font-family: gotham-medium;
+     font-family: Gotham-Light, sans-serif;
     color: #148fad;
     margin-top: 25px;
     font-size: 20px;
     margin-bottom: 10px;
 }
 #new1 span{
-    font-family: gotham-light;
+    font-family: Gotham-Light, sans-serif;
     color: #ef7915;
    
 }
@@ -1023,7 +1264,7 @@ fieldset {
     
 }
 #new2 span{
-    font-family: gotham-light;
+    font-family: Gotham-light, sans-serif;
     color: #ef7915;
    
 }
@@ -1089,7 +1330,7 @@ fieldset {
 /* FOURTHBLOCK - FOOTER */
 
 footer {
-    height: 35%;
+    height: 377px;
     width: 100%;
     background-color: whitesmoke;
 }
@@ -1102,7 +1343,8 @@ footer {
 
 #information {
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     position: relative;
     width: 100%;
     height: 100%;
@@ -1112,15 +1354,35 @@ footer {
    float: right;
    width: 50%;
    height: 100%;
-}
 
+}
+#email button:focus{
+    background-color: #044759;
+}
+#email img{
+    height: 25px;
+    width: auto;
+}
+#news-iframe{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+}
 #mention {
     float: left;
     width: 50%;
     height: auto;
     border-right: solid 1px #148fad;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     position: relative;
 }
 
@@ -1147,7 +1409,8 @@ footer {
     color: #148fad;
     font-family: roboto;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     position: relative;
     width: 27%;
 }
@@ -1182,12 +1445,14 @@ footer {
 
 #localisation h4{
    font-family: Gotham-Light;
+
    margin-bottom: 25px;
    font-size: 18px;
 }
 
 #contact{
    font-family: Roboto;
+
    font-weight: bold;
    line-height: 60px;
    margin-top: 10px;
@@ -1198,6 +1463,7 @@ footer {
 #contact a {
     text-decoration: none;
     color: #148fad;
+
 }
 
 
