@@ -293,7 +293,7 @@ header{
 /* BULLES ÉVÉNEMENTS */
 
 #secondblock #right #bulles {
-    font-family: "Gotham-Thin", sans-serif;
+    font-family: "Gotham-light", sans-serif;
     text-align: center;
     font-size: 30px;
     color: #ef790f;
@@ -392,8 +392,6 @@ header{
    font-family: Gotham-light, sans-serif;
    width: 180px;
    height: 31px;
-   margin: 11px auto;
-   padding-left: 173px;
    
    
 }
@@ -451,7 +449,7 @@ header{
 footer {
     position: absolute;
     top: 1258px;
-    height: 377px;
+    height: 270px;
     width: 100%;
     background-color: whitesmoke;
 }

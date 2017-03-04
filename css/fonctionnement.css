@@ -52,7 +52,7 @@ header{
 } 
 
 #content {
-    width: 85%;
+    width: 75%;
     height: auto;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -257,6 +257,8 @@ header{
     height: 100%;
     position: relative;
     float: left;  
+    background: url("../images/secondblock/fonctionnement.png") no-repeat;
+    background-size: cover;
 }
 
 #secondblock #right h2{
