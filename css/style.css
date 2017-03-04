@@ -40,24 +40,6 @@ body {
     url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
 }
 
-/* ROBOTO */
-
-@font-face {
-    font-family: "Roboto-Bold";
-    src: url(../polices/Roboto/Roboto-Bold.otf),
-    url("../polices/Roboto/Roboto-Bold.eot") format("eot"),
-    url("../polices/Roboto/Roboto-Bold.woff") format("woff"),
-    url("../polices/Roboto/Roboto-Bold.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Roboto-Regular";
-    src: url(../polices/Roboto/Roboto-Regular.otf),
-    url("../polices/Roboto/Roboto-Regular.eot") format("eot"),
-    url("../polices/Roboto/Roboto-Regular.woff") format("woff"),
-    url("../polices/Roboto/Roboto-Regular.ttf") format("truetype");
-}
-
 /* FIRSTBLOCK - HEADER */
 
 #firstblock {
@@ -75,7 +57,12 @@ header{
     width: 75%;
     height: auto;
     left: 50%;
+<<<<<<< HEAD
     transform: translateX(-50%);
+=======
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+>>>>>>> Brieuc
     position: absolute;
 }
 
@@ -117,7 +104,12 @@ header{
     width: 100%; 
     position: absolute; 
     top: 50%;
+<<<<<<< HEAD
     transform: translateY(-50%);
+=======
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+>>>>>>> Brieuc
 }
 
 #navigation nav {
@@ -207,6 +199,11 @@ header{
     width: 90%;
     height: auto;
     margin: 35px auto;
+<<<<<<< HEAD
+=======
+    display: -webkit-box;
+    display: -ms-flexbox;
+>>>>>>> Brieuc
     display: flex;
 }
 
@@ -233,7 +230,12 @@ header{
     height: auto;
     left: 50%;
     position: relative;
+<<<<<<< HEAD
     transform: translateX(-50%);
+=======
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+>>>>>>> Brieuc
 }
 
 #presentation h1 {
@@ -274,7 +276,12 @@ header{
     position: absolute;
     margin-left: 23px;
     top: 50%;
+<<<<<<< HEAD
     transform: translateY(-50%);
+=======
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+>>>>>>> Brieuc
     width: 200px;
     line-height: normal;
 }
@@ -325,6 +332,7 @@ header{
 
 }
 .texte{
+<<<<<<< HEAD
     text-align: center;
     font-family: roboto; 
     margin-top: 315px;
@@ -358,6 +366,41 @@ header{
     text-align: center;
     font-family: Gotham-light, sans-serif;
     color: #ef7915;
+=======
+    text-align: center;
+    font-family: roboto; 
+    margin-top: 315px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    line-height: 18px;
+}
+.boutton{
+    width: 180px;
+    height: 25px;
+    margin: 50px auto;
+    margin-top: -0.1px;
+    padding-left: 10px;
+    
+    
+}
+ .boutton-plus{
+    display: inline;
+    text-align: center;
+    font-family: Gotham-light, sans-serif;
+    color: #ef7915;
+    width: 180px; 
+    height: 25px; 
+}
+        
+.texte-plus1 {
+    display: inline;
+    font-size: 17px;
+    text-align: center;
+    font-family: Gotham-light, sans-serif;
+    color: #ef7915;
+>>>>>>> Brieuc
     margin-left: 35px;
 }
         
@@ -396,6 +439,7 @@ header{
 }
 
 #button-play {
+<<<<<<< HEAD
     position: absolute;
     top: 81%;
     left: 32%;
@@ -464,6 +508,76 @@ header{
 
 #carte-treffle{
     position: absolute;
+=======
+    position: absolute;
+    top: 81%;
+    left: 32%;
+}
+
+
+.a-down{
+    position:absolute;
+    margin: 5px;
+    width: 30px;
+    left: 340px;
+    top: 460px;
+}
+
+
+#first-card{
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 610px;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+#second-card{
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 610px;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+#carte-pic{
+    position: absolute;
+    left: -50%;
+    width: 390px;
+    float: left;
+    background-color: white;
+    transform:rotate(-10deg); 
+-ms-transform:rotate(-10deg); /* Internet Explorer */
+-moz-transform:rotate(-10deg); /* Firefox */
+-webkit-transform:rotate(-10deg); /* Safari et Chrome */ 
+-o-transform:rotate(-10deg); /* Opera */
+}
+
+.rotate-carte{
+    transform:rotate(0deg); 
+-ms-transform:rotate(0deg); /* Internet Explorer */
+-moz-transform:rotate(0deg); /* Firefox */
+-webkit-transform:rotate(0deg); /* Safari et Chrome */ 
+-o-transform:rotate(0deg); /* Opera */
+}
+
+#carte-coeur{
+    position: absolute;
+    float: right;
+    right: -50%;
+    background-color: white;
+    transform:rotate(5deg); 
+-ms-transform:rotate(5deg); /* Internet Explorer */
+-moz-transform:rotate(5deg); /* Firefox */
+-webkit-transform:rotate(5deg); /* Safari et Chrome */ 
+-o-transform:rotate(5deg); /* Opera */
+}
+
+#carte-treffle{
+    position: absolute;
+>>>>>>> Brieuc
     left: -50%;
     width: 390px;
     float: left;
@@ -496,7 +610,12 @@ header{
     top: 50%;
     left: 50%;
     position: relative;
+<<<<<<< HEAD
     transform: translateX(-50%) translateY(-50%);
+=======
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+>>>>>>> Brieuc
 }
 
 #quit {
@@ -532,7 +651,7 @@ header{
 
 #thirdblock h2{
     color: #148fad;
-    font-family: gotham-medium;
+    font-family: Gotham-Light, sans-serif;
     font-weight: normal;
     font-size: 35px;
     text-align: center;
@@ -561,7 +680,7 @@ header{
 .liste li{
     font-size: 25px;
     color: #148fad;
-    font-family: Gotham-Medium;
+    font-family: Gotham;
     
 }
 .small {
@@ -570,7 +689,7 @@ header{
     
 }
 .titre {
-    font-family: Gotham-Medium;
+    font-family: Gotham-Thin;
     font-size: 25px;
     color: #148fad;
     text-align: center;
@@ -679,7 +798,7 @@ header{
 
 #first-card{
     position: relative;
-    margin: 0 auto;
+    margin: 0px auto;
     width: 1200px;
     height: 610px;
     overflow: hidden;
@@ -1168,7 +1287,11 @@ fieldset {
 
 #news h2 {
     color: #148fad;
+<<<<<<< HEAD
     font-family: gotham-medium;
+=======
+    font-family: Gotham-Light, sans-serif;
+>>>>>>> Brieuc
     font-weight: normal;
     font-size: 35px;
     text-align: center;
@@ -1179,7 +1302,7 @@ fieldset {
     margin-top: 50px;
     margin-bottom: 50px;
     color: #ef7915;
-    font-family: gotham-light;
+    font-family: Gotham-Light, sans-serif;
 }
 #email{
     position: absolute;
@@ -1248,21 +1371,21 @@ fieldset {
     margin-left: 15px;
 }
 #new1 h3{
-    font-family: gotham-medium;
+    font-family: Gotham-Light, sans-serif;
     color: #148fad;
     margin-top: 25px;
     font-size: 20px;
     margin-bottom: 10px;
 }
 #new2 h3{
-     font-family: gotham-medium;
+     font-family: Gotham-Light, sans-serif;
     color: #148fad;
     margin-top: 25px;
     font-size: 20px;
     margin-bottom: 10px;
 }
 #new1 span{
-    font-family: gotham-light;
+    font-family: Gotham-Light, sans-serif;
     color: #ef7915;
    
 }
@@ -1272,7 +1395,7 @@ fieldset {
     
 }
 #new2 span{
-    font-family: gotham-light;
+    font-family: Gotham-light, sans-serif;
     color: #ef7915;
    
 }
@@ -1338,7 +1461,11 @@ fieldset {
 /* FOURTHBLOCK - FOOTER */
 
 footer {
+<<<<<<< HEAD
     height: 40%;
+=======
+    height: 377px;
+>>>>>>> Brieuc
     width: 100%;
     background-color: whitesmoke;
 }
@@ -1351,7 +1478,12 @@ footer {
 
 #information {
     left: 50%;
+<<<<<<< HEAD
     transform: translateX(-50%);
+=======
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+>>>>>>> Brieuc
     position: relative;
     width: 100%;
     height: 100%;
@@ -1365,22 +1497,38 @@ footer {
 }
 #email button:focus{
     background-color: #044759;
+<<<<<<< HEAD
 }
 #email img{
     height: 25px;
     width: auto;
 }
+=======
+}
+#email img{
+    height: 25px;
+    width: auto;
+}
+>>>>>>> Brieuc
 #news-iframe{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
+<<<<<<< HEAD
 
     -webkit-box-pack: center;
 
         -ms-flex-pack: center;
 
+=======
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+>>>>>>> Brieuc
 }
 #mention {
     float: left;
@@ -1388,7 +1536,12 @@ footer {
     height: auto;
     border-right: solid 1px #148fad;
     top: 50%;
+<<<<<<< HEAD
     transform: translateY(-50%);
+=======
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+>>>>>>> Brieuc
     position: relative;
 }
 
@@ -1415,7 +1568,12 @@ footer {
     color: #148fad;
     font-family: roboto;
     top: 50%;
+<<<<<<< HEAD
     transform: translateY(-50%);
+=======
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+>>>>>>> Brieuc
     position: relative;
     width: 27%;
 }

@@ -204,7 +204,7 @@ $(document).ready(function() {
     
         //SCROLL
     window.onscroll = function(){
-       if (document.body.scrollTop >= 1000 && i == 0){
+       if (document.body.scrollTop >= 800 && i == 0){
             $('#carte-pic').addClass("animate-left");
            ++i;
             };
@@ -214,12 +214,12 @@ $(document).ready(function() {
             ++i;
             };
         
-        if (document.body.scrollTop >= 2500 && i == 2){
+        if (document.body.scrollTop >= 1100 && i == 2){
             $('#carte-treffle').addClass("animate-left");
             ++i;
             };
         
-        if (document.body.scrollTop >= 2000 && i == 3){
+        if (document.body.scrollTop >= 1200 && i == 3){
             $('#carte-carreau').addClass("animate-right");
             ++i;
             };

@@ -38,24 +38,6 @@ body{
     url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
 }
 
-/* ROBOTO */
-
-@font-face {
-    font-family: "Roboto-Bold";
-    src: url(../polices/Roboto/Roboto-Bold.otf),
-    url("../polices/Roboto/Roboto-Bold.eot") format("eot"),
-    url("../polices/Roboto/Roboto-Bold.woff") format("woff"),
-    url("../polices/Roboto/Roboto-Bold.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Roboto-Regular";
-    src: url(../polices/Roboto/Roboto-Regular.otf),
-    url("../polices/Roboto/Roboto-Regular.eot") format("eot"),
-    url("../polices/Roboto/Roboto-Regular.woff") format("woff"),
-    url("../polices/Roboto/Roboto-Regular.ttf") format("truetype");
-}
-
 #firstblock{
     position: relative;
     height: 8em;  
