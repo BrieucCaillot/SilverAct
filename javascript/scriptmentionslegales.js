@@ -1,55 +1,47 @@
 
 $(document).ready(function() {
 
-	$("header").css("border-bottom", "2px solid rgb(209, 211, 212)");
-	$("#navigation").css("margin-top", "2px");
+	//SCROll MENU @50 
     
-    //SCROLL MENU 
-		$(document).on("scroll", function() {
+    $(document).on("scroll", function() {
 
-		if($(document).scrollTop()>50) {
-			$("header").css("position", "fixed");
-			$("header").css("height", "60px");
-            $("header").css("background", "white");
-
-            $("#secondblock").css("top", "100px");
-
-			$("#logoimg").attr("src", "../images/firstblock/silveractfixed.svg");
-            $("#logoimg").css("width", "20%");
+        if($(document).scrollTop()>50) {
+            $("header").css("position", "fixed");
+            $("header").css("height", "60px");
             
-			$("#logo").css("width", "15%");
+            $("#content").css("height", "60px");
+            
+            $("#logoimg").attr("src", "../images/firstblock/silveractfixed.svg");
+            $("#logoimg").css("width", "25%");
+            
+            $("#logo").css("width", "15%");
             $("#logo").css("height", "60px");
             
-			$("#telephone").hide();
-			$("#mail").hide();
-            
-			$("#img-social").css("width", "50%");
-            $("#social").css("height", "60px");
+            $("#img-head").css("width", "90%");
+            $("#img-head").css("margin", "18px auto");
+            $("header").css("z-index", "200");
 
             $("#navigation").css("margin-top", "0px");
             
-		} else {
+        } else {
             
-			$("header").css("position", "relative");
-			$("header").css("height", "126px");
-            $("header").css("border-bottom", "2px solid #d1d3d4");
+            $("header").css("position", "relative");
+            $("header").css("height", "95px");
+            
+            $("#content").css("height", "auto");
+            
+            $("#logoimg").attr("src", "../images/firstblock/logo.svg");
+            $("#logoimg").css("width", "70%");
+            
+            $("#logo").css("width", "15%");
+            $("#logo").css("height", "95px");
 
-            $("#secondblock").css("top", "0px");
+            $("#img-head").css("width", "90%");
+            $("#img-head").css("margin", "35px auto");
+            $("header").css("z-index", "");
             
-			$("#logoimg").attr("src", "../images/firstblock/logo.svg");
-            $("#logoimg").css("width", "65%");
-            
-			$("#logo").css("width", "15%");
-            $("#logo").css("height", "126px");
-            
-			$("#telephone").show();
-			$("#mail").show();
-            
-			$("#img-social").css("width", "50%");
-            $("#social").css("height", "126px");
-            
-			$("#navigation").css("margin-top", "2px");
+            $("#navigation").css("margin-top", "0px");
 
-		}
-	});
+        }
+    });
 });
