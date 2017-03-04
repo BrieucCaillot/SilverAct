@@ -1,8 +1,5 @@
 
 $(document).ready(function() {
-
-		$("header").css("border-bottom", "2px solid rgb(209, 211, 212)");
-		$("#navigation").css("margin-top", "2px");
     
     //SCROll MENU @50 
 
@@ -55,15 +52,15 @@ $(document).ready(function() {
 			   } else {
 			     	$('#secondblock #left').css( "padding-top", "0" );
 			   }
-			});
+			});*/
 
 			var bodyleft = document.getElementsByTagName("body");
 			var left = document.getElementById("left");
 
 			window.onscroll = function(){
-			    if (document.body.scrollTop < 750){
+			    if (document.body.scrollTop < 100){
 			        left.style.position = "absolute";
-			        left.style.top = "20em";
+			        left.style.top = "0em";
 			    }   
 			    else if (document.body.scrollTop >= 750 && document.body.scrollTop <= 1400){
 			        left.style.position = "fixed";
@@ -73,5 +70,5 @@ $(document).ready(function() {
 			        left.style.position = "absolute";
 			        left.style.top = "170px"; 
 			    }
-	};*/
+	};
 });
