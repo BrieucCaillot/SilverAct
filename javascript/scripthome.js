@@ -95,7 +95,7 @@ $(document).ready(function() {
         $("#small-pic").css("display","none");
         $("#carte-pic").animate({
                 width: "1100px",
-            }, 2000, 'easeOutQuint', function () {
+            }, 1000, 'easeInOutCirc', function () {
             $("#big-card-pic").css("display","block");
         });
     });
@@ -109,7 +109,7 @@ $(document).ready(function() {
 
         $("#carte-pic").animate({
             width: "390px",
-        }, 2000, 'easeOutQuint', function () {
+        }, 1000, 'easeOutQuint', function () {
             $("#small-pic").css("display","block");
             
         });
@@ -125,7 +125,7 @@ $(document).ready(function() {
         $("#small-coeur").css("display","none");
         $("#carte-coeur").animate({
             width: "1100px",
-        }, 2000, 'easeOutQuint', function () {
+        }, 1000, 'easeInOutCirc', function () {
             $("#big-card-coeur").css("display","block");
         });
     });
@@ -137,7 +137,7 @@ $(document).ready(function() {
         $("#big-card-coeur").css("display","none");
         $("#carte-coeur").animate({
             width: "390px",
-        }, 2000, 'easeOutQuint', function () {
+        }, 1000, 'easeOutQuint', function () {
             $("#small-coeur").css("display","block");
              $("#carte-coeur").addClass("animate-mouve-small-card");
              $("#carte-pic").css("display", "block");
@@ -154,7 +154,7 @@ $(document).ready(function() {
         $("#small-trefle").css("display","none");
         $("#carte-treffle").animate({
             width: "1100px",
-        }, 2000, 'easeOutQuint', function () {
+        }, 1000, 'easeInOutCirc', function () {
             $("#big-card-trefle").css("display","block");
         });
     });
@@ -169,7 +169,7 @@ $(document).ready(function() {
         
         $("#carte-treffle").animate({
             width: "390px",
-        }, 2000, 'easeOutQuint', function () {
+        }, 1000, 'easeOutQuint', function () {
         $("#small-trefle").css("display","block");
         });
     });
@@ -184,7 +184,7 @@ $(document).ready(function() {
         $("#small-carreau").css("display","none");
         $("#carte-carreau").animate({
             width: "1100px",
-        }, 1500, 'easeInOutCirc', function () {
+        }, 1000, 'easeInOutCirc', function () {
             $("#big-card-carreau").css("display","block");
         });
     });
@@ -204,22 +204,22 @@ $(document).ready(function() {
     
         //SCROLL
     window.onscroll = function(){
-       if (document.body.scrollTop >= 800 && i == 0){
+       if (document.body.scrollTop >= 500 && i == 0){
             $('#carte-pic').addClass("animate-left");
            ++i;
             };
         
-        if (document.body.scrollTop >= 900 && i == 1){
+        if (document.body.scrollTop >= 600 && i == 1){
             $('#carte-coeur').addClass("animate-right");
             ++i;
             };
         
-        if (document.body.scrollTop >= 1100 && i == 2){
+        if (document.body.scrollTop >= 800 && i == 2){
             $('#carte-treffle').addClass("animate-left");
             ++i;
             };
         
-        if (document.body.scrollTop >= 1200 && i == 3){
+        if (document.body.scrollTop >= 900 && i == 3){
             $('#carte-carreau').addClass("animate-right");
             ++i;
             };
