@@ -257,7 +257,7 @@ header{
     position: absolute;
     left: 54%;
     border-right: 3px solid #ef7915;
-    width: 13px;
+    width: 19px;
     height: 127%;
 }
 
@@ -320,7 +320,7 @@ header{
     border-radius: 100%;
     z-index: 2;
     position: absolute;
-    top: 234%;
+    top: 268%;
 }
 
 #secondblock #right #bulles3 {
@@ -330,7 +330,7 @@ header{
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 448%;;
+    top: 480%;;
     z-index: 2;
 }
 
@@ -341,7 +341,7 @@ header{
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 656%;
+    top: 687%;
     z-index: 2;
 }
 
@@ -450,7 +450,7 @@ header{
 
 footer {
     position: absolute;
-    top: 1260px;
+    top: 1258px;
     height: 377px;
     width: 100%;
     background-color: whitesmoke;
