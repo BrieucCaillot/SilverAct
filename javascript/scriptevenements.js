@@ -9,6 +9,8 @@ $(document).ready(function() {
         if($(document).scrollTop()>50) {
             $("header").css("position", "fixed");
             $("header").css("height", "60px");
+            $("header").css("z-index", "200");
+            $("header").css("padding", "0 0 0 0");
             
             $("#content").css("height", "60px");
             
@@ -20,14 +22,14 @@ $(document).ready(function() {
             
             $("#img-head").css("width", "90%");
             $("#img-head").css("margin", "18px auto");
-            $("header").css("z-index", "200");
-
+            
             $("#navigation").css("margin-top", "0px");
             
         } else {
             
             $("header").css("position", "relative");
             $("header").css("height", "95px");
+            $("header").css("padding", "10px 0 10px 0");
             
             $("#content").css("height", "auto");
             
@@ -60,15 +62,16 @@ $(document).ready(function() {
 			window.onscroll = function(){
 			    if (document.body.scrollTop < 100){
 			        left.style.position = "absolute";
-			        left.style.top = "0em";
+			        left.style.top = "100px";
 			    }   
-			    else if (document.body.scrollTop >= 750 && document.body.scrollTop <= 1400){
+			    else if (document.body.scrollTop >= 100 && document.body.scrollTop <= 720){
 			        left.style.position = "fixed";
-			        left.style.top = "118px";
+			        left.style.top = "0px";
 			    }
-			    else if (document.body.scrollTop > 1400){
+			    else if (document.body.scrollTop > 720){
+                    console.log($(window).scrollTop());
 			        left.style.position = "absolute";
-			        left.style.top = "170px"; 
+			        left.style.top = "720px"; 
 			    }
 	};
 });

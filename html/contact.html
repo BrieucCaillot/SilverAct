@@ -8,23 +8,35 @@
 #notes            : Only working on search engine
 ============================================================================-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
-    <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<html lang="fr">
     
-    <!--SCRIPT-->
-        <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script type="text/javascript" src="../javascript/scriptcontact.js"></script>
-</head>
-<body>
+    <head>
+        <!--META-->
+        <meta charset="UTF-8">
+        <title>Contact</title>
+
+        <!--LINK-->
+        <link rel="stylesheet" href="../css/contact.css">
+        <link rel="stylesheet" href="../css/reset.css">
+            <!--MEDIA QUERIES-->
+        <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 380px)' href="../css/phone.css"/>
+        <link rel="stylesheet" media='screen and (min-width: 381px) and (max-width: 768px)' href="../css/laptop.css"/>
+
+        <!--FONT-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+        
+        <!--SCRIPT-->
+            <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <script type="text/javascript" src="../javascript/scriptcontact.js"></script>
+    </head>
+    <body>
            <!-- HEADER -->
             <header>
                 
-                <div id="content">
+                <div id="header">
                     <div id="logo">
                         <a href="../index.html"><img id="logoimg" src="../images/firstblock/logo.svg" alt="SilverAct'"></a>
                     </div>
@@ -45,11 +57,11 @@
                                     <a href="evenements.html">ÉVENEMENTS</a>
                                 </li>
 
-                                <li class="hvr-sweep-to-top">
+                                <li class="hvr-sweep-to-top" >
                                     <a href="fonctionnement.html">FONCTIONNEMENT</a>
                                 </li>
 
-                                <li class="hvr-sweep-to-top">
+                                <li>
                                     <a href="contact.html" class="hvr-sweep-to-right-2">CONTACT</a>
                                 </li>
                             </ul>
@@ -173,39 +185,50 @@
             
         </div>
         
-          <!--FOOTER - FOURTHBLOCK-->
-        
-            <footer>
-                <div id="left-block">
-                    
-                    <div id="information">
-                        
-                        <div id="mention">
-                            <p>Nos préstations <br>sont déductibles<br>des impôts !</p>
-                            <p><a href="mentionslegales.html">Mentions légales</a></p>
-                        </div>
-                        
-
-                        <div id="localisation">
-                            <h4>SILVER ACT'</h4>
-                            <p>77 rue de Prony</p>
-                            <p>75017 PARIS</p>
-                            <ul id="img-footer">
-                                <li><img src="../images/firstblock/telephone.svg" id="phone"></li>
-                                <li><img src="../images/firstblock/mail.svg" id="mail"></li>
-                            </ul>
-                            <p id="contact"><a href="tel:07828241">07 82 82 41 68</a><br><a href="mailto:contact@silveract.fr">Envoyer un mail</a></p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div id="right-block">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.6765973035117!2d2.2987758150501643!3d48.883441406897425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f9617917cc3%3A0xa1c4ed5b1cbdbf99!2s77+Rue+de+Prony%2C+75017+Paris!5e0!3m2!1sfr!2sfr!4v1487262680072" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-            </footer>
-
-         </div>
-           
+        <!--FOOTER - FOURTHBLOCK-->
     
-</body>
+        <footer>
+
+            <div id="left-block">
+                <div id="deduction" class="section">
+                    <div class="textfooter">
+                        <p>Nos préstations<br>sont déductibles <br>des impôts !</p>
+                        <a href="mentionslegales.html">Mentions Légales</a>
+                    </div>
+                </div>
+
+                <div id="contact" class="section">
+                    <div class="textfooter"> 
+                        <h2>SILVER ACT'</h2>
+                        <p>77 rue de Prony <br> 75017 PARIS </p>
+                        <ul>
+                            <li>
+                                <img src="../images/firstblock/telephone.svg" alt="telephone" id="phone">
+                                 <a href="tel:0782824168">07 82 82 41 68</a>
+                            </li>
+
+                            <li>
+                                <img src="../images/firstblock/mail.svg" alt="mail" id="mail">
+                                <a href="mailto:contact@silveract.fr">Envoyer un mail</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div id="social" class="section">
+                    <div class="textfooter">
+                         <p>Retrouvez nous ici</p>
+                        <a href="https://www.facebook.com/SiIverAct/" target="_blank"><img src="../images/firstblock/facebook.svg" alt="facebook"></a>
+                        <a href="https://twitter.com/SiIverAct" target="_blank"><img src="../images/firstblock/twitter.svg" alt="twitter"></a>
+                    </div>
+                </div>
+            </div> 
+
+            <div id="right-block">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.6765973035117!2d2.2987758150501643!3d48.883441406897425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f9617917cc3%3A0xa1c4ed5b1cbdbf99!2s77+Rue+de+Prony%2C+75017+Paris!5e0!3m2!1sfr!2sfr!4v1487262680072" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          
+        </footer>
+
+    </body>
 </html>
