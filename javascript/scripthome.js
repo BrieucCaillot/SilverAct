@@ -15,6 +15,7 @@ $(document).ready(function() {
                 "font-family" : "Gotham-Light" 
             });
             $("#navigation ul li:nth-child(2) a").removeAttr('style');
+    });
 
 
     // MODIF CSS MENU ACTIVITÉ ON CLICK
