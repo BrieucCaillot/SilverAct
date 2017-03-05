@@ -19,6 +19,9 @@ $(document).ready(function() {
             $("header").css("position", "fixed");
             $("header").css("height", "60px");
             $("header").css("margin-top", "-100px");
+            $("header").css("z-index", "200");
+            $("header").css("padding", "0 0 0 0");
+            
             
             $("#content").css("height", "60px");
             
@@ -30,7 +33,6 @@ $(document).ready(function() {
             
             $("#img-head").css("width", "90%");
             $("#img-head").css("margin", "18px auto");
-            $("header").css("z-index", "200");
 
             $("#navigation").css("margin-top", "0px");
             
@@ -39,6 +41,7 @@ $(document).ready(function() {
             $("header").css("position", "relative");
             $("header").css("height", "95px");
             $("header").css("margin-top", "0");
+            $("header").css("padding", "10px 0 10px 0");
             
             $("#content").css("height", "auto");
             

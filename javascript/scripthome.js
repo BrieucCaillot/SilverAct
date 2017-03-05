@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     // CHANGE IMAGE EVERY X SECONDS
     
-    var urlcss = ['http://lorempixel.com/400/200/sports/' ,
+    /*var urlcss = ['http://lorempixel.com/400/200/sports/' ,
                    'http://lorempixel.com/400/200/city/'];
     var urlhtml = ['images/firstblock/groupe.jpg' ,
                    'images/firstblock/theatre.jpg'];
@@ -33,7 +33,7 @@ $(document).ready(function() {
             p.css("background","url("+urlcss[curentImageIndex++] + ") no-repeat");
             $("#image").src = (+ urlhtml[curentImageIndex++]> + );
                 if(curentImageIndex>= urlcss.length){curentImageIndex = 0}
-            }, 7000);
+            }, 7000);*/
 
         /*http://codepen.io/dodekx/pen/BKEbPK?editors=1111*/
     
@@ -45,6 +45,8 @@ $(document).ready(function() {
         if($(document).scrollTop()>50) {
             $("header").css("position", "fixed");
             $("header").css("height", "60px");
+            $("header").css("z-index", "200");
+            $("header").css("padding", "0 0 0 0");
             
             $("#content").css("height", "60px");
             
@@ -64,6 +66,7 @@ $(document).ready(function() {
             
             $("header").css("position", "relative");
             $("header").css("height", "95px");
+            $("header").css("padding", "10px 0 10px 0");
             
             $("#content").css("height", "auto");
             
