@@ -264,6 +264,7 @@ header{
 #secondblock #trait {
     position: absolute;
     left: 40px;
+
     border-right: 2px solid #ef7915;
     width: 19px;
     height: 127%;
@@ -582,8 +583,8 @@ footer a {
     padding: 10px;
 }
 
+
 #right-block{
     width: 50%; 
     height: 100%; 
     float: right;
-}

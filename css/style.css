@@ -132,6 +132,12 @@ header{
     color: white; 
 }
 
+#navigation ul li:first-child a {
+  background-color : #148fad;
+  font-family : Gotham-Medium;
+  color : #fff;
+}
+
 /* SWIPER TON RIGHT li */
 
 /* Sweep To Top */
@@ -347,9 +353,10 @@ header{
     text-align: center;
     font-family: Gotham-light, sans-serif;
     color: #ef7915;
+
     margin-top: 0px;
     margin-left: 35px;
-}
+
         
 .texte-plus2 {
     font-size: 17px;
