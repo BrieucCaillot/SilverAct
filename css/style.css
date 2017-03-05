@@ -381,6 +381,7 @@ header{
     -webkit-animation: width 0.5s forwards ease;
     animation: width 0.5s ease forwards;
 }
+
         
 #circle-play:hover {
     -webkit-animation: width-play 0.5s forwards ease;
