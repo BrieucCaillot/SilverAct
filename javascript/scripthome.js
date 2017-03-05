@@ -33,7 +33,6 @@ $(document).ready(function() {
                 "font-family" : "Gotham-Light" 
             });
             $("#navigation ul li:first-child a").removeAttr('style');
-
     });
 
     // SMOOTH SCROLL TO ACTIVITÉ
@@ -44,24 +43,13 @@ $(document).ready(function() {
         }, 2000);
     });
 
-    // CHANGE IMAGE EVERY X SECONDS
+    // SMOOTH SCROLL TO ACCUEIL
     
-    /*var urlcss = ['http://lorempixel.com/400/200/sports/' ,
-                   'http://lorempixel.com/400/200/city/'];
-    var urlhtml = ['images/firstblock/groupe.jpg' ,
-                   'images/firstblock/theatre.jpg'];
-    var p = $("#presentation");
-    
-
-
-        curentImageIndex = 0;
-        setInterval(function(){ 
-            p.css("background","url("+urlcss[curentImageIndex++] + ") no-repeat");
-            $("#image").src = (+ urlhtml[curentImageIndex++]> + );
-                if(curentImageIndex>= urlcss.length){curentImageIndex = 0}
-            }, 7000);*/
-
-        /*http://codepen.io/dodekx/pen/BKEbPK?editors=1111*/
+    $("#navigation ul li:first-child").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#firstblock").offset().top
+        }, 2000);
+    });
     
     //SCROll MENU @50 
 

@@ -132,12 +132,6 @@ header{
     color: white; 
 }
 
-#navigation ul li:first-child a {
-  background-color : #148fad;
-  font-family : Gotham-Medium;
-  color : #fff;
-}
-
 /* SWIPER TON RIGHT li */
 
 /* Sweep To Top */
@@ -219,6 +213,7 @@ header{
     background-size: 100%;
     height: auto;
     padding: 40px 40px 40px 40px;
+    margin-bottom: 100px;
 }
 
 #presentation #image img {
