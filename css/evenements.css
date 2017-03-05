@@ -51,6 +51,7 @@ header{
     height: 95px;
     position: relative;
     background-color: white;
+    padding: 10px 0 10px 0;
 } 
 
 #content {
@@ -132,6 +133,12 @@ header{
 
 #navigation ul li a:hover {
     color: white; 
+}
+
+#navigation ul li:nth-child(3) a {
+  background-color : #148fad;
+  font-family : Gotham-Medium;
+  color : #fff;
 }
 
 /* SWIPER TON RIGHT li */
@@ -255,7 +262,7 @@ header{
 
 #secondblock #trait {
     position: absolute;
-    left: 54%;
+    left: 40px;
     border-right: 3px solid #ef7915;
     width: 19px;
     height: 127%;
@@ -263,8 +270,16 @@ header{
 
 /* SECONDBLOCK RIGHT */
 
+.description {
+    line-height: 21px;
+    font-family: "Roboto", sans-serif;
+    padding-top: 2%;
+    font-size: 15px;
+    color: #044759;
+}
+
 #secondblock #right {
-    width: 50%;
+    width: 52%;
     position: relative;
     float: right;
     margin-top: 0%;
@@ -282,7 +297,7 @@ header{
     line-height: 31px;
 }
 
-#secondblock #right p {
+#secondblock #right .description p {
     line-height: 21px;
     font-family: "Roboto", sans-serif;
     padding-top: 2%;
@@ -300,11 +315,11 @@ header{
     float: left;;
     height: inherit;
     position: relative;
-    margin-top: 25%;;;
+    margin-top: 174px;;;
 }
 
 #secondblock #right #bulles1 {
-    border: 4px solid #ef790f;
+    border: 2px solid #ef790f;
     height: 120px;
     width: 120px;
     background-color: #fff;
@@ -313,35 +328,35 @@ header{
 }
 
 #secondblock #right #bulles2 {
-    border: 4px solid #ef790f;
+    border: 2px solid #ef790f;
     height: 120px;
     width: 120px;
     background-color: #fff;
     border-radius: 100%;
     z-index: 2;
     position: absolute;
-    top: 268%;
+    top: 280px;
 }
 
 #secondblock #right #bulles3 {
-    border: 4px solid #ef790f;
+    border: 2px solid #ef790f;
     height: 120px;
     width: 120px;
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 480%;;
+    top: 550px;
     z-index: 2;
 }
 
 #secondblock #right #bulles4 {
-    border: 4px solid #ef790f;
+    border: 2px solid #ef790f;
     height: 120px;
     width: 120px;
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 687%;
+    top: 810px;
     z-index: 2;
 }
 
@@ -366,7 +381,7 @@ header{
 }
 
 #secondblock #right #premier {
-    padding: 19% 5% 0% 30%;
+    padding: 19% 3% 0% 30%;
 
 }
 
@@ -392,10 +407,7 @@ header{
    font-family: Gotham-light, sans-serif;
    width: 180px;
    height: 31px;
-   margin: 11px auto;
-   padding-left: 173px;
-   
-   
+   margin: 16px 0px auto;
 }
 
 .boutton-plus{
@@ -404,14 +416,14 @@ header{
    color: #ef7915 ;
    width: 180px;
    height: 25px;
-   
+   text-decoration: none;
 }
        
 .texte-plus1 {
    display: inline;
    font-size: 17px;
    text-align: center;
-   color: #ef7915 ;
+   color: #ef7915;
    margin-left: 35px;
 }
        
@@ -448,141 +460,122 @@ header{
 
 /* FOURTHBLOCK - FOOTER */
 
+
 footer {
-    position: absolute;
-    top: 1258px;
-    height: 377px;
-    width: 100%;
-    background-color: whitesmoke;
+    width: 100%; 
+    height: 250px;
+    background-color: #efe6dc;
 }
 
-#left-block {
-   width: 50%;
-   float: left;
-   height: 100%;
-}
-
-#information {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    position: relative;
-    width: 100%;
+#left-block{
+    width: 50%; 
     height: 100%;
+    float: left; 
+    display: flex; 
 }
 
-#right-block {
-   float: right;
-   width: 50%;
-   height: 100%;
-
+.section{
+    width: 33%; 
+    height: auto; 
 }
-#email button:focus{
-    background-color: #044759;
-}
-#email img{
-    height: 25px;
-    width: auto;
-}
-#news-iframe{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    height: auto;
 
-    -webkit-box-pack: center;
-
-        -ms-flex-pack: center;
-
-}
-#mention {
-    float: left;
-    width: 50%;
-    height: auto;
-    border-right: solid 1px #148fad;
+#deduction {
+    text-align: center;
+    height: 80%; 
+    transform: translateY(-50%);
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
     position: relative;
+    border-right: 1px solid #044779;
 }
 
-#mention p {
-   text-align: center;
-   font-family: Gotham-Light;
-   font-size: 20px;
-   color: #ef7915 ;
-   padding-top: 40px;
-   line-height: 28px;
+.text {
+    top: 50%; 
+    transform: translateY(-50%); 
+    position: relative; 
 }
 
-#mention a {
-   text-align: center;
-   font-family: Gotham-Light;
-   color: #044759;
-   font-size: 12px;
-   text-decoration: underline;
-}
-
-#localisation {
-    float: left;
-    margin-left: 7%;
+#deduction a{
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
     color: #148fad;
-    font-family: roboto;
+}
+
+#deduction p{
+    margin-bottom: 12px; 
+    color: #ef7915;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#contact {
+    text-align: center;
+    border-right: 1px solid #044779;
+    height: 80%;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
     position: relative;
-    width: 27%;
+    transform: translateY(-50%);
 }
 
-#localisation ul {
-   list-style-type: none;
-    width: 16%;
-    margin-top: 25px;
+#contact h2 {
+    font-family: Gotham-Light;
+    margin-bottom: 18px;
+    color: #ef7915;
 }
 
-#img-footer{
-   float: left;
+#contact p {
+    margin-bottom: 13px; 
+    font-family: 'Quicksand', sans-serif;
+    color: #148fad;
 }
 
-#mail{
-    width: 100%;
+#contact ul li {
+    list-style: none; 
+}
+
+#contact ul li:last-child {
+    margin-top: 10px;
+}
+
+#contact ul li img {
+    transform: translateY(20%);
 }
 
 #phone {
-    margin-bottom: 32px; 
-    width: 65%;
+    width: 15px; 
 }
 
-#img-social {
-    display: inline-block; 
+#mail {
+    width: 20px; 
 }
 
-#img-social img {
-    display: inline-block;
-    width: 10%;
-}
-
-#localisation h4{
-   font-family: Gotham-Light;
-
-   margin-bottom: 25px;
-   font-size: 18px;
-}
-
-#contact{
-   font-family: Roboto;
-
-   font-weight: bold;
-   line-height: 60px;
-   margin-top: 10px;
-   margin-left: 40px;
-   font-size: 15px;  
-}
-
-#contact a {
-    text-decoration: none;
+#contact ul li a {
+    text-decoration: none; 
+    margin-left: 8px;
+    font-family: 'Quicksand', sans-serif;
     color: #148fad;
-
 }
+
+#social {
+    height: 80%;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#social p {
+    margin-bottom: 15px;
+    font-family: 'Quicksand', sans-serif;
+    color: #148fad;
+}
+
+#social img {
+    height: 33px;
+    padding: 10px;
+}
+
+#right-block{
+    width: 50%; 
+    height: 100%; 
+    float: right;
+}
+
