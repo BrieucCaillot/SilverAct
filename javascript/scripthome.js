@@ -2,12 +2,35 @@ $(document).ready(function() {
 
     // MODIF CSS MENU ACCUEIL ON CLICK
     $("#navigation ul li:first-child a").click(function() {
-        
+        $(this).css({
+            "background-color": "148fad",
+            "color": "fff",
+            "font-family" : "Gotham-Medium"
+        });
+        $("#navigation ul li:first-child").removeClass('hvr-sweep-to-top');
+            $("#navigation ul li:nth-child(2)").addClass('hvr-sweep-to-top');
+            $("#navigation ul li:nth-child(2) a").css({
+                "color" : "#148fad",
+                "font-family" : "Gotham-Light" 
+            });
+            $("#navigation ul li:nth-child(2) a").removeAttr('style');
+
     });
 
     // MODIF CSS MENU ACTIVITÉ ON CLICK
     $("#navigation ul li:nth-child(2) a").click(function() {
-        
+        $(this).css({
+            "background-color": "148fad",
+            "color": "fff",
+            "font-family" : "Gotham-Medium"
+        });
+        $("#navigation ul li:nth-child(2)").removeClass('hvr-sweep-to-top');
+            $("#navigation ul li:first-child").addClass('hvr-sweep-to-top');
+            $("#navigation ul li:first-child a").css({
+                "color" : "#148fad",
+                "font-family" : "Gotham-Light" 
+            });
+            $("#navigation ul li:first-child a").removeAttr('style');
     });
 
     // SMOOTH SCROLL TO ACTIVITÉ
