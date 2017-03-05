@@ -49,14 +49,25 @@ header{
     height: 95px;
     position: relative;
     background-color: white;
+    padding: 10px 0 10px 0;
 } 
 
-#content {
+#contentheader {
     width: 85%;
     height: auto;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    position: absolute;
+}
+
+
+#contentheader {
+    width: 75%;
+    height: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     position: absolute;
 }
 
@@ -130,6 +141,12 @@ header{
 
 #navigation ul li a:hover {
     color: white; 
+}
+
+#navigation ul li:nth-child(4) a {
+  background-color : #148fad;
+  font-family : Gotham-Medium;
+  color : #fff;
 }
 
 /* SWIPER TON RIGHT li */
@@ -214,12 +231,27 @@ header{
     margin-top: 7em;  
 }
 
-
 #secondblock #left {
     width: 45%;
     height: inherit;
     position: relative;
     float: left;  
+}
+
+#content {
+  width: 85%;
+    height: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    position: absolute;
+}
+
+#secondblock #left {
+    width: 45%;
+    height: inherit;
+    position: relative;
+
 }
 
 #secondblock #left h1{
@@ -241,7 +273,7 @@ header{
     font-size: 15px;
     font-family: Roboto;
     line-height: 24px;
-    width: 75%;
+    width: 80%;
     color: #044759;
     margin-top: 2%;  
 }
@@ -253,6 +285,9 @@ header{
 }
 
 #secondblock #right{
+    background: url("../images/secondblock/fonctionnement.png") no-repeat;
+    background-size: cover;
+    background-position: 20%;
     width: 55%;
     height: 100%;
     position: relative;
@@ -418,5 +453,19 @@ footer {
 #contact a {
     text-decoration: none;
     color: #148fad;
+
+}
+
+
+
+#secondblock #content {
+  
+}
+
+
+#secondblock #left {
+    width: 45%;
+    height: inherit;
+    position: relative;
 
 }

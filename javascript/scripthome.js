@@ -2,14 +2,41 @@ $(document).ready(function() {
 
     // MODIF CSS MENU ACCUEIL ON CLICK
     $("#navigation ul li:first-child a").click(function() {
-        $(this).css({
-            'background-color' : '#148fad',
-            'font-family' : 'Gotham-Bold',
-            'color' : '#fff'
-        });
+        
     });
+
+    // MODIF CSS MENU ACTIVITÉ ON CLICK
+    $("#navigation ul li:nth-child(2) a").click(function() {
+        
+    });
+
+    // SMOOTH SCROLL TO ACTIVITÉ
+    
+    $("#navigation ul li:nth-child(2)").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#thirdblock").offset().top
+        }, 2000);
+    });
+
+    // CHANGE IMAGE EVERY X SECONDS
+    
+    var urlcss = ['http://lorempixel.com/400/200/sports/' ,
+                   'http://lorempixel.com/400/200/city/'];
+    var urlhtml = ['images/firstblock/groupe.jpg' ,
+                   'images/firstblock/theatre.jpg'];
+    var p = $("#presentation");
     
 
+
+        curentImageIndex = 0;
+        setInterval(function(){ 
+            p.css("background","url("+urlcss[curentImageIndex++] + ") no-repeat");
+            $("#image").src = (+ urlhtml[curentImageIndex++]> + );
+                if(curentImageIndex>= urlcss.length){curentImageIndex = 0}
+            }, 7000);
+
+        /*http://codepen.io/dodekx/pen/BKEbPK?editors=1111*/
+    
     //SCROll MENU @50 
 
     

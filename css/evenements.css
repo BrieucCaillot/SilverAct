@@ -51,6 +51,7 @@ header{
     height: 95px;
     position: relative;
     background-color: white;
+    padding: 10px 0 10px 0;
 } 
 
 #content {
@@ -132,6 +133,12 @@ header{
 
 #navigation ul li a:hover {
     color: white; 
+}
+
+#navigation ul li:nth-child(3) a {
+  background-color : #148fad;
+  font-family : Gotham-Medium;
+  color : #fff;
 }
 
 /* SWIPER TON RIGHT li */
@@ -255,7 +262,7 @@ header{
 
 #secondblock #trait {
     position: absolute;
-    left: 54%;
+    left: 40px;
     border-right: 3px solid #ef7915;
     width: 19px;
     height: 127%;
@@ -263,8 +270,16 @@ header{
 
 /* SECONDBLOCK RIGHT */
 
+.description {
+    line-height: 21px;
+    font-family: "Roboto", sans-serif;
+    padding-top: 2%;
+    font-size: 15px;
+    color: #044759;
+}
+
 #secondblock #right {
-    width: 50%;
+    width: 52%;
     position: relative;
     float: right;
     margin-top: 0%;
@@ -282,7 +297,7 @@ header{
     line-height: 31px;
 }
 
-#secondblock #right p {
+#secondblock #right .description p {
     line-height: 21px;
     font-family: "Roboto", sans-serif;
     padding-top: 2%;
@@ -300,11 +315,11 @@ header{
     float: left;;
     height: inherit;
     position: relative;
-    margin-top: 25%;;;
+    margin-top: 174px;;;
 }
 
 #secondblock #right #bulles1 {
-    border: 4px solid #ef790f;
+    border: 2px solid #ef790f;
     height: 120px;
     width: 120px;
     background-color: #fff;
@@ -313,35 +328,35 @@ header{
 }
 
 #secondblock #right #bulles2 {
-    border: 4px solid #ef790f;
+    border: 2px solid #ef790f;
     height: 120px;
     width: 120px;
     background-color: #fff;
     border-radius: 100%;
     z-index: 2;
     position: absolute;
-    top: 268%;
+    top: 280px;
 }
 
 #secondblock #right #bulles3 {
-    border: 4px solid #ef790f;
+    border: 2px solid #ef790f;
     height: 120px;
     width: 120px;
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 480%;;
+    top: 550px;
     z-index: 2;
 }
 
 #secondblock #right #bulles4 {
-    border: 4px solid #ef790f;
+    border: 2px solid #ef790f;
     height: 120px;
     width: 120px;
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 687%;
+    top: 810px;
     z-index: 2;
 }
 
@@ -366,7 +381,7 @@ header{
 }
 
 #secondblock #right #premier {
-    padding: 19% 5% 0% 30%;
+    padding: 19% 3% 0% 30%;
 
 }
 
@@ -392,10 +407,7 @@ header{
    font-family: Gotham-light, sans-serif;
    width: 180px;
    height: 31px;
-   margin: 11px auto;
-   padding-left: 173px;
-   
-   
+   margin: 16px 0px auto;
 }
 
 .boutton-plus{
@@ -404,14 +416,14 @@ header{
    color: #ef7915 ;
    width: 180px;
    height: 25px;
-   
+   text-decoration: none;
 }
        
 .texte-plus1 {
    display: inline;
    font-size: 17px;
    text-align: center;
-   color: #ef7915 ;
+   color: #ef7915;
    margin-left: 35px;
 }
        

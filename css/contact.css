@@ -46,6 +46,7 @@ header{
     height: 95px;
     position: relative;
     background-color: white;
+    padding: 10px 0 10px 0;
 } 
 
 #content {
@@ -127,6 +128,12 @@ header{
 
 #navigation ul li a:hover {
     color: white; 
+}
+
+#navigation ul li:last-child a {
+  background-color : #148fad;
+  font-family : Gotham-Medium;
+  color : #fff;
 }
 
 /* SWIPER TON RIGHT li */
@@ -714,7 +721,6 @@ footer {
 
 #localisation h4{
    font-family: Gotham-Light;
-
    margin-bottom: 25px;
    font-size: 18px;
 }
@@ -732,5 +738,4 @@ footer {
 #contact a {
     text-decoration: none;
     color: #148fad;
-
 }
