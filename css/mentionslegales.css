@@ -38,11 +38,6 @@ body{
     url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
 }
 
-#firstblock{
-    position: relative;
-    height: 8em;  
-}
-
 /* FIRSTBLOCK - HEADER */
 
 #firstblock {
@@ -54,6 +49,7 @@ header{
     height: 95px;
     position: relative;
     background-color: white;
+    padding: 10px 0 10px 0;
 } 
 
 #content {
@@ -135,6 +131,12 @@ header{
 
 #navigation ul li a:hover {
     color: white; 
+}
+
+#navigation ul li:nth-child(3) a {
+  background-color : #148fad;
+  font-family : Gotham-Medium;
+  color : #fff;
 }
 
 /* SWIPER TON RIGHT li */
@@ -219,35 +221,40 @@ header{
     margin-top: 7em;  
 }
 
-
 #secondblock #left {
     width: 55%;
     height: inherit;
     position: relative;
-    float: left;  
+    float: left; 
+    font-family: "Gotham-Light", sans-serif;
 }
 
 #secondblock #left h1{
-    font-family: "Gotham-Medium", sans-serif;
     color: #148fad;
-    font-size: 49px;  
+    font-size: 49px;
+    padding-bottom: 25px;  
+}
+
+#secondblock #left h2{
+    color: #148fad;
+    font-size: 27px;
+    margin: 4% 0 4% 0;
+    line-height: 37px;  
+}
+
+#secondblock #left h3{
+    margin: 5% 0 2% 0;  
 }
 
 
-#secondblock #left h2{
-    font-family: "Gotham-Medium", sans-serif;
-    color: #148fad;
-    font-size: 27px;
-    margin-top: 9%;
-    line-height: 37px;  
+#secondblock #left h3 {
+    margin: 5% 0 2% 0;
 }
 
 #secondblock #left p{
     font-size: 15px;
-    font-family: "Roboto-Regular", sans-serif;
     line-height: 24px;
-    color: #044759;
-    margin-top: 4%;  
+    color: #044759; 
 }
 
 #secondblock #left a span {
@@ -260,8 +267,8 @@ header{
 
 footer {
     position: absolute;
-    top: 925%;
-    height: 377px;
+    top: 4470px;
+    height: 337px;
     width: 100%;
     background-color: whitesmoke;
 }
@@ -376,7 +383,6 @@ footer {
 
 #localisation h4{
    font-family: Gotham-Light;
-
    margin-bottom: 25px;
    font-size: 18px;
 }
@@ -394,5 +400,4 @@ footer {
 #contact a {
     text-decoration: none;
     color: #148fad;
-
 }
