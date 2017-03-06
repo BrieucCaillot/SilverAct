@@ -17,6 +17,16 @@ $(document).ready(function() {
             $("#navigation ul li:nth-child(2) a").removeAttr('style');
     });
 
+    // BUTTON PLAY 
+    
+    $("#button-play").hover(
+        function(){
+            $("#circle-play").animate({width : "145px"});
+        },
+        function(){
+            $("#circle-play").animate({width : "40px"});
+    });
+
 
     // MODIF CSS MENU ACTIVITÉ ON CLICK
     $("#navigation ul li:nth-child(2) a").click(function() {

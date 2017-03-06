@@ -16,6 +16,8 @@
         <!--LINK-->
         <link rel="shortcut icon" href="images/firstblock/silveractfixed.png">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/swiper.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 380px)' href="css/phone.css"/>
             <!--MEDIA QUERIES-->
@@ -97,12 +99,32 @@
 
         <div id="presentation">
 
-            <h1>Silver Act’ est spécialisé dans le <br> divertissement des seniors à travers une <br> gamme d‘activité dédiée à la culture.</h1>
-            <!--<img class="element-animation" src="images/secondblock/scroll.svg">-->   
-            <div id="image">
-                <img src="images/firstblock/photohome.jpg" alt="homme qui paint-silveract'">
-            </div>
 
+        <!-- Swiper -->
+    <div class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/firstblock/photohome-1.jpg" alt="homme qui paint-silveract'"></div>
+            <div class="swiper-slide"><img src="images/firstblock/photohome-2.jpg" alt="activité de groupe silveract"></div>
+            <div class="swiper-slide"><img src="images/firstblock/photohome-3.jpg" alt="activité theatre silver act"></div>
+            <div class="swiper-slide"><img src="images/firstblock/photohome-4.jpg" alt="activité cours informatique silveract"></div>
+        </div>
+    </div>
+
+        <script type="text/javascript" src="javascript/swiper.min.js"></script>
+        
+        <script>
+           var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            speed: 400,
+            keyboardControl: true,
+            freeMode: true,
+            loop: true,
+            autoplay: 3000
+            });
+        </script>
+
+            <h1>Silver Act’ est spécialisé dans le <br> divertissement des seniors à travers une <br> gamme d‘activité dédiée à la culture.</h1>
 
             <div id="scroll">
                 <p>scroller<br>vers le bas</p>
@@ -116,7 +138,7 @@
                     <div id="circle-play">
                         <img src="images/firstblock/fleche-playsvg.svg">
                     </div>
-                    <p class="texte-plus1">Play</p> 
+                    <p class="text-play">Play</p> 
                 </a>
             </div>
         </div>
@@ -481,7 +503,7 @@
                     </div>  
             </div>
             <div id="button-news"> 
-                        <div id="div-button-news"class="boutton">    
+                        <div id="div-button-news" class="boutton">    
                             <a class="boutton-plus" id="lien-blog" href="http://www.silveract.fr/blog" target="_blank"> 
                             <div id="fleche-left">
                                 <img src="images/thirdblock/fleche-right.svg">
