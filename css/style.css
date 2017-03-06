@@ -132,11 +132,6 @@ header{
     color: white; 
 }
 
-#navigation ul li:first-child a {
-  background-color : #148fad;
-  font-family : Gotham-Medium;
-  color : #fff;
-}
 
 /* SWIPER TON RIGHT li */
 
@@ -307,10 +302,14 @@ header{
     margin-bottom: -35px;
 
 }
-        
-#circle-play:hover {
-    -webkit-animation: width-play 0.5s forwards ease;
-    animation: width-play 0.5s ease forwards;
+.text-play{    
+    display: inline-block;
+    font-size: 28px;
+    text-align: center;
+    font-family: Gotham-light, sans-serif;
+    color: #ef7915 ;
+    margin-left: 55px;
+    height: 35px;
 }
 
 #button-play {
@@ -462,7 +461,7 @@ header{
         
 .text-more1 {
     display: inline;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
     font-family: Gotham-light, sans-serif;
     color: #ef7915;
@@ -791,7 +790,7 @@ fieldset {
    
  }
 .exits{
-    margin-left: 20px;
+    margin-left: 45px;
 } 
 
 
