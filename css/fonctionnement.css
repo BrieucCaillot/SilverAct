@@ -239,7 +239,7 @@ header{
 }
 
 #content {
-  width: 85%;
+  width: 75%;
     height: auto;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -257,14 +257,14 @@ header{
 #secondblock #left h1{
     font-family: Gotham-Light, sans-serif;
     color: #148fad;
-    font-size: 49px;  
+    font-size: 35px;  
 }
 
 
 #secondblock #left h2{
     font-family: "Gotham-Light", sans-serif;
     color: #148fad;
-    font-size: 27px;
+    font-size: 20px;
     margin-top: 9%;
     line-height: 37px;  
 }
@@ -317,17 +317,30 @@ header{
 
 /* FOURTHBLOCK - FOOTER */
 
-
 footer {
+    position: absolute;
+    top: 1010px;
     width: 100%; 
     height: 250px;
     background-color: #efe6dc;
+}
+
+footer p {
+    color: #148fad;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer a {
+    font-family: 'Quicksand', sans-serif;
+    color: #148fad;
 }
 
 #left-block{
     width: 50%; 
     height: 100%;
     float: left; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex; 
 }
 
@@ -339,7 +352,8 @@ footer {
 #deduction {
     text-align: center;
     height: 80%; 
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); 
+            transform: translateY(-50%);
     top: 50%;
     position: relative;
     border-right: 1px solid #044779;
@@ -347,20 +361,18 @@ footer {
 
 .text {
     top: 50%; 
-    transform: translateY(-50%); 
+    -webkit-transform: translateY(-50%); 
+            transform: translateY(-50%); 
     position: relative; 
 }
 
 #deduction a{
-    font-size: 14px;
-    font-family: 'Quicksand', sans-serif;
-    color: #148fad;
+    font-size: 14px; 
 }
 
 #deduction p{
     margin-bottom: 12px; 
     color: #ef7915;
-    font-family: 'Quicksand', sans-serif;
 }
 
 #contact {
@@ -369,7 +381,8 @@ footer {
     height: 80%;
     top: 50%;
     position: relative;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 #contact h2 {
@@ -380,8 +393,6 @@ footer {
 
 #contact p {
     margin-bottom: 13px; 
-    font-family: 'Quicksand', sans-serif;
-    color: #148fad;
 }
 
 #contact ul li {
@@ -393,7 +404,8 @@ footer {
 }
 
 #contact ul li img {
-    transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
 }
 
 #phone {
@@ -406,23 +418,20 @@ footer {
 
 #contact ul li a {
     text-decoration: none; 
-    margin-left: 8px;
-    font-family: 'Quicksand', sans-serif;
-    color: #148fad;
+    margin-left: 8px; 
 }
 
 #social {
     height: 80%;
     top: 50%;
     position: relative;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     text-align: center;
 }
 
 #social p {
     margin-bottom: 15px;
-    font-family: 'Quicksand', sans-serif;
-    color: #148fad;
 }
 
 #social img {
@@ -430,9 +439,29 @@ footer {
     padding: 10px;
 }
 
+
 #right-block{
     width: 50%; 
     height: 100%; 
     float: right;
 }
 
+
+
+
+/************** RESPONSIVE ***************/
+
+/* RESPONSIVE LAPTOP */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+  {
+  
+  }
+
+
+/* RESPONSIVE PHONE */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 768px)
+  {
+
+  }

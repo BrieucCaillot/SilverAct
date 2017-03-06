@@ -9,13 +9,15 @@
 ============================================================================-->
 
 <html lang="fr">
-    <head>
+ <head>
         <!--META-->
         <meta charset="UTF-8">
         
         <!--LINK-->
         <link rel="shortcut icon" href="images/firstblock/silveractfixed.png">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/swiper.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 380px)' href="css/phone.css"/>
             <!--MEDIA QUERIES-->
@@ -23,6 +25,7 @@
 
         <!--FONT-->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
         
         <!--SCRIPT-->
         <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -37,7 +40,6 @@
             
                 <!-- HEADER -->
             <header>
-                
                 <div id="content">
                     <div id="logo">
                         <a href="index.html"><img id="logoimg" src="images/firstblock/logo.svg" alt="SilverAct'"></a>
@@ -91,453 +93,592 @@
                             </a>
 
                         </div>
+                    </div>
                 </div>
             </header>
 
-                <div id="presentation">
+        <div id="presentation">
 
-                    <h1>Silver Act’ est spécialisé dans le <br> divertissement des seniors à travers une <br> gamme d‘activité dédiée à la culture.</h1>
-                    <!--<img class="element-animation" src="images/secondblock/scroll.svg">-->   
-                    <div id="image">
-                        <img src="images/firstblock/photohome.jpg" alt="homme qui paint-silveract'">
-                    </div>
 
-                    <div id="scroll">
-                        <p>scroller<br>vers le bas</p>
-                        <div id="scroll-down">
-                            <div id="circle"></div>
-                            <div id="line"></div>
-                        </div>
-                    </div>
-                    <div id="button-play" class="boutton">    
-                        <a id="play" class="boutton-plus"> 
-                            <div id="circle-play">
-                                <img src="images/firstblock/fleche-playsvg.svg">
-                            </div>
-                            <p class="texte-plus1">Play</p> 
-                        </a>
-                    </div>
+        <!-- Swiper -->
+    <div class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/firstblock/photohome-1.jpg" alt="homme qui paint-silveract'"></div>
+            <div class="swiper-slide"><img src="images/firstblock/photohome-2.jpg" alt="activité de groupe silveract"></div>
+            <div class="swiper-slide"><img src="images/firstblock/photohome-3.jpg" alt="activité theatre silver act"></div>
+            <div class="swiper-slide"><img src="images/firstblock/photohome-4.jpg" alt="activité cours informatique silveract"></div>
+        </div>
+    </div>
+
+        <script type="text/javascript" src="javascript/swiper.min.js"></script>
+        
+        <script>
+           var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            speed: 400,
+            keyboardControl: true,
+            freeMode: true,
+            loop: true,
+            autoplay: 3000
+            });
+        </script>
+
+            <h1>Silver Act’ est spécialisé dans le <br> divertissement des seniors à travers une <br> gamme d‘activité dédiée à la culture.</h1>
+
+            <div id="scroll">
+                <p>scroller<br>vers le bas</p>
+                <div id="scroll-down">
+                    <div id="circle"></div>
+                    <div id="line"></div>
                 </div>
+            </div>
+            <div id="button-play" class="button-orange">    
+                <a id="play" class="button-more"> 
+                    <div id="circle-play">
+                        <img src="images/firstblock/fleche-playsvg.svg">
+                    </div>
+                    <p class="text-play">Play</p> 
+                </a>
             </div>
         </div>
-
-        <!-- THIRDBLOCK - CARTES-->
-        <div id="thirdblock">
-            <h2>NOTRE CARRÉ D'AS</h2>
-            <div id="first-card" class="carre-carte">
-                <div id="carte-pic" class="carte">
-                   <div id="small-pic">
-                        <div class="a-top">
-                            <ul class="liste">
-                                <li>A</li>
-                                <li><img class="small" src="images/thirdblock/pic-informatique%20.png"></li>
-                            </ul>
-                        </div>
-                        <h3 class="titre">PIC<br>DE L'INTERNET</h3>
-
-                        <img  class="picto" src="images/thirdblock/pic-informatique%20.png" alt="Cours d'informatique">
-                        <p class="texte">Apprenez les rudiments du digital afin de rester au contact de vos proches via internet et découvrez <br>l’univers du numérique. </p>
-
-                        <div class="boutton">    
-                            <a id="boutton-pic" class="boutton-plus"> 
-                                <div id="fleche-pic" class="fleche-left">
-                                    <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
-                                </div>
-                                <p id="texte-pic" class="texte-plus1">En savoir plus</p> 
-                            </a>
-                        </div>
-
-                        <div class="a-down">
-                            <ul class="liste">
-                                <li>A</li>
-                                <li><img class="small" src="images/thirdblock/pic-informatique%20.png"></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!--BIG CARTE PIC-->
-                    <div id="big-card-pic">
-                        <img class="big-img"src="images/thirdblock/carte-informatique.png">
-                        <div class="big-card-text">
-                            <h3>PIC DE L'INTERNET</h3>
-                            <h4>L'atelier :</h4>
-                             <p>Nous vous proposons sur la forme de cours personnalisé d'apprendre et de perfectionner la maitrise des outils du numérique sous forme de divertissement. SilverAct' vous permet d’acquérir et de découvrir les notions essentielles: <span>l'informatique,  navigation sur internet, réseaux sociaux, envoie de mail, etc.</span><br><span class="plus">+</span></p>
-                        </div>
-                        <div class="big-card-place">
-                            <img class='place'src='images/thirdblock/places.png'><p class='place-text'>2 places pour aller voir<br>des expositions ou musées !</p>
-                        </div>
-                        <div class="price">
-                            <p class='price-text'>A partir de<br></p><span>80 €</span> <p class="price-text">Déductible des impôts</p>
-                            <div class='boutton-retour'id="boutton-retour-pic"><a class='boutton-back'><div class='fleche-right'><img src='images/thirdblock/fleche-left.svg'></div><p class='texte-back1'>Retour</p></a></div>
-
-                        </div>
-                        <div class="joker">
-                            <img class='small-joker' src='images/thirdblock/Joker-small.png'><img class='big-joker' src='images/thirdblock/Joker.png'>
-
-                            <p class="select">Notre sélection :</p>
-
-                            <form>
-                               <fieldset class="button-radio">
-
-                                   <div>
-                                        <input type="checkbox" value="musée des arts et metiers" name="museum" id="arts" required checked="checked">
-                                        <label for="arts" class="label-radio">Musée des arts et métiers</label><br>
-
-                                        <input type="checkbox" value="cité des sciences" name="scienctist" id="science" required>
-                                        <label for="science" class="label-radio">Cité des sciences</label><br>
-
-                                        <input type="checkbox" value="exposition du moment" name="exposition" id="exposition" required>
-                                        <label for="exposition" class="label-radio">Exposition</label>
-                                    </div>
-                                </fieldset>
-                            </form>
-
-                            <div class="boutton">    
-
-                                    <a href="html/contact.html" id="boutton-contact-pic" class="boutton-plus" > 
-
-                                        <div id="fleche-carreau" class="fleche-left">
-                                            <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
-                                        </div>
-                                        <p  class="texte-plus1">Contactez-nous</p> 
-                                    </a>
-                                </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                 <div id="carte-coeur" class="carte">
-                    <div id="small-coeur">
-                        <div class="a-top">
-                            <ul class="liste">
-                                <li>A</li>
-                                <li><img class="small" src="images/thirdblock/muse-coeur.png"></li>
-                            </ul>
-                        </div>
-                        <h3 class="titre">AU COEUR<br>DE L'HISTOIRE</h3>
-
-                        <img  class="picto" src="images/thirdblock/muse-coeur.png" alt="Visite de musées">
-                        <p class="texte">Voyagez à travers l’histoire grâce à une visite privée dans les célèbres sites, musées qui font la richesse <br>de notre héritage culturel. </p>
-
-                         <div class="boutton">    
-                            <a id="boutton-coeur" class="boutton-plus"> 
-                                <div id="fleche-coeur" class="fleche-left">
-                                    <img id="coeur-fleche" src="images/thirdblock/fleche-right.svg">
-                                </div>
-                                <p id="texte-coeur" class="texte-plus1">En savoir plus</p> 
-                            </a>
-                        </div>
-
-                        <div class="a-down">
-                            <ul class="liste">
-                                <li>A</li>
-                                <li><img class="small" src="images/thirdblock/muse-coeur.png"></li>
-                            </ul>
-                        </div>
-                     </div>
-                    
-                    <!-- BIG CARD-COEUR-->
-                    
-                    <div id="big-card-coeur">
-                        <img class="big-img"src="images/thirdblock/carte-muse.png">
-                        <div class="big-card-text">
-                            <h3>AU COEUR DE L'HISTOIRE</h3>
-                            <h4>L'atelier :</h4>
-                             <p>SilverAct' vous dévoile tous les secrets de l'histoire de Paris et sa région. Vous serez accompagnez d'un guipe privé et qualifié pour approfondir votre culture et votre savoir. Partez avec un ouvrage retraçant l'histoire du lieu que vous avez choisi.<br><span class="plus">+</span></p>
-                        </div>
-                        <div class="big-card-place">
-                            <img class='place'src='images/thirdblock/places.png'><p class='place-text'>Seul ou accompagnés des<br>places pour aller voir des<br>expositions ou musés !</p>
-                        </div>
-                        <div class="price">
-                            <p class='price-text'>A partir de<br></p><span>120 €</span> <p class="price-text">Déductible des impôts</p>
-                            <div class='boutton-retour'id="boutton-retour-coeur"><a class='boutton-back'><div class='fleche-right'><img src='images/thirdblock/fleche-left.svg'></div><p class='texte-back1'>Retour</p></a></div>
-
-                        </div>
-                        <div class="joker">
-                            <img class='small-joker' src='images/thirdblock/Joker-small.png'><img class='big-joker' src='images/thirdblock/Joker.png'>
-
-                            <p class="select">Notre sélection :</p>
-
-                            <form>
-                               <fieldset class="button-radio">
-
-                                   <div>
-                                        <input type="checkbox" value="musée des arts et metiers" name="museum" id="arts" required checked="checked">
-                                        <label for="arts" class="label-radio">Musée d'Orsay</label><br>
-
-                                        <input type="checkbox" value="cité des sciences" name="scienctist" id="science" required>
-                                        <label for="science" class="label-radio">Le Louvre</label><br>
-                                        
-                                        <input type="checkbox" value="exposition du moment" name="exposition" id="exposition" required>
-                                        <label for="exposition" class="label-radio">Musée de la Photographie</label>
-                                    </div>
-                                </fieldset>
-                            </form>
-
-                            <div class="boutton">    
-
-                                    <a href="html/contact.html" class="boutton-plus" id="boutton-contact-coeur" > 
-
-                                        <div id="fleche-carreau" class="fleche-left">
-                                            <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
-                                        </div>
-                                        <p class="texte-plus1">Contactez-nous</p> 
-                                    </a>
-                                </div>
-
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-            <div id="second-card" class="carre-carte">
-                 <div id="carte-treffle" class="carte">
-                   <div id="small-trefle">
-                        <div class="a-top">
-                            <ul class="liste">
-                                <li>A</li>
-                                <li><img class="small" src="images/thirdblock/treffle-joueur.png"></li>
-                            </ul>
-                        </div>
-                        <h3 class="titre">TREFLE<br>JOUEUR</h3>
-
-                        <img  class="picto" src="images/thirdblock/treffle-joueur.png" alt="Sortie théâtre">
-                        <p class="texte">Jouez le temps d’un acte les personnages de vos pièces préférées et assitez à la représentation<br> de votre choix.  </p>
-
-                         <div class="boutton">    
-                            <a id="boutton-treffle" class="boutton-plus"> 
-                                <div id="fleche-treffle" class="fleche-left">
-                                    <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
-                                </div>
-                                <p id="texte-treffle" class="texte-plus1">En savoir plus</p> 
-                            </a>
-                        </div>
-
-                        <div class="a-down">
-                            <ul class="liste">
-                                <li>A</li>
-                                <li><img class="small" src="images/thirdblock/treffle-joueur.png"></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!--BIG CARTE TREFLE-->
-                    <div id="big-card-trefle">
-                        <img class="big-img"src="images/thirdblock/THEATRE.png">
-                        <div class="big-card-text">
-                            <h3>TREFLE JOUEUR</h3>
-                            <h4>L'atelier :</h4>
-                             <p>Nous vous faisons profitez d'un échange privilégiez autour d'une initiation scénique  avec un comédien ou un chanteur d'opéra qualifié. Passionné d’Apollinaire, Rimbaud ou autre poète ? Nous vous donnons aussi l'occasion de réciter leurs textes de manière dynamique. <br><span class="plus">+</span></p>
-                        </div>
-                        <div class="big-card-place">
-                            <img class='place'src='images/thirdblock/places.png'><p class='place-text'>2 places pour aller voir<br>au théâtre ou a l'opéra !</p>
-                        </div>
-                        <div class="price">
-                            <p class='price-text'>A partir de<br></p><span>80 €</span><p class="price-text"> Déductible des impôts</p>
-                            <div class='boutton-retour'id="boutton-retour-trefle"><a class='boutton-back'><div class='fleche-right'><img src='images/thirdblock/fleche-left.svg'></div><p class='texte-back1'>Retour</p></a></div>
-
-                        </div>
-                        <div class="joker">
-                            <img class='small-joker' src='images/thirdblock/Joker-small.png'><img class='big-joker' src='images/thirdblock/Joker.png'>
-
-                            <p class="select">Notre sélection :</p>
-
-                            <form>
-                               <fieldset class="button-radio">
-
-                                   <div>
-                                        <input type="checkbox" value="le lac des cygnes" name="lac des cygnes" id="arts" required checked="checked">
-                                        <label for="arts" class="label-radio">Le Lac des cygnes</label><br>
-
-                                        <input type="checkbox" value="nos disques" name="disques" id="science" required>
-                                        <label for="science" class="label-radio">Nos disques sont rayés</label><br>
-
-                                        <input type="checkbox" value="moi et francois B" name="exposition" id="exposition" required>
-                                        <label for="exposition" class="label-radio">Moi et François B</label>
-                                    </div>
-                                </fieldset>
-                            </form>
-
-                            <div class="boutton">    
-
-                                    <a href="html/contact.html" id="boutton-contact-trefle" class="boutton-plus" > 
-
-                                        <div id="fleche-carreau" class="fleche-left">
-                                            <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
-                                        </div>
-                                        <p class="texte-plus1">Contactez-nous</p> 
-                                    </a>
-                                </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div id="carte-carreau" class="carte">
-                    <div id="small-carreau">
-                        <div class="a-top">
-                            <ul class="liste">
-                                <li>A</li>
-                                <li><img class="small" src="images/thirdblock/carreau-artiste.png"></li>
-                            </ul>
-                        </div>
-                        <h3 class="titre">CARREAU<br>DES ARTISTES</h3>
-
-                        <img  class="picto" src="images/thirdblock/carreau-artiste.png" alt="Atelier créatif">
-                        <p class="texte">Libérez votre esprit créatif à travers le dessin et la peinture et découvrez vos artistes préférés à <br>l’occasion d’une exposition. </p>
-
-                         <div class="boutton" id="boutton-carreau">    
-                            <a class="boutton-plus"> 
-                                <div class="fleche-left">
-                                    <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
-                                </div>
-                                <p id="texte-carreau" class="texte-plus1">En savoir plus</p> 
-                            </a>
-                        </div>
-
-                        <div class="a-down">
-                            <ul class="liste">
-                                <li>A</li>
-                                <li><img class="small" src="images/thirdblock/carreau-artiste.png"></li>
-                            </ul>
-                        </div>
-                    </div>                 
-                    
-                    <!--BIG CARTE CARREAU-->
-                    <div id="big-card-carreau">
-                        <img class="big-img"src="images/thirdblock/carte-artiste.png">
-                        <div class="big-card-text">
-                            <h3>CARREAU DES ARTISTES</h3>
-                            <h4>L'atelier :</h4>
-                             <p>Apprenez à regarder le monde différemment en reproduisant ce qui vous entoure ou en créant votre œuvre personnelle  Nous vous proposons de stimuler votre créativité  avec des ateliers artistiques ou le dessin et la peinture n'auront plus de secret pour vous. <br><span class="plus">+</span></p>
-                        </div>
-                        <div class="big-card-place">
-                            <img class='place'src='images/thirdblock/places.png'><p class='place-text'>2 places pour aller voir<br>des expositions ou musés !</p>
-                        </div>
-                        <div class="price">
-                            <p class='price-text'>A partir de<br></p><span>80 €</span><p class="price-text"> Déductible des impôts</p>
-                            <div class='boutton-retour'id="boutton-retour-carreau"><a class='boutton-back'><div class='fleche-right'><img src='images/thirdblock/fleche-left.svg'></div><p class='texte-back1'>Retour</p></a></div>
-
-                        </div>
-                        <div class="joker">
-                            <img class='small-joker' src='images/thirdblock/Joker-small.png'><img class='big-joker' src='images/thirdblock/Joker.png'>
-
-                            <p class="select">Notre sélection :</p>
-                            
-                            <form>
-                               <fieldset class="button-radio">
-
-                                   <div>
-                                        <input type="checkbox" value="exposition" name="expo" id="maggrit" required checked="checked">
-                                        <label for="arts" class="label-radio">Exposition Maggrit</label><br>
-
-                                        <input type="checkbox" value="museum" name="Orsay" id="museum-orsay" required>
-                                        <label for="museum" class="label-radio">Musée d'Orsay </label><br>
-
-                                        <input type="checkbox" value="moi et francois B" name="exposition" id="exposition" required>
-                                        <label for="exposition" class="label-radio">Moi et François B</label>
-                                    </div>
-                                </fieldset>
-                            </form>
-
-                            <div class="boutton">    
-
-                                    <a href="html/contact.html" id="boutton-contact-carreau" class="boutton-plus"  > 
-
-                                        <div id="fleche-carreau" class="fleche-left">
-                                            <img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
-                                        </div>
-                                        <p class="texte-plus1">Contactez-nous</p> 
-                                    </a>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
             
-            <div id="news">
-                <h2>NOTRE ACTUALITÉ</h2>
-                <h4>Retrouvez toute notre actualités et l'ensemble<br>de nos offres en vous abonnant !</h4>
-                <div id="email">
-                    <input type="text" placeholder="Votre e-mail">
-                    <button><img src="images/thirdblock/send-01.svg"></button>
-                </div>
-                <div id ="news-iframe">
-                    <div id="new1"><img src="http://resize3-europe1.ladmedia.fr/r/734,406,000000,center-middle/img/var/europe1/storage/images/europe1/emissions/allo-europe-1/allo-europe-1-emplois-a-domicile-tout-ce-quil-faut-savoir-090217-2973605/32882909-1-fre-FR/Allo-Europe-1-Emplois-a-domicile-Tout-ce-qu-il-faut-savoir-09-02-17.jpg">
-                     <audio controls>
-                      <source src="images/Allo-Europe-1-Emplois-a-domicile-Tout-ce-qu-il-faut-savoir-09-02-17-1908047.mp3" type="audio/mpeg">
-                          Your browser does not support the audio tag.
-                    </audio>
-                    <h3>SILVER ACT' A LA RADIO <br>SUR EUROPE 1 !</h3>
-                    <p><span>13/02/2017</span><br>Écoutez à partir de 24'30 Silver act' est sur Europe 1 !</p>
-                    </div>
-                    <div id="new2"><iframe width="544px" height="330px" src="//embedftv-a.akamaihd.net/ea0036bdc724ca7ea959630cab954cc2" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                    <h3>SILVER ACT' ET TELE MATIN</h3>
-                    <p><span>05/12/2016</span><br>Découvrez le passage de Silver Act' dans l'émission<br> Télé Matin !</p>
-                    </div>  
-            </div>
-            <div id="button-news"> 
-                        <div id="div-button-news"class="boutton">    
-                            <a class="boutton-plus" id="lien-blog" href="http://www.silveract.fr/blog" target="_blank"> 
-                            <div id="fleche-left">
-                                <img src="images/thirdblock/fleche-right.svg">
-                            </div>
-                            <p id="text-button-news" class="texte-plus1">Toutes nos actualités</p> 
-                            </a>
-                        </div>
-                    </div>
-            </div>
-
-           <footer>
-               <div id="left-block">
-                   <div id="deduction" class="section">
-                      <div class="text">
-                           <p>Nos préstations<br>sont déductibles <br>des impôts !</p>
-                           <a href="../html/mentionslegales.html">Mentions Légales</a>
-                       </div>
-                   </div>
-
-                   <div id="contact" class="section">
-                       <div class="text"> 
-                           <h2>SILVER ACT'</h2>
-                           <p>77 rue de Prony <br> 75017 PARIS </p>
-                           <ul>
-                               <li>
-                                   <img src="../images/telephone.svg" alt="telephone" id="phone">
-                                   <a href="tel:0782824168">07 82 82 41 68</a>
-                               </li>
-
-                               <li>
-                                   <img src="../images/mail.svg" alt="mail" id="mail">
-                                   <a href="mailto:contact@silveract.fr">Envoyer un mail</a>
-                               </li>
-                           </ul>
-                       </div>
-                   </div>
-
-                   <div id="social" class="section">
-                       <div class="text">
-                           <p>Retrouvez nous ici</p>
-                           <a href="https://www.facebook.com/SiIverAct/" target="_blank"><img src="images/facebook.svg" alt="facebook"></a>
-                           <a href="https://twitter.com/SiIverAct" target="_blank"><img src="images/twitter.svg" alt="twitter"></a>
-                       </div>
-                   </div>
-               </div> 
-
-               <div id="right-block">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.6765973035117!2d2.2987758150501643!3d48.883441406897425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f9617917cc3%3A0xa1c4ed5b1cbdbf99!2s77+Rue+de+Prony%2C+75017+Paris!5e0!3m2!1sfr!2sfr!4v1487262680072" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-               </div>
-           </footer>
-
-            <div id="video">
-                <video width="80%" autoplay loop controls>
-                    <source src="images/firstblock/video.mp4" type="video/mp4">Your browser does not support HTML5 video.
-                </video>
-                <img src="images/firstblock/quit.svg" alt="quitter">
-            </div>
-           
-    </body> 
-</html>
+			<!-- THIRDBLOCK - CARTES-->
+			<div id="thirdblock">
+				<h2>NOTRE CARRÉ D'AS</h2>
+				<div id="first-card">
+				<!--CARD-PEAK-->
+					<div id="card-peak" class="card">
+						<div id="small-peak">
+							<div class="a-top">
+								<ul class="liste">
+									<li>A</li>
+									<li><img class="small" src="images/thirdblock/pic-informatique%20.png"</li>
+								</ul>
+							</div>
+							<h3 class="title">PIC<br>DE L'INTERNET</h3>
+							<img  class="picto" src="images/thirdblock/pic-informatique%20.png" alt="Cours d'informatique">
+							<p class="text">
+								Apprenez les rudiments du digital afin de rester au contact de vos proches via internet et découvrez 
+								<br>
+								l’univers du numérique. 
+							</p>
+							<div class="button-orange">
+								<a id="button-peak" class="button-more">
+									<div class="fleche-left">
+										<img  src="images/thirdblock/fleche-right.svg">
+									</div>
+									<p id="text-peak" class="text-more1">
+										En savoir plus
+									</p>
+								</a>
+							</div>
+							<div class="a-down">
+								<ul class="liste">
+									<li>A</li>
+									<li><img class="small" src="images/thirdblock/pic-informatique%20.png"></li>
+								</ul>
+							</div>
+						</div>
+						<!--BIG CARD PEAK-->
+						<div id="big-card-peak">
+							<img class="big-img"src="images/thirdblock/carte-informatique.png" alt="Cours d'informatique">
+							<div class="big-card-text">
+								<h3>PIC DE L'INTERNET</h3>
+								<h4>L'atelier :</h4>
+								<p>
+									Nous vous proposons sur la forme de cours personnalisé d'apprendre et de perfectionner la maitrise des outils du numérique sous forme de divertissement. SilverAct' vous permet d’acquérir et de découvrir les notions essentielles: 
+									<span>l'informatique,  navigation sur internet, réseaux sociaux, envoie de mail, etc.</span>
+									<br>
+									<span class="more">+</span>
+								</p>
+							</div>
+							<div class="big-card-place">
+								<img class='place'src='images/thirdblock/places.png'>
+								<p class='place-text'>
+									2 places pour aller voir
+									<br>
+									des expositions ou musées !
+								</p>
+							</div>
+							<div class="price">
+								<p class='price-text'>
+									A partir de
+									<br>
+								</p>
+								<span>80 €</span>
+								<p class="price-text">
+									Déductible des impôts
+								</p>
+								<div class='button-back-orange'id="button-back-peak">
+									<a class='button-back'>
+										<div class='fleche-right'>
+											<img src='images/thirdblock/fleche-left.svg'>
+										</div>
+										<p class='text-back1'>
+											Retour
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="joker">
+								<img class='small-joker' src='images/thirdblock/Joker-small.png'>
+								<img class='big-joker' src='images/thirdblock/Joker.png'>
+								<p class="select">
+									Notre sélection :
+								</p>
+								<form>
+									<fieldset class="button-radio">
+										<div>
+											<input type="radio" value="musée des arts et metiers" name="choiceexist" class="exits" required checked="checked">
+											<label for="arts" class="label-radio">Musée des arts et métiers</label>
+											<br>
+											<input type="radio" value="cité des sciences" name="choiceexist" class="exits" required>
+											<label for="science" class="label-radio">Cité des sciences</label>
+											<br>
+											<input type="radio" value="exposition du moment" name="choiceexist" class="exits"  required>
+											<label for="exposition" class="label-radio">Exposition</label>
+										</div>
+									</fieldset>
+								</form>
+								<div class="button-orange">
+									<a href="html/contact.html" id="button-contact-peak" class="button-more" >
+										<div class="fleche-left">
+											<img  src="images/thirdblock/fleche-right.svg">
+										</div>
+										<p  class="text-more1">
+											Contactez-nous
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--CARD-HEART-->
+					<div id="card-heart" class="card">
+						<div id="small-heart">
+							<div class="a-top">
+								<ul class="liste">
+									<li>A</li>
+									<li><img class="small" src="images/thirdblock/muse-coeur.png"></li>
+								</ul>
+							</div>
+							<h3 class="title">AU COEUR<br>DE L'HISTOIRE</h3>
+							<img  class="picto" src="images/thirdblock/muse-coeur.png" alt="Visite de musées">
+							<p class="text">
+								Voyagez à travers l’histoire grâce à une visite privée dans les célèbres sites, musées qui font la richesse 
+								<br>
+								de notre héritage culturel. 
+							</p>
+							<div class="button-orange">
+								<a id="button-heart" class="button-more">
+									<div class="fleche-left">
+										<img src="images/thirdblock/fleche-right.svg">
+									</div>
+									<p class="text-more1">
+										En savoir plus
+									</p>
+								</a>
+							</div>
+							<div class="a-down">
+								<ul class="liste">
+									<li>A</li>
+									<li><img class="small" src="images/thirdblock/muse-coeur.png"></li>
+								</ul>
+							</div>
+						</div>
+						<!-- BIG CARD-HEART-->
+						<div id="big-card-heart">
+							<img class="big-img"src="images/thirdblock/carte-muse.png" alt="Visite de musée">
+							<div class="big-card-text">
+								<h3>AU COEUR DE L'HISTOIRE</h3>
+								<h4>L'atelier :</h4>
+								<p>
+									SilverAct' vous dévoile tous les secrets de l'histoire de Paris et sa région. Vous serez accompagnez d'un guipe privé et qualifié pour approfondir votre culture et votre savoir. Partez avec un ouvrage retraçant l'histoire du lieu que vous avez choisi.
+									<br>
+									<span class="more">+</span>
+								</p>
+							</div>
+							<div class="big-card-place">
+								<img class='place'src='images/thirdblock/places.png'>
+								<p class='place-text' id="place-text-heart">
+									Seul ou accompagnés des
+									<br>
+									places pour aller voir des
+									<br>
+									expositions ou musés !
+								</p>
+							</div>
+							<div class="price">
+								<p class='price-text'>
+									A partir de
+									<br>
+								</p>
+								<span>120 €</span>
+								<p class="price-text">
+									Déductible des impôts
+								</p>
+								<div class='button-back-orange'id="button-back-heart">
+									<a class='button-back'>
+										<div class='fleche-right'>
+											<img src='images/thirdblock/fleche-left.svg'>
+										</div>
+										<p class='text-back1'>
+											Retour
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="joker">
+								<img class='small-joker' src='images/thirdblock/Joker-small.png'>
+								<img class='big-joker' src='images/thirdblock/Joker.png'>
+								<p class="select">
+									Notre sélection :
+								</p>
+								<form>
+									<fieldset class="button-radio">
+										<div>
+											<input type="radio" value="musée des arts et metiers" name="choiceexist" class="exits" required checked="checked">
+											<label for="arts" class="label-radio">Musée d'Orsay</label>
+											<br>
+											<input type="radio" value="cité des sciences" name="choiceexist" class="exits"  required>
+											<label for="science" class="label-radio">Le Louvre</label>
+											<br>
+											<input type="radio" value="exposition du moment" name="choiceexist" class="exits"  required>
+											<label for="exposition" class="label-radio">Musée de la Photographie</label>
+										</div>
+									</fieldset>
+								</form>
+								<div class="button-orange">
+									<a href="html/contact.html" class="button-more" id="button-contact-heart" >
+										<div class="fleche-left">
+											<img src="images/thirdblock/fleche-right.svg">
+										</div>
+										<p class="text-more1">
+											Contactez-nous
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="second-card">
+				<!--CARD CLOVER-->
+					<div id="card-clover" class="card">
+						<div id="small-clover">
+							<div class="a-top">
+								<ul class="liste">
+									<li>A</li>
+									<li><img class="small" src="images/thirdblock/treffle-joueur.png"></li>
+								</ul>
+							</div>
+							<h3 class="title">TREFLE<br>JOUEUR</h3>
+							<img  class="picto" src="images/thirdblock/treffle-joueur.png" alt="Sortie théâtre">
+							<p class="text">
+								Jouez le temps d’un acte les personnages de vos pièces préférées et assitez à la représentation
+								<br>
+								 de votre choix.  
+							</p>
+							<div class="button-orange">
+								<a id="button-clover" class="button-more">
+									<div class="fleche-left">
+										<img src="images/thirdblock/fleche-right.svg">
+									</div>
+									<p  class="texte-plus1">
+										En savoir plus
+									</p>
+								</a>
+							</div>
+							<div class="a-down">
+								<ul class="liste">
+									<li>A</li>
+									<li><img class="small" src="images/thirdblock/treffle-joueur.png"></li>
+								</ul>
+							</div>
+						</div>
+						<!--BIG CARD CLOVER-->
+						<div id="big-card-clover">
+							<img class="big-img"src="images/thirdblock/THEATRE.png" alt="Sortie théâtre">
+							<div class="big-card-text">
+								<h3>TREFLE JOUEUR</h3>
+								<h4>L'atelier :</h4>
+								<p>
+									Nous vous faisons profitez d'un échange privilégiez autour d'une initiation scénique  avec un comédien ou un chanteur d'opéra qualifié. Passionné d’Apollinaire, Rimbaud ou autre poète ? Nous vous donnons aussi l'occasion de réciter leurs textes de manière dynamique. 
+									<br>
+									<span class="more">+</span>
+								</p>
+							</div>
+							<div class="big-card-place">
+								<img class='place'src='images/thirdblock/places.png'>
+								<p class='place-text'>
+									2 places pour aller voir
+									<br>
+									au théâtre ou a l'opéra !
+								</p>
+							</div>
+							<div class="price">
+								<p class='price-text'>
+									A partir de
+									<br>
+								</p>
+								<span>80 €</span>
+								<p class="price-text">
+									 Déductible des impôts
+								</p>
+								<div class='button-back-orange'id="button-back-clover">
+									<a class='button-back'>
+										<div class='fleche-right'>
+											<img src='images/thirdblock/fleche-left.svg'>
+										</div>
+										<p class='text-back1'>
+											Retour
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="joker">
+								<img class='small-joker' src='images/thirdblock/Joker-small.png'>
+								<img class='big-joker' src='images/thirdblock/Joker.png'>
+								<p class="select">
+									Notre sélection :
+								</p>
+								<form>
+									<fieldset class="button-radio">
+										<div>
+											<input type="radio" value="le lac des cygnes" name="choiceexist" class="exits"  required checked="checked">
+											<label for="arts" class="label-radio">Le Lac des cygnes</label>
+											<br>
+											<input type="radio" value="nos disques" name="choiceexist" class="exits"  required>
+											<label for="science" class="label-radio">Nos disques sont rayés</label>
+											<br>
+											<input type="radio" value="moi et francois B" name="choiceexist" class="exits"  required>
+											<label for="exposition" class="label-radio">Moi et François B</label>
+										</div>
+									</fieldset>
+								</form>
+								<div class="button-orange">
+									<a href="html/contact.html" id="button-contact-clover" class="button-more" >
+										<div class="fleche-left">
+											<img  src="images/thirdblock/fleche-right.svg">
+										</div>
+										<p class="text-more1">
+											Contactez-nous
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--CARD-TILE-->
+					<div id="card-tile" class="card">
+						<div id="small-tile">
+							<div class="a-top">
+								<ul class="liste">
+									<li>A</li>
+									<li><img class="small" src="images/thirdblock/carreau-artiste.png"></li>
+								</ul>
+							</div>
+							<h3 class="title">CARREAU<br>DES ARTISTES</h3>
+							<img  class="picto" src="images/thirdblock/carreau-artiste.png" alt="Atelier créatif">
+							<p class="text">
+								Libérez votre esprit créatif à travers le dessin et la peinture et découvrez vos artistes préférés à 
+								<br>
+								l’occasion d’une exposition. 
+							</p>
+							<div class="button-orange" id="button-tile">
+								<a class="button-more">
+									<div class="fleche-left">
+										<img src="images/thirdblock/fleche-right.svg">
+									</div>
+									<p  class="texte-plus1">
+										En savoir plus
+									</p>
+								</a>
+							</div>
+							<div class="a-down">
+								<ul class="liste">
+									<li>A</li>
+									<li><img class="small" src="images/thirdblock/carreau-artiste.png"></li>
+								</ul>
+							</div>
+						</div>
+						<!--BIG CARD TILE-->
+						<div id="big-card-tile">
+							<img class="big-img"src="images/thirdblock/carte-artiste.png">
+							<div class="big-card-text" alt="Atelier créatif">
+								<h3>CARREAU DES ARTISTES</h3>
+								<h4>L'atelier :</h4>
+								<p>
+									Apprenez à regarder le monde différemment en reproduisant ce qui vous entoure ou en créant votre œuvre personnelle  Nous vous proposons de stimuler votre créativité  avec des ateliers artistiques ou le dessin et la peinture n'auront plus de secret pour vous. 
+									<br>
+									<span class="more">+</span>
+								</p>
+							</div>
+							<div class="big-card-place">
+								<img class='place'src='images/thirdblock/places.png'>
+								<p class='place-text'>
+									2 places pour aller voir
+									<br>
+									des expositions ou musés !
+								</p>
+							</div>
+							<div class="price">
+								<p class='price-text'>
+									A partir de
+									<br>
+								</p>
+								<span>80 €</span>
+								<p class="price-text">
+									 Déductible des impôts
+								</p>
+								<div class='button-back-orange'id="button-back-tile">
+									<a class='button-back'>
+										<div class='fleche-right'>
+											<img src='images/thirdblock/fleche-left.svg'>
+										</div>
+										<p class='text-back1'>
+											Retour
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="joker">
+								<img class='small-joker' src='images/thirdblock/Joker-small.png'>
+								<img class='big-joker' src='images/thirdblock/Joker.png'>
+								<p class="select">
+									Notre sélection :
+								</p>
+								<form>
+									<fieldset class="button-radio">
+										<div>
+											<input type="radio" value="exposition" name="choiceexist" class="exits"  required checked="checked">
+											<label for="arts" class="label-radio">Exposition Maggrit</label>
+											<br>
+											<input type="radio" value="museum" name="choiceexist" class="exits"  required>
+											<label for="museum" class="label-radio">Musée d'Orsay </label>
+											<br>
+											<input type="radio" value="moi et francois B" name="choiceexist" class="exits"  required>
+											<label for="exposition" class="label-radio">Moi et François B</label>
+										</div>
+									</fieldset>
+								</form>
+								<div class="button-orange">
+									<a href="html/contact.html" id="button-contact-tile" class="button-more"  >
+										<div  class="fleche-left">
+											<img id="pic-fleche" src="images/thirdblock/fleche-right.svg">
+										</div>
+										<p class="text-more1">
+											Contactez-nous
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="news">
+				<h2>NOTRE ACTUALITÉ</h2>
+				<h4>Retrouvez toute notre actualités et l'ensemble<br>de nos offres en vous abonnant !</h4>
+				<div id="email">
+					<input type="text" placeholder="Votre e-mail">
+					<button><img src="images/thirdblock/send-01.svg"></button>
+				</div>
+				<div id ="news-iframe">
+					<div id="new1">
+						<img src="http://resize3-europe1.ladmedia.fr/r/734,406,000000,center-middle/img/var/europe1/storage/images/europe1/emissions/allo-europe-1/allo-europe-1-emplois-a-domicile-tout-ce-quil-faut-savoir-090217-2973605/32882909-1-fre-FR/Allo-Europe-1-Emplois-a-domicile-Tout-ce-qu-il-faut-savoir-09-02-17.jpg">
+						<audio controls>
+							<source src="images/Allo-Europe-1-Emplois-a-domicile-Tout-ce-qu-il-faut-savoir-09-02-17-1908047.mp3" type="audio/mpeg">
+								Your browser does not support the audio tag.
+							</audio>
+							<h3>SILVER ACT' A LA RADIO <br>SUR EUROPE 1 !</h3>
+							<p>
+								<span>13/02/2017</span>
+								<br>
+								Écoutez à partir de 24'30 Silver act' est sur Europe 1 !
+							</p>
+						</div>
+						<div id="new2">
+							<iframe width="544px" height="330px" src="//embedftv-a.akamaihd.net/ea0036bdc724ca7ea959630cab954cc2" frameborder="0" scrolling="no" allowfullscreen></iframe>
+							<h3>SILVER ACT' ET TELE MATIN</h3>
+							<p>
+								<span>05/12/2016</span>
+								<br>
+								Découvrez le passage de Silver Act' dans l'émission
+								<br>
+								 Télé Matin !
+							</p>
+						</div>
+					</div>
+					<div id="button-news">
+						<div id="div-button-news"class="button-orange">
+							<a class="button-more" href="http://www.silveract.fr/blog" target="_blank">
+								<div id="fleche-left">
+									<img src="images/thirdblock/fleche-right.svg">
+								</div>
+								<p id="text-button-news" class="text-more1">
+									Toutes nos actualités
+								</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<div id="left-block">
+						<div id="deduction" class="section">
+							<div class="text-footer">
+								<p>
+									Nos préstations
+									<br>
+									sont déductibles 
+									<br>
+									des impôts !
+								</p>
+								<a href="html/mentionslegales.html">Mentions Légales</a>
+							</div>
+						</div>
+						<div id="contact" class="section">
+							<div class="text-footer">
+								<h2>SILVER ACT'</h2>
+								<p>
+									77 rue de Prony 
+									<br>
+									 75017 PARIS 
+								</p>
+								<ul>
+									<li>
+										<img src="images/firstblock/telephone.svg" alt="telephone" id="phone">
+										<a href="tel:0782824168">07 82 82 41 68</a>
+									</li>
+									<li>
+										<img src="images/firstblock/mail.svg" alt="mail" id="mail">
+										<a href="mailto:contact@silveract.fr">Envoyer un mail</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div id="social" class="section">
+							<div class="text-footer">
+								<p>
+									Retrouvez nous ici
+								</p>
+								<a href="https://www.facebook.com/SiIverAct/" target="_blank"><img src="images/firstblock/facebook.svg" alt="facebook"></a>
+								<a href="https://twitter.com/SiIverAct" target="_blank"><img src="images/firstblock/twitter.svg" alt="twitter"></a>
+							</div>
+						</div>
+					</div>
+					<div id="right-block">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.6765973035117!2d2.2987758150501643!3d48.883441406897425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f9617917cc3%3A0xa1c4ed5b1cbdbf99!2s77+Rue+de+Prony%2C+75017+Paris!5e0!3m2!1sfr!2sfr!4v1487262680072" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</footer>
+				<div id="video">
+					<video width="80%" autoplay loop controls>
+						<source src="images/firstblock/video.mp4" type="video/mp4">
+							Your browser does not support HTML5 video.
+						</video>
+						<img src="images/firstblock/quit.svg" alt="quitter">
+					</div>
+				</body>
+			</html>
