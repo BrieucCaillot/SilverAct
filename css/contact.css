@@ -382,7 +382,21 @@ h1{
    color: #044759;  
 }
 
+.peak {
+    display: none;
+}
 
+.heart {
+    display: none;
+}
+
+.clover {
+    display: none;
+}
+
+.tile {
+    display: none;
+}
 /*BOUTTON*/
 
 
@@ -400,6 +414,7 @@ h1{
     color: #ef7915;
     width: 180px; 
     height: 25px; 
+    text-decoration: none;
 }
         
 .text-more1 {
