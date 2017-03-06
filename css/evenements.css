@@ -373,8 +373,9 @@ header{
 }*/
 
 #secondblock #right #bulles li span {
-    text-align: center;;
-    position: absolute;;
+    font-family: gotham-light;
+    text-align: center;
+    position: absolute;
     top: 50%;;
     left: 50%;;
     -webkit-transform: translate(-50%, -50%);;
