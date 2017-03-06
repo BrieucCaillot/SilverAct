@@ -132,12 +132,6 @@ header{
     color: white; 
 }
 
-#navigation ul li:first-child a {
-  background-color : #148fad;
-  font-family : Gotham-Medium;
-  color : #fff;
-}
-
 /* SWIPER TON RIGHT li */
 
 /* Sweep To Top */
@@ -218,16 +212,7 @@ header{
     background: url(../images/firstblock/photohome-2.jpg) no-repeat;
     background-size: 100%;
     height: auto;
-    padding: 40px 40px 40px 40px;
-}
-
-#presentation #image img {
-    width: 78%;
-    height: auto;
-    left: 50%;
-    position: relative;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    margin-bottom: 100px;
 }
 
 #presentation h1 {
@@ -237,7 +222,7 @@ header{
     text-align: left;
     color: white;
     position: absolute;
-    top: 63%;
+    top: 56%;
     left: 15%;
     z-index: 20;
     z-index: 20;
@@ -254,7 +239,7 @@ header{
 
 #scroll {
     position: absolute;
-    top: 80%;
+    top: 74%;
     left: 15%;
     width: 16px;
     height: auto;
@@ -304,19 +289,19 @@ header{
 #play img {
     width: 12px;
     height: auto;
-    top: 3px;
+    top: 10px;
     position: absolute;
-    left: 8px;
+    left: 15px;
 }
 
 #circle-play{
     position: relative;
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
     border: solid 2px #ef7915;
     border-radius: 25px;
-    margin-bottom: -25px;
     margin-top: 5px;
+    margin-bottom: -35px;
 
 }
 .texte{
@@ -349,13 +334,22 @@ header{
         
 .texte-plus1 {
     display: inline;
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
     font-family: Gotham-light, sans-serif;
     color: #ef7915;
-
     margin-top: 0px;
     margin-left: 35px;
+}
+
+.text-play {
+    display: inline-block;
+    font-size: 28px;
+    text-align: center;
+    font-family: Gotham-light, sans-serif;
+    color: #ef7915;
+    margin-left: 55px;
+    height: 35px;
 }
 
         
@@ -388,96 +382,15 @@ header{
     animation: width-play 0.5s ease forwards;
 }
 
-@-webkit-keyframes width-play {
-    from {width: 25px;}
-    to {width: 90px;}
-
-}
-
 #button-play {
     position: absolute;
-    top: 81%;
+    top: 77%;
     left: 32%;
+    z-index: 100;
+    display: inline-block;
+    height: 63px;
 }
 
-
-.a-down{
-    position:absolute;
-    margin: 5px;
-    width: 30px;
-    left: 340px;
-    top: 460px;
-}
-
-
-#first-card{
-    position: relative;
-    margin: 0 auto;
-    width: 1200px;
-    height: 610px;
-    overflow: hidden;
-    padding-top: 50px;
-}
-
-#second-card{
-    position: relative;
-    margin: 0 auto;
-    width: 1200px;
-    height: 610px;
-    overflow: hidden;
-    padding-top: 60px;
-}
-
-#carte-pic{
-    position: absolute;
-    left: -50%;
-    width: 390px;
-    float: left;
-    background-color: white;
-    transform:rotate(-10deg); 
--ms-transform:rotate(-10deg); /* Internet Explorer */
--moz-transform:rotate(-10deg); /* Firefox */
--webkit-transform:rotate(-10deg); /* Safari et Chrome */ 
--o-transform:rotate(-10deg); /* Opera */
-}
-
-.rotate-carte{
-    transform:rotate(0deg); 
--ms-transform:rotate(0deg); /* Internet Explorer */
--moz-transform:rotate(0deg); /* Firefox */
--webkit-transform:rotate(0deg); /* Safari et Chrome */ 
--o-transform:rotate(0deg); /* Opera */
-}
-
-#carte-coeur{
-    position: absolute;
-    float: right;
-    right: -50%;
-    background-color: white;
-    transform:rotate(5deg); 
--ms-transform:rotate(5deg); /* Internet Explorer */
--moz-transform:rotate(5deg); /* Firefox */
--webkit-transform:rotate(5deg); /* Safari et Chrome */ 
--o-transform:rotate(5deg); /* Opera */
-}
-
-#carte-treffle{
-    position: absolute;
-    left: -50%;
-    width: 390px;
-    float: left;
-    background-color: white;
-    transform:rotate(10deg); 
--ms-transform:rotate(10deg); /* Internet Explorer */
--moz-transform:rotate(10deg); /* Firefox */
--webkit-transform:rotate(10deg); /* Safari et Chrome */ 
--o-transform:rotate(10deg); /* Opera */
-}
-
-#carte-carreau{
-    position: absolute;
-    background-color: white;
-}
 /*VIDEO BLOCK*/
 #video {
     background: whitesmoke;
@@ -621,11 +534,11 @@ header{
         
 .texte-plus1 {
     display: inline;
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
     font-family: Gotham-light, sans-serif;
     color: #ef7915;
-    margin-left: 35px;
+    margin-left: 33px;
 }
         
 .texte-plus2 {
@@ -1568,4 +1481,29 @@ footer a {
     -webkit-transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
   }
 }
+
+.swiper-container {
+        height: auto;
+        width: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
 }
