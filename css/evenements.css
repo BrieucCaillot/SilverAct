@@ -337,6 +337,7 @@ header{
     z-index: 2;
     position: absolute;
     top: 286px;
+
 }
 
 #secondblock #right #bulles3 {
@@ -589,3 +590,4 @@ footer a {
     height: 100%; 
     float: right;
 }
+
