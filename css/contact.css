@@ -312,8 +312,8 @@ h1{
     height: 30px;
     border-bottom: solid 1.5px #e6e6e6;
     border-top: 0px;
-	border-left: 0px;
-	border-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
     margin-top: 10px;
     font-family: gotham-light;
     
@@ -324,8 +324,8 @@ h1{
     height: 30px;
     border-bottom: solid 1.5px #e6e6e6;
     border-top: 0px;
-	border-left: 0px;
-	border-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
     margin-right: 25px;
     font-family: gotham-light;
      margin-top: 10px;
@@ -337,8 +337,8 @@ h1{
     height: 35px;
     border-bottom: solid 1.5px #e6e6e6;
     border-top: 0px;
-	border-left: 0px;
-	border-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
     font-family: gotham-light;
     color: #044759;
      margin-top: 10px;
@@ -694,7 +694,6 @@ footer a {
 .textfooter{
     -webkit-transform: translateY(-50%);
     position: relative;
-    border-right: 1px solid #044779;
 }
 
 .textfooter {
@@ -731,8 +730,7 @@ footer a {
     font-family: Gotham-Light;
     margin-bottom: 18px;
     color: #ef7915;
-    font-size: 28px;
-
+    font-size: 24px;
 }
 
 #contact p {

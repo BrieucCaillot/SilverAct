@@ -346,8 +346,6 @@ header{
     position: absolute;
 }
 
-
-
 #video img {
     width: 1.5%;
     position: absolute;
@@ -359,9 +357,6 @@ header{
     -webkit-animation: close-video 1s forwards ease;
     animation: close-video 1s ease forwards;
 }
-
-
-
 
 /* THIRDBLOCK*/ 
 
@@ -821,7 +816,7 @@ fieldset {
     color: #ef7915;
     font-family: Gotham-Light, sans-serif;
     font-size: 24px;
-	line-height: normal; 
+    line-height: normal; 
 
 }
 
