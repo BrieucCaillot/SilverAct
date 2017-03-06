@@ -61,10 +61,10 @@ $(document).ready(function() {
     });
     
     
-    $('#select-workshop').click(function () {
+    $('#select-workshop').change(function () {
         console.log($("#select-workshop").val());
         $("#select-exit option").remove();
-        if ($('#select-workshop').val() == "Pic de l'informatique") {
+        if ($('#select-workshop').val() == "Pic de l'informatique") {   
             $('#select-exit').append("<option>Choix de votre sortie</option><option>Musée des arts et métiers</option><option>Cité des sciences</option><option>Exposition</option>");
             
         } else if ($(this).val() == "Au coeur de l'histoire") {
