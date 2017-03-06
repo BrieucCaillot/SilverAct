@@ -17,6 +17,17 @@ $(document).ready(function() {
             $("#navigation ul li:nth-child(2) a").removeAttr('style');
     });
 
+    // BUTTON PLAY 
+    
+    $("#button-play").hover(
+        function(){
+            $("#circle-play").animate({width : "145px"});
+        },
+        function(){
+            $("#circle-play").animate({width : "40px"});
+    });
+
+
 
     // MODIF CSS MENU ACTIVITÉ ON CLICK
     $("#navigation ul li:nth-child(2) a").click(function() {
@@ -34,6 +45,7 @@ $(document).ready(function() {
             });
             $("#navigation ul li:first-child a").removeAttr('style');
 
+
     });
 
     // SMOOTH SCROLL TO ACTIVITÉ
@@ -44,24 +56,22 @@ $(document).ready(function() {
         }, 2000);
     });
 
-    // CHANGE IMAGE EVERY X SECONDS
+    // SMOOTH SCROLL TO ACTIVITÉ
+
     
-    /*var urlcss = ['http://lorempixel.com/400/200/sports/' ,
-                   'http://lorempixel.com/400/200/city/'];
-    var urlhtml = ['images/firstblock/groupe.jpg' ,
-                   'images/firstblock/theatre.jpg'];
-    var p = $("#presentation");
+    $("#navigation ul li:nth-child(2)").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#thirdblock").offset().top
+        }, 2000);
+    });
+    // SMOOTH SCROLL TO ACCUEIL
     
+    $("#navigation ul li:first-child").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#firstblock").offset().top
+        }, 2000);
+    });
 
-
-        curentImageIndex = 0;
-        setInterval(function(){ 
-            p.css("background","url("+urlcss[curentImageIndex++] + ") no-repeat");
-            $("#image").src = (+ urlhtml[curentImageIndex++]> + );
-                if(curentImageIndex>= urlcss.length){curentImageIndex = 0}
-            }, 7000);*/
-
-        /*http://codepen.io/dodekx/pen/BKEbPK?editors=1111*/
     
     //SCROll MENU @50 
 
