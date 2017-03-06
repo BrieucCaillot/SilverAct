@@ -210,7 +210,7 @@ header{
     margin-right: 13%; 
 }
 
-/******************************/
+/* CONTENT1*/
 
 
 #content1{
@@ -234,23 +234,32 @@ h2{
     margin-bottom: 70px;
     font-weight: normal;
 }
+h1{
+    color: #148fad;
+    font-family: Gotham-Light, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    font-weight: normal;
+}
 
-#carte-formulaire{
+#card-form{
     width: 1100px;
     height: 530px;
     border: solid 2px #e6e6e6;
     border-radius: 10px;
     position: relative;
-    box-shadow: 10px 10px 20px #b9b9b9 ; 
+    box-shadow: 10px 10px 20px #e6e6e6;
 }
 
-#carte-formulaire img{
+#card-form img{
     float: left;
     height: 530px;
     width: auto;
 }
 
-#carte-formulaire h3{
+#card-form h3{
     color: #148fad;
     font-family: Gotham-Light, sans-serif;
     font-weight: normal;
@@ -261,7 +270,7 @@ h2{
     margin-bottom: 30px;
 }
 
-#carte-formulaire form{
+#card-form form{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -287,38 +296,44 @@ h2{
 .input-base{
    width: 410px;
     height: 30px;
-    border: solid 2px #e6e6e6;
-    border-radius: 10px;
-     margin-top: 10px;
+    border-bottom: solid 1.5px #e6e6e6;
+    border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+    margin-top: 10px;
     font-family: gotham-light;
-    padding-left: 10px;
+    
     
 }
 .name-input {
     width: 192px;
     height: 30px;
-    border: solid 2px #e6e6e6;
-    border-radius: 10px;
-    margin-right: 10px;
+    border-bottom: solid 1.5px #e6e6e6;
+    border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+    margin-right: 25px;
     font-family: gotham-light;
-    padding-left: 10px;
+     margin-top: 10px;
+   
    
 }
-#carte-formulaire form select{
+#card-form form select{
    width: 425px;
     height: 35px;
-    border: solid 2px #e6e6e6;
-    border-radius: 10px;
-    margin-top: 10px;
+    border-bottom: solid 1.5px #e6e6e6;
+    border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
     font-family: gotham-light;
-    padding-left: 10px;
     color: #044759;
+     margin-top: 10px;
 }
-#carte-formulaire form textarea{
+#card-form form textarea{
    width: 410px;
-    border: solid 2px #e6e6e6;
-    border-radius: 10px;
-    margin-top: 10px;
+    border: solid 1.5px #e6e6e6;
+   
+    margin-top: 15px;
     font-family: gotham-light;
     height: 100px;
     overflow-y: scroll;
@@ -346,14 +361,14 @@ h2{
 
 /*BOUTTON*/
 
-.boutton{
+.button-orange{
     width: 180px;
     height: 25px;
     margin: 50px auto;
     margin-top: -0.1px;
     padding-left: 10px;
 }
- .boutton-plus{
+ .button-more{
     display: inline;
     text-align: center;
     font-family: Gotham-light, sans-serif;
@@ -362,7 +377,7 @@ h2{
     height: 25px; 
 }
         
-.texte-plus1 {
+.text-more1 {
     display: inline;
     font-size: 17px;
     text-align: center;
@@ -379,7 +394,7 @@ h2{
     margin-left: 20px;
 }
 #text-button-go{
-    margin-left: 40px;
+    margin-left: 35px;
     
 }
 
@@ -405,16 +420,15 @@ h2{
 
         
 #fleche-left:hover {
-    -webkit-animation: width-new 0.5s forwards ease;
-    animation: width-new 0.5s ease forwards;
+    -webkit-animation: width-new1 0.5s forwards ease;
+    animation: width-new1 0.5s ease forwards;
 }
         
 
         
-@-webkit-keyframes width-new {
-    from {width: 25px;}
-    to {width: 140px;}
-}
+
+
+/*CONTENT2*/
 
 #content2{
     display: -webkit-box;
@@ -431,9 +445,9 @@ h2{
 .small-carte-contact{
     height: 550px;
     width: 450px;
-    border: solid 2px #e6e6e6;
+    border: solid 1.5px #e6e6e6;
     border-radius: 10px;
-    box-shadow: 10px 10px 20px #b9b9b9 ;
+    box-shadow: 10px 10px 20px #e6e6e6;
     margin-top: 50px;
     margin-bottom: 50px;
     
@@ -448,10 +462,12 @@ h2{
 #card-phone img{
     width: 450px;
     height: auto;
+    border-radius: 10px 10px 0px 0px ;
 }
 #card-email img{
     width: 450px;
     height: auto;
+    border-radius: 10px 10px 0px 0px ;
 }
 #card-phone span{
     font-size: 25px;
@@ -462,13 +478,17 @@ h2{
     margin-top: 15px;
 }
 #text-call{
-    font-family: roboto;
+    font-family: Quicksand;
     text-align: center;
     display: block;
     margin-top: 20px;
+    line-height: normal;
+    color: #044759;
    
 }
+
 /*BUTTON*/
+
 #fleche-left-call {
     position: relative;
     height: 25px;
@@ -490,16 +510,16 @@ h2{
 
         
 #fleche-left-call:hover {
-    -webkit-animation: width-new 0.5s forwards ease;
-    animation: width-new 0.5s ease forwards;
+    -webkit-animation: width-new1 0.5s forwards ease;
+    animation: width-new1 0.5s ease forwards;
 }
 #button-call{
     height: auto;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
 }
 #text-button-call{
-    margin-left: 40px;
+    margin-left: 35px;
     
 }
 #div-button-call a {
@@ -522,9 +542,8 @@ h2{
 }
 #card-email textarea{
    width: 350px;
-    border: solid 2px #e6e6e6;
-    border-radius: 10px;
-    margin-top: 10px;
+    border: solid 1.5px #e6e6e6;
+    margin-top: 15px;
     font-family: gotham-light;
     height: 100px;
     overflow-y: scroll;
@@ -555,21 +574,23 @@ h2{
 
         
 #fleche-left-email:hover {
-    -webkit-animation: width-new 0.5s forwards ease;
-    animation: width-new 0.5s ease forwards;
+    -webkit-animation: width-new1 0.5s forwards ease;
+    animation: width-new1 0.5s ease forwards;
 }
 #button-email{
     height: auto;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 #text-button-email{
-    margin-left: 40px;
+    margin-left: 35px;
     
 }
 #div-button-email a {
     text-decoration: none;
 }
+
+/* CONTENT3*/
 
 #content3{
     display: -webkit-box;
@@ -732,4 +753,11 @@ footer a {
     width: 50%; 
     height: 100%; 
     float: right;
+}
+
+/* KEYFRAMES*/
+
+@-webkit-keyframes width-new1 {
+    from {width: 25px;}
+    to {width: 120px;}
 }

@@ -142,143 +142,145 @@ $(document).ready(function() {
 
     var i = 0;
 
-    //BIG CARDS : PIC 
-    $("#boutton-pic").click(function() {
-        $("#carte-pic").removeClass("animate-left");
-        $("#carte-pic").addClass("animate_card");
-        $("#carte-pic").css("left", "5%");
-        $("#carte-coeur").css("display", "none");
-        $("#small-pic").css("display","none");
-        $("#carte-pic").animate({
+    //BIG CARDS : PEAK
+    $("#button-peak").click(function() {
+        $("#card-peak").removeClass("animate-left");
+        $("#card-peak").addClass("animate_card");
+        $("#card-peak").css("left", "5%");
+        $("#card-heart").css("display", "none");
+        $("#small-peak").css("display","none");
+        $("#card-peak").animate({
                 width: "1100px",
             }, 1000, 'easeInOutCirc', function () {
-            $("#big-card-pic").css("display","block");
+            $("#big-card-peak").css("display","block");
         });
     });
     
-    //BUTTON BACK PIC
-     $("#boutton-retour-pic").click(function() {
-        $("#carte-pic").css("left", "100px");
-        $("#carte-pic").removeClass("animate_card");
-        $("#carte-coeur").css("display", "block");
-        $("#big-card-pic").css("display","none");
+    //BUTTON BACK PEAK
+     $("#button-back-peak").click(function() {
+        $("#card-peak").css("left", "100px");
+        $("#card-peak").removeClass("animate_card");
+        $("#card-heart").css("display", "block");
+        $("#big-card-peak").css("display","none");
 
-        $("#carte-pic").animate({
+        $("#card-peak").animate({
             width: "390px",
         }, 1000, 'easeOutQuint', function () {
-            $("#small-pic").css("display","block");
+            $("#small-peak").css("display","block");
             
         });
     });
     
-    //BIG CARD COEUR
-        $("#boutton-coeur").click(function() {
-        $("#carte-coeur").removeClass("animate-right");
-        $("#carte-coeur").removeClass("animate-mouve-small-card");
-        $("#carte-coeur").addClass("animate_card2");
-        $("#carte-coeur").css("left", "5%");
-        $("#carte-pic").css("display", "none");
-        $("#small-coeur").css("display","none");
-        $("#carte-coeur").animate({
+    //BIG CARD HEART
+        $("#button-heart").click(function() {
+        $("#card-heart").removeClass("animate-right");
+        $("#card-heart").removeClass("animate-mouve-small-card");
+        $("#card-heart").addClass("animate_card2");
+        $("#card-heart").css("left", "5%");
+        $("#card-peak").css("display", "none");
+        $("#small-heart").css("display","none");
+        $("#card-heart").animate({
             width: "1100px",
         }, 1000, 'easeInOutCirc', function () {
-            $("#big-card-coeur").css("display","block");
+            $("#big-card-heart").css("display","block");
         });
     });
     
-    //BUTTON BACK COEUR
-     $("#boutton-retour-coeur").click(function() {
+    //BUTTON BACK HEART
+     $("#button-back-heart").click(function() {
         
-        $("#carte-coeur").removeClass("animate_card2");
-        $("#big-card-coeur").css("display","none");
-        $("#carte-coeur").animate({
+        $("#card-heart").removeClass("animate_card2");
+        $("#big-card-heart").css("display","none");
+        $("#card-heart").animate({
             width: "390px",
         }, 1000, 'easeOutQuint', function () {
-            $("#small-coeur").css("display","block");
-             $("#carte-coeur").addClass("animate-mouve-small-card");
-             $("#carte-pic").css("display", "block");
+            $("#small-heart").css("display","block");
+             $("#card-heart").addClass("animate-mouve-small-card");
+             $("#card-peak").css("display", "block");
             
         });
     });
     
-    //BIG CARD TREFLE
-        $("#boutton-treffle").click(function() {
-        $("#carte-treffle").removeClass("animate-left");
-        $("#carte-treffle").addClass("animate_card1");
-        $("#carte-treffle").css("left", "5%");
-        $("#carte-carreau").css("display", "none");
-        $("#small-trefle").css("display","none");
-        $("#carte-treffle").animate({
+    //BIG CARD CLOVER
+        $("#button-clover").click(function() {
+        $("#card-clover").removeClass("animate-left");
+        $("#card-clover").addClass("animate_card1");
+        $("#card-clover").css("left", "5%");
+        $("#card-tile").css("display", "none");
+        $("#small-clover").css("display","none");
+        $("#card-clover").animate({
             width: "1100px",
         }, 1000, 'easeInOutCirc', function () {
-            $("#big-card-trefle").css("display","block");
+            $("#big-card-clover").css("display","block");
         });
     });
     
-    //BUTTON BACK TREFLE
-    $("#boutton-retour-trefle").click(function() {
+    //BUTTON BACK CLOVER
+    $("#button-back-clover").click(function() {
          
-         $("#carte-treffle").css("left", "100px");
-         $("#carte-treffle").removeClass("animate_card1");
-         $("#carte-carreau").css("display", "block");
-         $("#big-card-trefle").css("display","none");
+         $("#card-clover").css("left", "100px");
+         $("#card-clover").removeClass("animate_card1");
+         $("#card-tile").css("display", "block");
+         $("#big-card-clover").css("display","none");
         
-        $("#carte-treffle").animate({
+        $("#card-clover").animate({
             width: "390px",
         }, 1000, 'easeOutQuint', function () {
-        $("#small-trefle").css("display","block");
+        $("#small-clover").css("display","block");
         });
     });
     
-    //BIG CARD CARREAU
-        $("#boutton-carreau").click(function() {
-        $("#carte-carreau").removeClass("animate-right");
-        $("#carte-carreau").removeClass("animate-mouve-small-card");
-        $("#carte-carreau").addClass("animate_card1");
-        $("#carte-carreau").css("left", "5%");
-        $("#carte-treffle").css("display", "none");
-        $("#small-carreau").css("display","none");
-        $("#carte-carreau").animate({
+    //BIG CARD TILE
+        $("#button-tile").click(function() {
+        $("#card-tile").removeClass("animate-right");
+        $("#card-tile").removeClass("animate-mouve-small-card");
+        $("#card-tile").addClass("animate_card1");
+        $("#card-tile").css("left", "5%");
+        $("#card-clover").css("display", "none");
+        $("#small-tile").css("display","none");
+        $("#card-tile").animate({
             width: "1100px",
         }, 1000, 'easeInOutCirc', function () {
-            $("#big-card-carreau").css("display","block");
+            $("#big-card-tile").css("display","block");
         });
     });
     
-    //BUTTON BACK CARREAU
-    $("#boutton-retour-carreau").click(function() {
-    $("#carte-carreau").removeClass("animate_card1");
-    $("#big-card-carreau").css("display","none");
-    $("#carte-carreau").animate({
+    //BUTTON BACK TILE
+    $("#button-back-tile").click(function() {
+    $("#card-tile").removeClass("animate_card1");
+    $("#big-card-tile").css("display","none");
+    $("#card-tile").animate({
         width: "390px",
     }, 1000, 'easeOutQuint', function () {
-        $("#small-carreau").css("display","block");
-        $("#carte-carreau").addClass("animate-mouve-small-card");
-        $("#carte-treffle").css("display", "block");
+        $("#small-tile").css("display","block");
+        $("#card-tile").addClass("animate-mouve-small-card");
+        $("#card-clover").css("display", "block");
         });
     });
+    
     
         //SCROLL
     window.onscroll = function(){
        if (document.body.scrollTop >= 500 && i == 0){
-            $('#carte-pic').addClass("animate-left");
+            $('#card-peak').addClass("animate-left");
            ++i;
             };
         
         if (document.body.scrollTop >= 600 && i == 1){
-            $('#carte-coeur').addClass("animate-right");
+            $('#card-heart').addClass("animate-right");
             ++i;
             };
         
         if (document.body.scrollTop >= 800 && i == 2){
-            $('#carte-treffle').addClass("animate-left");
+            $('#card-clover').addClass("animate-left");
             ++i;
             };
         
         if (document.body.scrollTop >= 900 && i == 3){
-            $('#carte-carreau').addClass("animate-right");
+            $('#card-tile').addClass("animate-right");
             ++i;
             };
         };
-
+    
+  
 });
