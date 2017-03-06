@@ -445,3 +445,23 @@ footer a {
     height: 100%; 
     float: right;
 }
+
+
+
+
+/************** RESPONSIVE ***************/
+
+/* RESPONSIVE LAPTOP */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+  {
+  
+  }
+
+
+/* RESPONSIVE PHONE */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 768px)
+  {
+
+  }

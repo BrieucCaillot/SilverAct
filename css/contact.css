@@ -237,6 +237,18 @@ header{
 }
 
 #title-interlocutor{
+
+    color: #148fad;
+    font-family: Gotham-Light, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    font-weight: normal;
+}
+
+h1{
+
     color: #148fad;
     font-family: Gotham-Light, sans-serif;
     font-size: 35px;
@@ -265,13 +277,11 @@ h1{
     box-shadow: 10px 10px 20px #e6e6e6;
 }
 
-
 #card-form img{
     float: left;
     height: 530px;
     width: auto;
 }
-
 
 #card-form h3{
     color: #148fad;
@@ -439,10 +449,6 @@ h1{
     animation: width-new1 0.5s ease forwards;
 }
         
-
-        
-
-
 /*CONTENT2*/
 
 #content2{
@@ -793,4 +799,27 @@ footer a {
 @-webkit-keyframes width-new1 {
     from {width: 25px;}
     to {width: 120px;}
+
 }
+
+
+
+/************** RESPONSIVE ***************/
+
+/* RESPONSIVE LAPTOP */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+  {
+  
+  }
+
+
+/* RESPONSIVE PHONE */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 768px)
+  {
+
+  }
+=======
+}
+
