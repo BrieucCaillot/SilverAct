@@ -337,6 +337,7 @@ header{
     z-index: 2;
     position: absolute;
     top: 286px;
+
 }
 
 #secondblock #right #bulles3 {
@@ -583,8 +584,27 @@ footer a {
     padding: 10px;
 }
 
+
 #right-block{
     width: 50%; 
     height: 100%; 
     float: right;
 }
+
+/************** RESPONSIVE ***************/
+
+/* RESPONSIVE LAPTOP */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+  {
+  
+  }
+
+
+/* RESPONSIVE PHONE */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 768px)
+  {
+
+  }
+

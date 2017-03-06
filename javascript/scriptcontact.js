@@ -32,7 +32,6 @@ $(document).ready(function() {
             
             $("#img-head").css("width", "90%");
             $("#img-head").css("margin", "18px auto");
-            
 
             $("#navigation").css("margin-top", "0px");
             
@@ -42,6 +41,7 @@ $(document).ready(function() {
             $("header").css("height", "95px");
             $("header").css("padding", "10px 0 10px 0");
             $("header").css("margin-top", "0");
+            $("header").css("padding", "10px 0 10px 0");
             
             $("#content").css("height", "auto");
             
@@ -61,20 +61,20 @@ $(document).ready(function() {
     });
     
     
-    $('#select-atelier').click(function () {
-        console.log($("#select-atelier").val());
-        $("#select-sortie option").remove();
-        if ($('#select-atelier').val() == "Pic de l'informatique") {
-            $('#select-sortie').append("<option>Choix de votre sortie</option><option>Musée des arts et métiers</option><option>Cité des sciences</option><option>Exposition</option>");
+    $('#select-workshop').change(function () {
+        console.log($("#select-workshop").val());
+        $("#select-exit option").remove();
+        if ($('#select-workshop').val() == "Pic de l'informatique") {   
+            $('#select-exit').append("<option>Choix de votre sortie</option><option>Musée des arts et métiers</option><option>Cité des sciences</option><option>Exposition</option>");
             
         } else if ($(this).val() == "Au coeur de l'histoire") {
-            $('#select-sortie').append("<option>Choix de votre sortie</option><option>Musée d'Orsay</option><option>Le Louvre</option><option>Musée de la Photographie</option>");
+            $('#select-exit').append("<option>Choix de votre sortie</option><option>Musée d'Orsay</option><option>Le Louvre</option><option>Musée de la Photographie</option>");
             
          } else if ($(this).val() == "Trèfle joueur") {
-            $('#select-sortie').append("<option>Choix de votre sortie</option><option>Le Lac des cygnes</option><option>Nos disques sont rayés</option><option>Moi et François B</option>"); 
+            $('#select-exit').append("<option>Choix de votre sortie</option><option>Le Lac des cygnes</option><option>Nos disques sont rayés</option><option>Moi et François B</option>"); 
              
         } else if ($(this).val() == "Carreau des artistes") {
-            $('#select-sortie').append("<option>Choix de votre sortie</option><option>Exposition Maggrit</option><option>Musée d'Orsay</option><option>Moi et François B</option>"); 
+            $('#select-exit').append("<option>Choix de votre sortie</option><option>Exposition Maggrit</option><option>Musée d'Orsay</option><option>Moi et François B</option>"); 
         }
     });
 });
