@@ -27,14 +27,6 @@ body {
     url("../polices/Gotham/Gotham-Light.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "Gotham-Medium";
-    src: url(../polices/Gotham/Gotham-Medium.otf),
-    url("../polices/Gotham/Gotham-Medium.eot") format("eot"),
-    url("../polices/Gotham/Gotham-Medium.woff") format("woff"),
-    url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
-}
-
 /* FIRSTBLOCK - HEADER */
 
 #firstblock {
@@ -247,7 +239,7 @@ header{
     font-weight: normal;
 }
 
-h1{
+#title{
 
     color: #148fad;
     font-family: Gotham-Light, sans-serif;
@@ -258,15 +250,6 @@ h1{
     font-weight: normal;
 }
 
-h1{
-    color: #148fad;
-    font-family: Gotham-Light, sans-serif;
-    font-size: 35px;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 70px;
-    font-weight: normal;
-}
 
 #card-form{
     width: 1100px;
@@ -314,6 +297,7 @@ h1{
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    font-size: 13px;
 }
 
 
@@ -326,9 +310,9 @@ h1{
     border-right: 0px;
     margin-top: 10px;
     font-family: gotham-light;
-    
-    
+    font-size: 13px;
 }
+
 .name-input {
     width: 192px;
     height: 30px;
@@ -338,12 +322,12 @@ h1{
     border-right: 0px;
     margin-right: 25px;
     font-family: gotham-light;
-     margin-top: 10px;
-   
-   
+    margin-top: 10px;
+    font-size: 13px;   
 }
+
 #card-form form select{
-   width: 425px;
+    width: 425px;
     height: 35px;
     border-bottom: solid 1.5px #e6e6e6;
     border-top: 0px;
@@ -351,12 +335,13 @@ h1{
     border-right: 0px;
     font-family: gotham-light;
     color: #044759;
-     margin-top: 10px;
+    margin-top: 10px;
+    font-size: 13px;
 }
+
 #card-form form textarea{
-   width: 410px;
+    width: 410px;
     border: solid 1.5px #e6e6e6;
-   
     margin-top: 15px;
     font-family: gotham-light;
     height: 100px;
@@ -364,7 +349,9 @@ h1{
     resize: none;
     padding-top: 5px;
     padding-left: 10px;
+    font-size: 13px;
 }
+
 ::-webkit-input-placeholder {
    color: #044759;
     
@@ -382,7 +369,21 @@ h1{
    color: #044759;  
 }
 
+.peak {
+    display: none;
+}
 
+.heart {
+    display: none;
+}
+
+.clover {
+    display: none;
+}
+
+.tile {
+    display: none;
+}
 /*BOUTTON*/
 
 
@@ -400,6 +401,7 @@ h1{
     color: #ef7915;
     width: 180px; 
     height: 25px; 
+    text-decoration: none;
 }
         
 .text-more1 {
@@ -558,11 +560,10 @@ h1{
 }
 #input-mail{
     width: 350px;
-    padding-left: 10px;
     margin-left: 40px;
 }
 #card-email textarea{
-   width: 350px;
+    width: 350px;
     border: solid 1.5px #e6e6e6;
     margin-top: 15px;
     font-family: gotham-light;
@@ -572,6 +573,7 @@ h1{
     padding-top: 5px;
     padding-left: 10px;
     margin-left: 40px;
+    font-size: 13px;
 }
 /*BUTTON*/
 #fleche-left-email {
