@@ -18,13 +18,8 @@
         <link rel="shortcut icon" href="../images/firstblock/silveractfixed.png">
         <link rel="stylesheet" href="../css/contact.css">
         <link rel="stylesheet" href="../css/reset.css">
-            <!--MEDIA QUERIES-->
-        <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 380px)' href="../css/phone.css"/>
-        <link rel="stylesheet" media='screen and (min-width: 381px) and (max-width: 768px)' href="../css/laptop.css"/>
 
         <!--FONT-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 
         
@@ -58,7 +53,7 @@
                                     </li>
 
                                     <li class="hvr-sweep-to-top">
-                                        <a href="evenements.html">ÉVENEMENTS</a>
+                                        <a href="evenements.html">ÉVÉNEMENTS</a>
                                     </li>
 
                                     <li class="hvr-sweep-to-top">
@@ -96,7 +91,7 @@
                     </div>
                 </header>
         
-			<h1>NOUS CONTACTER</h1>
+			<h1 id="title">NOUS CONTACTER</h1>
 			<div id="content1">
 				<div id="card-form">
 					<img src="../images/secondblock/formulaire.png" alt="image formulaire">
@@ -111,19 +106,34 @@
 						<input type="text" placeholder="Adresse*"class="input-base">
 						<select id="select-workshop">
 							<option>Votre Atelier*</option>
-							<option>Pic de l'informatique</option>
-							<option>Au coeur de l'histoire</option>
-							<option>Trèfle joueur</option>
-							<option>Carreau des artistes</option>
+							<option id="peak">Pique de l'informatique</option>
+							<option id="heart">Au coeur de l'histoire</option>
+							<option id="clover">Trèfle joueur</option>
+							<option id="tile">Carreau des artistes</option>
 						</select>
 						<select id="select-exit">
 							<option>Choix de votre sortie</option>
+							<option class="peak" id='peak1' value='musée des arts et metiers'>Musée des Arts et Métiers</option>
+							<option class="peak" id='peak2' value="cité des sciences">Cité des Sciences</option>
+							<option class="peak" id='peak3' value="exposition du moment">Exposition du Moment</option>
+							
+							<option class="heart" id='heart1' value='musée orsay'>Musée d'Orsay</option>
+							<option class="heart" id='heart2' value="louvre">Le Louvre</option>
+							<option class="heart" id='heart3' value="musée photographie">Musée de la Photographie</option>
+							
+							<option class="clover" id='clover1' value='le lac des cygnes'>le Lac des Cygnes</option>
+							<option class="clover" id='clover2' value="nos disques">Nos Disques sont rayés</option>
+							<option class="clover" id='clover3' value="moi et francois B">Moi et François B</option>
+							
+							<option class="tile" id='tile1' value='exposition maggrit'>Exposition Magritte</option>
+							<option class="tile" id='tile2' value="museum">Musée d'Orsay</option>
+							<option class="tile" id='tile3' value="museum picasso">Musée Picasso</option>
 						</select>
 						<textarea placeholder="Votre message*"></textarea>
 					</form>
 					<div id="button-go">
-						<div id="div-button-go"class="button-orange">
-							<a class="button-more">
+						<div id="div-button-go" class="button-orange">
+							<a href="contact.html" class="button-more">
 								<div id="fleche-left">
 									<img src="../images/thirdblock/fleche-right.svg">
 								</div>
@@ -223,7 +233,7 @@
 						<br>
 						procure une sensation de bien- être et de
 						<br>
-						gaité réciproque et cela dans le plus pur
+						gaieté réciproque et cela dans le plus pur
 						<br>
 						respect et partage »
 					</p>
@@ -278,5 +288,6 @@
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.6765973035117!2d2.2987758150501643!3d48.883441406897425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f9617917cc3%3A0xa1c4ed5b1cbdbf99!2s77+Rue+de+Prony%2C+75017+Paris!5e0!3m2!1sfr!2sfr!4v1487262680072" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</footer>
+			<script src="../javascript/cookie.js"></script>
 		</body>
 	</html>
