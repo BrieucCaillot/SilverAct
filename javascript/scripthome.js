@@ -74,6 +74,7 @@ $(document).ready(function() {
 
     
     //SCROll MENU @50 
+
     
     $(document).on("scroll", function() {
 
@@ -267,41 +268,8 @@ $(document).ready(function() {
         });
     });
     
-   //COOKIES
     
-        //PEAK
-        $('#button-contact-peak').click(function(e){
-            var peak1 = $('input[name=choiceexist]:checked').val();
-            console.log($('input[name=choiceexist]:checked').val());
-            setCookie("PEAK1",peak1,30);
-        });
-
-        //HEART
-        $('#button-contact-heart').click(function(e){
-            var heart1 = $('input[name=choiceexist1]:checked').val();
-            console.log($('input[name=choiceexist]:checked').val());
-            setCookie("HEART1",heart1,30);
-        });
-
-        //CLOVER
-
-        $('#button-contact-clover').click(function(e){
-            var clover1 = $('input[name=choiceexist2]:checked').val();
-            console.log($('input[name=choiceexist]:checked').val());
-            setCookie("CLOVER1",clover1,30);
-        });
-
-        //TILE
-
-        $('#button-contact-tile').click(function(e){
-            var tile1 = $('input[name=choiceexist3]:checked').val();
-            console.log($('input[name=choiceexist]:checked').val());
-            setCookie("TILE1",tile1,30);
-        });
-
-    
-    
-    //SCROLL
+        //SCROLL
     window.onscroll = function(){
        if (document.body.scrollTop >= 500 && i == 0){
             $('#card-peak').addClass("animate-left");
