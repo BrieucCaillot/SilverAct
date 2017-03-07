@@ -30,14 +30,6 @@ body{
     url("../polices/Gotham/Gotham-Light.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "Gotham-Medium";
-    src: url(../polices/Gotham/Gotham-Medium.otf),
-    url("../polices/Gotham/Gotham-Medium.eot") format("eot"),
-    url("../polices/Gotham/Gotham-Medium.woff") format("woff"),
-    url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
-}
-
 /* FIRSTBLOCK - HEADER */
 
 #firstblock {
@@ -266,12 +258,12 @@ header{
     color: #148fad;
     font-size: 20px;
     margin-top: 9%;
-    line-height: 37px;  
+    line-height: normal;  
 }
 
 #secondblock #left p{
     font-size: 15px;
-    font-family: Roboto;
+    font-family: 'Quicksand', sans-serif;
     line-height: 24px;
     width: 80%;
     color: #044759;
@@ -303,7 +295,7 @@ header{
 
 #secondblock #right p{
     line-height: 21px;
-    font-family: "Roboto-Regular";
+    font-family: 'Quicksand', sans-serif;
     padding-top: 2%;
     font-size: 15px;
     color: #148fad;  

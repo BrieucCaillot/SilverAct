@@ -65,7 +65,7 @@ $(document).ready(function() {
     
     $('#select-workshop').change(function () {
         console.log($("#select-workshop").val());
-        if ($('#select-workshop').val() == "Pic de l'informatique") {
+        if ($('#select-workshop').val() == "Pique de l'informatique") {
             $('#select-exit .tile').css("display", "none"); 
             $('#select-exit .clover').css("display", "none"); 
             $('#select-exit .heart').css("display", "none");
