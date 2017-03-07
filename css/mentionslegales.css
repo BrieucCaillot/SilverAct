@@ -13,7 +13,6 @@
     margin: 0;
 }
 
-
 body{
     background-color: #fff;  
 }
@@ -50,7 +49,7 @@ header{
     height: auto;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     position: absolute;
 }
 
@@ -77,23 +76,21 @@ header{
     width: 70%; 
     height: 100%; 
     position: absolute;
-
     top: 50%; 
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%); 
+    transform: translateX(-50%) translateY(-50%); 
 
 }
+
 /* NAV MENU */
-
-
 
 #navigation {
     width: 100%; 
     position: absolute; 
     top: 50%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #navigation nav {
@@ -124,12 +121,6 @@ header{
 
 #navigation ul li a:hover {
     color: white; 
-}
-
-#navigation ul li:nth-child(3) a {
-  background-color : #148fad;
-  font-family : Gotham-Medium;
-  color : #fff;
 }
 
 /* SWIPER TON RIGHT li */
@@ -297,7 +288,7 @@ footer a {
     text-align: center;
     height: 80%; 
     -webkit-transform: translateY(-50%); 
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     top: 50%;
     position: relative;
     border-right: 1px solid #044779;
@@ -306,7 +297,7 @@ footer a {
 .text {
     top: 50%; 
     -webkit-transform: translateY(-50%); 
-            transform: translateY(-50%); 
+    transform: translateY(-50%); 
     position: relative; 
 }
 
@@ -326,7 +317,7 @@ footer a {
     top: 50%;
     position: relative;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #contact h2 {
@@ -349,7 +340,7 @@ footer a {
 
 #contact ul li img {
     -webkit-transform: translateY(20%);
-            transform: translateY(20%);
+    transform: translateY(20%);
 }
 
 #phone {
@@ -371,7 +362,7 @@ footer a {
     top: 50%;
     position: relative;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     text-align: center;
 }
 
@@ -399,14 +390,297 @@ footer a {
 /* RESPONSIVE LAPTOP */
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
-  {
-  
-  }
+{
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 95px;
+        padding: 0;
+    }
+
+    header #content {
+        width: 100%;
+        height: 61px;;;
+    }
+
+    #menu {
+        height: inherit;
+        width: 67%;
+    }
+
+    #navigation ul li a {
+        font-size: 10px;
+        padding: 15px 0 15px 0;;
+    }
+
+    #logo {
+        width: 15%;
+        height: 62px;
+        margin-left: 21px;;
+    }
+
+    #img-head {
+        margin: 22px 0px 0 0;
+    }
+
+    #content {
+        width: 88%
+    }
+
+    #secondblock #left h1 {
+        font-size: 25px;
+    }
+
+    #secondblock #left h2 {
+        font-size: 20px;
+    }
+
+    #secondblock #left h3 {
+        font-size: 15px;
+    }
+
+    #secondblock #left p {
+        font-size: 10px;
+    }
+
+    footer {
+        top: 4500px;
+        height: 22%;
+    }
+
+    footer a {
+        font-size: 8px;
+    }
+    
+    #deduction a {
+        font-size: 8px
+    }
+
+    .text {
+        font-size: 10px
+    }
+
+    #phone {
+        width: 10px
+    }
+
+    #mail {
+        width: 15px
+    }
+
+    #contact ul li:last-child {
+        margin-top: 4px
+    }
+
+    #contact h2 {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+
+    #contact p {
+        margin-bottom: 0;
+        font-size: 9px;
+    }
+
+    #social img {
+        height: 19px;
+    }
+
+    #social p {
+        font-size: 11px;
+        margin-bottom: 0px;
+    }
+}
 
 
 /* RESPONSIVE PHONE */
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 768px)
-  {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+{
 
-  }
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 95px;
+        padding: 0;
+    }
+
+    header #content {
+        width: 100%;
+        height: 61px;;;
+    }
+
+    #menu {
+        height: inherit;
+        width: 67%;
+    }
+
+    #navigation ul li a {
+        font-size: 10px;
+        padding: 15px 0 15px 0;;
+    }
+
+    #logo {
+        width: 15%;
+        height: 62px;
+        margin-left: 21px;;
+    }
+
+    #img-head {
+        margin: 22px 0px 0 0;
+    }
+
+    #content {
+        width: 88%
+    }
+
+    #secondblock {
+        margin-top: 0;
+    }
+
+    #secondblock #left {
+        width: 100%
+    }
+
+    #secondblock #left h1 {
+        font-size: 25px;
+        width: 282px;
+        text-align: center;
+    }
+
+    #strong {
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #secondblock #left h2 {
+        font-size: 20px;
+        width: 282px;
+        text-align: center;
+    }
+
+    #secondblock #left h3 {
+        font-size: 15px;
+        width: 282px;
+        text-align: center;
+        margin-top: 35px;;
+    }
+
+    #secondblock #left p {
+        font-size: 10px;
+        width: 282px;
+    }
+
+    footer {
+        top: 5500px;
+        height: 385px;
+        width: 100%;
+    }
+
+    footer a {
+        font-size: 8px;
+    }
+
+    #left-block {
+        width: 100%;
+    }
+
+    #right-block {
+        display: none;
+    }
+
+    #deduction {
+        width: 50%;
+        top: 4px;
+        -webkit-transform: none;
+        transform: none;
+        height: 76px;
+        position: absolute;
+        left: 26%;
+        border-bottom: 1px solid #044779;
+        border-right: none;
+    }
+    
+    #deduction a {
+        font-size: 10px;
+        position: absolute;
+        top: 312px;
+        left: 23%;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    #phone {
+        width: 10px
+    }
+
+    #mail {
+        width: 15px
+    }
+
+    #contact ul li:last-child {
+        margin-top: 0px;
+    }
+
+    #contact {
+        width: 50%;
+        height: 151px;
+        top: 183px;
+        -webkit-transform: none;
+        transform: none;
+        margin-left: 0;
+        position: absolute;
+        left: 79px;
+        border: none;
+    }
+
+    #contact h2 {
+        font-size: 18px;
+        padding-left: 5px;
+        margin-bottom: 0px;
+    }
+
+    #contact p {
+        margin-bottom: 0;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    #contact ul li a{
+        font-size: 12px;
+    }
+
+    #contact ul li {
+        font-size: 23px;
+    }
+
+    #social {
+        width: 50%;
+        height: 103px;
+        top: 77px;
+        -webkit-transform: none;
+        transform: none;
+        margin-left: 0;
+        position: absolute;
+        border-bottom: 1px solid #044779;
+        left: 26%;;
+    }
+
+    #social img {
+        height: 25px;
+    }
+
+    #social p {
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+}
