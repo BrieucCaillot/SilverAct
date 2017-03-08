@@ -13,7 +13,6 @@
     margin: 0;
 }
 
-
 body{
     background-color: #fff;  
 }
@@ -30,13 +29,6 @@ body{
     url("../polices/Gotham/Gotham-Light.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "Gotham-Medium";
-    src: url(../polices/Gotham/Gotham-Medium.otf),
-    url("../polices/Gotham/Gotham-Medium.eot") format("eot"),
-    url("../polices/Gotham/Gotham-Medium.woff") format("woff"),
-    url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
-}
 
 /* FIRSTBLOCK - HEADER */
 
@@ -133,6 +125,12 @@ header{
     color: white; 
 }
 
+#navigation ul li:nth-child(3) a {
+  background-color : #148fad;
+  font-family : Gotham-Medium;
+  color : #fff;
+}
+
 /* SWIPER TON RIGHT li */
 
 /* Sweep To Top */
@@ -213,6 +211,7 @@ header{
     width: 100%;
     height: 46em;
     margin-top: 7em;  
+    
 }
 
 #secondblock #left {
@@ -221,6 +220,7 @@ header{
     position: relative;
     float: left; 
     font-family: "Gotham-Light", sans-serif;
+    line-height: normal;
 }
 
 #secondblock #left h1{
@@ -287,7 +287,7 @@ footer a {
     display: flex; 
 }
 
-.section{ 
+.section{
     width: 33%; 
     height: auto; 
 }
@@ -295,11 +295,11 @@ footer a {
 #deduction {
     text-align: center;
     height: 80%; 
-    -webkit-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); 
+            transform: translateY(-50%);
     top: 50%;
     position: relative;
     border-right: 1px solid #044779;
-    transform: translateY(-50%);
 }
 
 .text {
@@ -313,12 +313,9 @@ footer a {
     font-size: 14px; 
 }
 
-#deduction p{ 
-    color: #ef7915; 
-    font-size: 15px; 
-    border-bottom: 1px solid #044779; 
-    height: 67%; 
-    border-bottom-width: 1px;;
+#deduction p{
+    margin-bottom: 12px; 
+    color: #ef7915;
 }
 
 #contact {
@@ -335,9 +332,6 @@ footer a {
     font-family: Gotham-Light;
     margin-bottom: 18px;
     color: #ef7915;
-    font-size: 20px;
-    width: inherit;
-    height: 32px;
 }
 
 #contact p {
@@ -593,7 +587,7 @@ footer a {
     }
 
     footer {
-        top: 5500px;
+        top: 5600px;
         height: 385px;
         width: 100%;
     }
@@ -612,24 +606,25 @@ footer a {
 
     #deduction {
         width: 50%;
-        border-right: none;
         top: 4px;
                 -webkit-transform: none;
                         transform: none;
-        height: 98px;
+        height: 80px;
         position: absolute;
-        left: 26%;;
+        left: 26%;
+        border-right: none;
+        border-bottom: 1px solid #044779;
     }
     
     #deduction a {
         font-size: 10px;
         position: absolute;
         top: 312px;
-        left: 23%;;
+        left: 23%;
     }
 
     .text {
-        font-size: 50px
+        font-size: 18px;
     }
 
     #phone {
@@ -653,6 +648,7 @@ footer a {
         margin-left: 0;
         position: absolute;
         left: 79px;
+        border-right: none;
     }
 
     #contact h2 {

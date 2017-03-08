@@ -27,14 +27,6 @@ body {
     url("../polices/Gotham/Gotham-Light.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "Gotham-Medium";
-    src: url(../polices/Gotham/Gotham-Medium.otf),
-    url("../polices/Gotham/Gotham-Medium.eot") format("eot"),
-    url("../polices/Gotham/Gotham-Medium.woff") format("woff"),
-    url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
-}
-
 /* FIRSTBLOCK - HEADER */
 
 #firstblock {
@@ -48,6 +40,7 @@ header{
     background-color: white;
     padding: 10px 0 10px 0;
     margin: 0 auto;;
+
 } 
 
 #contentheader {
@@ -55,7 +48,7 @@ header{
     height: auto;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+            transform: translateX(-50%);
     position: absolute;
 }
 
@@ -92,21 +85,23 @@ header{
     width: 70%; 
     height: 100%; 
     position: absolute;
+
     top: 50%; 
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%); 
+            transform: translateX(-50%) translateY(-50%); 
 
 }
-
 /* NAV MENU */
+
+
 
 #navigation {
     width: 100%; 
     position: absolute; 
     top: 50%;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 #navigation nav {
@@ -228,8 +223,9 @@ header{
     width: 100%;
     height: auto;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    
 }
 
 #title-interlocutor{
@@ -243,7 +239,7 @@ header{
     font-weight: normal;
 }
 
-h1{
+#title{
 
     color: #148fad;
     font-family: Gotham-Light, sans-serif;
@@ -254,15 +250,6 @@ h1{
     font-weight: normal;
 }
 
-h1{
-    color: #148fad;
-    font-family: Gotham-Light, sans-serif;
-    font-size: 35px;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 70px;
-    font-weight: normal;
-}
 
 #card-form{
     width: 1100px;
@@ -296,35 +283,36 @@ h1{
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: 25px;
     float: left;
 }
-
+ 
 #input-name {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 13px;
 }
 
 
 .input-base{
    width: 410px;
-   height: 30px;
-   border-bottom: solid 1.5px #e6e6e6;
-   border-top: 0px;
-   border-left: 0px;
-   border-right: 0px;
-   margin-top: 10px;
-   font-family: gotham-light;
-
-
+    height: 30px;
+    border-bottom: solid 1.5px #e6e6e6;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-top: 10px;
+    font-family: gotham-light;
+    font-size: 13px;
 }
+
 .name-input {
     width: 192px;
     height: 30px;
@@ -335,35 +323,38 @@ h1{
     margin-right: 25px;
     font-family: gotham-light;
     margin-top: 10px;
-
-
+    font-size: 13px;   
 }
+
 #card-form form select{
-   width: 425px;
-   height: 35px;
-   border-bottom: solid 1.5px #e6e6e6;
-   border-top: 0px;
-   border-left: 0px;
-   border-right: 0px;
-   font-family: gotham-light;
-   color: #044759;
-   margin-top: 10px;
+    width: 425px;
+    height: 35px;
+    border-bottom: solid 1.5px #e6e6e6;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-family: gotham-light;
+    color: #044759;
+    margin-top: 10px;
+    font-size: 13px;
 }
-#card-form form textarea{
-   width: 410px;
-   border: solid 1.5px #e6e6e6;
 
-   margin-top: 15px;
-   font-family: gotham-light;
-   height: 100px;
-   overflow-y: scroll;
-   resize: none;
-   padding-top: 5px;
-   padding-left: 10px;
+#card-form form textarea{
+    width: 410px;
+    border: solid 1.5px #e6e6e6;
+    margin-top: 15px;
+    font-family: gotham-light;
+    height: 100px;
+    overflow-y: scroll;
+    resize: none;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 13px;
 }
+
 ::-webkit-input-placeholder {
    color: #044759;
-
+    
 }
 
 :-moz-placeholder { /* Firefox 18- */
@@ -378,7 +369,21 @@ h1{
    color: #044759;  
 }
 
+.peak {
+    display: none;
+}
 
+.heart {
+    display: none;
+}
+
+.clover {
+    display: none;
+}
+
+.tile {
+    display: none;
+}
 /*BOUTTON*/
 
 
@@ -389,15 +394,16 @@ h1{
     margin-top: -0.1px;
     padding-left: 10px;
 }
-.button-more{
+ .button-more{
     display: inline;
     text-align: center;
     font-family: Gotham-light, sans-serif;
     color: #ef7915;
     width: 180px; 
     height: 25px; 
+    text-decoration: none;
 }
-
+        
 .text-more1 {
     display: inline;
     font-size: 17px;
@@ -407,7 +413,7 @@ h1{
     background-color: white;
     margin-left: 35px;
 }
-
+        
 #button-go{
     height: auto;
     float: left;
@@ -420,7 +426,7 @@ h1{
 }
 
 
-#fleche-left {
+ #fleche-left {
     position: relative;
     height: 25px;
     width: 25px;
@@ -429,7 +435,7 @@ h1{
     margin-bottom: -25px;
     margin-top: 5px;
 }
-#fleche-left img {
+ #fleche-left img {
     position: absolute;
     height: 12px;
     width: auto;
@@ -439,12 +445,12 @@ h1{
     margin-left : -3px;
 }
 
-
+        
 #fleche-left:hover {
     -webkit-animation: width-new1 0.5s forwards ease;
     animation: width-new1 0.5s ease forwards;
 }
-
+        
 /*CONTENT2*/
 
 #content2{
@@ -454,8 +460,8 @@ h1{
     width: 100%;
     height: auto;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     
 }
 
@@ -501,7 +507,7 @@ h1{
     margin-top: 20px;
     line-height: normal;
     color: #044759;
-
+   
 }
 
 /*BUTTON*/
@@ -515,7 +521,7 @@ h1{
     margin-bottom: -25px;
     margin-top: 5px;
 }
-#fleche-left-call img {
+ #fleche-left-call img {
     position: absolute;
     height: 12px;
     width: auto;
@@ -525,7 +531,7 @@ h1{
     margin-left : -3px;
 }
 
-
+        
 #fleche-left-call:hover {
     -webkit-animation: width-new1 0.5s forwards ease;
     animation: width-new1 0.5s ease forwards;
@@ -554,20 +560,20 @@ h1{
 }
 #input-mail{
     width: 350px;
-    padding-left: 10px;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 #card-email textarea{
-   width: 350px;
-   border: solid 1.5px #e6e6e6;
-   margin-top: 15px;
-   font-family: gotham-light;
-   height: 100px;
-   overflow-y: scroll;
-   resize: none;
-   padding-top: 5px;
-   padding-left: 10px;
-   margin-left: 40px;
+    width: 350px;
+    border: solid 1.5px #e6e6e6;
+    margin-top: 15px;
+    font-family: gotham-light;
+    height: 100px;
+    overflow-y: scroll;
+    resize: none;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-left: 40px;
+    font-size: 13px;
 }
 /*BUTTON*/
 #fleche-left-email {
@@ -579,7 +585,7 @@ h1{
     margin-bottom: -25px;
     margin-top: 5px;
 }
-#fleche-left-email img {
+ #fleche-left-email img {
     position: absolute;
     height: 12px;
     width: auto;
@@ -589,7 +595,7 @@ h1{
     margin-left : -3px;
 }
 
-
+        
 #fleche-left-email:hover {
     -webkit-animation: width-new1 0.5s forwards ease;
     animation: width-new1 0.5s ease forwards;
@@ -616,8 +622,8 @@ h1{
     width: 100%;
     height: auto;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .interlocutor{
     display: block;
@@ -686,7 +692,7 @@ footer a {
     text-align: center;
     height: 80%; 
     -webkit-transform: translateY(-50%); 
-    transform: translateY(-50%);
+            transform: translateY(-50%);
     position: relative;
     border-right: 1px solid #044779;
     top: 50%;;
@@ -701,7 +707,7 @@ footer a {
 .textfooter {
     top: 50%; 
     -webkit-transform: translateY(-50%); 
-    transform: translateY(-50%); 
+            transform: translateY(-50%); 
     position: relative; 
 }
 
@@ -725,7 +731,7 @@ footer a {
     top: 50%;
     position: relative;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 #contact h2 {
@@ -749,7 +755,7 @@ footer a {
 
 #contact ul li img {
     -webkit-transform: translateY(20%);
-    transform: translateY(20%);
+            transform: translateY(20%);
 }
 
 #phone {
@@ -771,7 +777,7 @@ footer a {
     top: 50%;
     position: relative;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+            transform: translateY(-50%);
     text-align: center;
 }
 
@@ -805,46 +811,17 @@ footer a {
 /* RESPONSIVE LAPTOP */
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
-{
-    header {
-        height: 95px;
-        padding: 0;
-    }
-
-    header #contentheader {
-        width: 100%;
-        height: 61px;;;
-    }
-
-    #menu {
-        height: inherit;
-        width: 67%;
-    }
-
-    #navigation ul li a {
-        font-size: 10px;
-        padding: 15px 0 15px 0;;
-    }
-
-    #logo {
-        width: 15%;
-        height: 62px;
-        margin-left: 21px;;
-    }
-
-    #img-head {
-        margin: 22px 0px 0 0;
-    }
-    
-}
+  {
+  
+  }
 
 
 /* RESPONSIVE PHONE */
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
-{
+@media only screen and (min-device-width : 768px) and (max-device-width : 768px)
+  {
 
-}
-
+  }
+=======
 }
 

@@ -29,14 +29,6 @@ body {
     url("../polices/Gotham/Gotham-Light.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "Gotham-Medium";
-    src: url(../polices/Gotham/Gotham-Medium.otf),
-    url("../polices/Gotham/Gotham-Medium.eot") format("eot"),
-    url("../polices/Gotham/Gotham-Medium.woff") format("woff"),
-    url("../polices/Gotham/Gotham-Medium.ttf") format("truetype");
-}
-
 /* FIRSTBLOCK */
 
 
@@ -84,13 +76,13 @@ header{
 
 #menu {
     width: 70%; 
+    height: 100%; 
     position: absolute;
 
     top: 50%; 
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-    height: 100%; 
+            transform: translateX(-50%) translateY(-50%); 
 
 }
 /* NAV MENU */
@@ -200,10 +192,10 @@ header{
 #img-head {
     width: 90%;
     height: auto;
+    margin: 35px auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 35px auto;
 }
 
 #img-head img {
@@ -217,7 +209,7 @@ header{
 /* SECOND BLOCK */
 
 #content{
-    width: 85%;
+    width: 75%;
     height: auto;
     left: 50%;
     position: absolute;
@@ -245,20 +237,15 @@ header{
     color: #148fad;
     font-size: 35px;
     padding-top: 118px;
-    /* position: absolute; */
-    /* top: 13%; */
-    /* left: 40%; */
-    /* -webkit-transform: translate(-50%, -50%); */
-    /* transform: translate(-50%, -50%); */;
 }
 
 #left p {
     font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    line-height: 27px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 20px;
     width: 75%;
     color: #044759;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 #secondblock #trait {
@@ -273,14 +260,14 @@ header{
 
 .description {
     line-height: 22px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Quicksand', sans-serif;
     padding-top: 2%;
     font-size: 16px;
     color: #044759;
 }
 
 #secondblock #right {
-    width: 49%;
+    width: 52%;
     position: relative;
     float: right;
     margin-top: 0%;
@@ -300,7 +287,7 @@ header{
 
 #secondblock #right .description p {
     line-height: 21px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Quicksand', sans-serif;
     padding-top: 2%;
     font-size: 15px;
     color: #044759;
@@ -434,10 +421,10 @@ header{
    position: relative;
    height: 25px;
    width: 25px;
+   border: solid 2px #ef7915 ;
    border-radius: 25px;
    margin-bottom: -25px;
    margin-top: 5px;
-   border: solid 2px #ef7915;
 }
        
 .fleche-left:hover {
@@ -580,8 +567,8 @@ footer a {
 }
 
 #social img {
-    padding: 10px;
     height: 33px;
+    padding: 10px;
 }
 
 
@@ -590,9 +577,6 @@ footer a {
     height: 100%; 
     float: right;
 }
-
-
-
 
 
 /************** RESPONSIVE ***************/

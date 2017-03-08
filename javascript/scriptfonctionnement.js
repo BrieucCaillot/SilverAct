@@ -11,7 +11,7 @@ $(document).ready(function() {
             $("header").css("padding", "0 0 0 0");
 
             
-            $("#contentheader").css("height", "60px");
+            $("#content").css("height", "60px");
             
             $("#logoimg").attr("src", "../images/firstblock/silveractfixed.svg");
             $("#logoimg").css("width", "25%");
