@@ -400,9 +400,9 @@ footer a {
 
 /************** RESPONSIVE ***************/
 
-/* RESPONSIVE LAPTOP */
+/* MEDIA QUERIES MAX WIDTH 1100px */
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+@media screen and (max-device-width : 1100px)
   {
     body {
         overflow-x: hidden;
@@ -459,7 +459,7 @@ footer a {
     }
 
     footer {
-        top: 4500px;
+        top: 3600px;
         height: 22%;
     }
 
@@ -509,12 +509,201 @@ footer a {
 
   }
 
+/* MEDIA QUERIES MAX WIDTH 780px */
 
-/* RESPONSIVE PHONE */
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+@media screen and (max-device-width : 780px)
   {
 
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 95px;
+        padding: 0;
+    }
+
+    header #content {
+        width: 100%;
+        height: 61px;;;
+    }
+
+    #menu {
+        height: inherit;
+        width: 67%;
+    }
+
+    #navigation ul li a {
+        font-size: 10px;
+        padding: 15px 0 15px 0;;
+    }
+
+    #logo {
+        width: 15%;
+        height: 62px;
+        margin-left: 21px;;
+    }
+
+    #img-head {
+        margin: 22px 0px 0 0;
+    }
+
+    #content {
+        width: 88%
+    }
+
+    #secondblock {
+        margin-top: 0;
+    }
+
+    #secondblock #left {
+        width: 100%
+    }
+
+    #secondblock #left h1 {
+        font-size: 25px;
+        width: 282px;
+        text-align: center;
+    }
+
+    strong {
+        font-size: 11px;
+        width: 100%;
+        text-align: center;;
+    }
+
+    #secondblock #left h2 {
+        font-size: 20px;
+        width: 282px;
+        text-align: center;
+    }
+
+    #secondblock #left h3 {
+        font-size: 15px;
+        width: 282px;
+        text-align: center;
+        margin-top: 35px;;
+    }
+
+    #secondblock #left p {
+        font-size: 10px;
+        width: 282px;
+    }
+
+    footer {
+        top: 5680px;
+        height: 385px;
+        width: 100%;
+    }
+
+    footer a {
+        font-size: 8px;
+    }
+
+    #left-block {
+        width: 100%;
+    }
+
+    #right-block {
+        display: none;
+    }
+
+    #deduction {
+        width: 50%;
+        top: 4px;
+                -webkit-transform: none;
+                        transform: none;
+        height: 80px;
+        position: absolute;
+        left: 26%;
+        border-right: none;
+        border-bottom: 1px solid #044779;
+    }
+    
+    #deduction a {
+        font-size: 10px;
+        position: absolute;
+        top: 312px;
+        left: 37%;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    #phone {
+        width: 10px
+    }
+
+    #mail {
+        width: 15px
+    }
+
+    #contact ul li:last-child {
+    margin-top: 0px;
+    }
+
+    #contact {
+        width: 77%;
+        height: 151px;
+        top: 183px;
+        -webkit-transform: none;
+                transform: none;
+        margin-left: 0;
+        position: absolute;
+        left: 79px;
+        border-right: none;
+    }
+
+    #contact h2 {
+        font-size: 18px;
+        padding-left: 5px;
+        margin-bottom: 0px;
+    }
+
+    #contact p {
+        margin-bottom: 0;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    #contact ul li a{
+        font-size: 12px;
+    }
+
+    #contact ul li {
+        font-size: 23px;
+    }
+
+    #social {
+        width: 50%;
+        height: 103px;
+        top: 77px;
+        -webkit-transform: none;
+                transform: none;
+        margin-left: 0;
+        position: absolute;
+        border-bottom: 1px solid #044779;
+        left: 26%;;
+    }
+
+    #social img {
+        height: 25px;
+    }
+
+    #social p {
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+  }
+
+/* MEDIA QUERIES MAX WIDTH 380px */
+
+@media screen and (max-device-width : 380px) 
+  {
+  
     body {
         overflow-x: hidden;
     }
@@ -697,5 +886,5 @@ footer a {
         margin-bottom: 10px;
         margin-top: 10px;
     }
-    
+
   }
