@@ -29,6 +29,11 @@ body{
     url("../polices/Gotham/Gotham-Light.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Gotham-Medium";
+    src: url(../polices/Gotham/Gotham-Medium.otf);
+}
+
 
 /* FIRSTBLOCK - HEADER */
 
