@@ -646,13 +646,22 @@ header{
     line-height: 22px;
 }
 
-/* FOURTHBLOCK - FOOTER */
+#video {
+    margin-top: -9%;
+}
 
-footer {
-    width: 100%; 
-    height: 250px;
-    background-color: #efe6dc;
-    margin-top: 50px;
+#video video {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%) translateY(50%);
+    -webkit-transform: translateX(-50%) translateY(50%);
+    top: 50%;
+}
+#video img {
+    width: 1.5%;
+    position: absolute;
+    left: 96%;
+    top: 2%;
 }
 
 /* FOURTHBLOCK - FOOTER */
@@ -661,6 +670,7 @@ footer {
     width: 100%; 
     height: 250px;
     background-color: #efe6dc;
+    margin-top: 280px;
 }
 
 footer p {
@@ -738,7 +748,7 @@ footer a {
     font-family: Gotham-Light;
     margin-bottom: 18px;
     color: #ef7915;
-    font-size: 24px;
+    font-size: 19px;
 }
 
 #contact p {
