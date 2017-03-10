@@ -580,7 +580,7 @@ footer a {
     }
   }
 
-  /* MEDIA QUERIES MAX WIDTH 780PX*/
+/* MEDIA QUERIES MAX WIDTH 780PX */
 
 @media screen and (max-device-width : 780px)
   {
@@ -775,7 +775,6 @@ footer a {
         margin-top: 6px;
     }
   }
-
 
 /* MEDIA QUERIES MAX WIDTH 380PX */
 
