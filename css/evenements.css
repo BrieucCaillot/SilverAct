@@ -588,7 +588,7 @@ footer a {
 
 /* MEDIA QUERIES MAX WIDTH 1100PX */
 
-@media screen and (max-device-width : 1100px)
+@media all and (max-width : 1100px)
   {
     body {
         overflow-x: hidden;
@@ -687,8 +687,8 @@ footer a {
     }
 
     #secondblock #right #premier h2 {
-    font-size: 15px;
-    width: 128%;
+        font-size: 15px;
+        width: 128%;
     }
 
     .description {
@@ -767,7 +767,7 @@ footer a {
 
 /* MEDIA QUERIES MAX WIDTH 780PX */
     
-@media screen and (max-device-width : 780px)
+@media all and (max-width : 780px)
   {
     
     body {
@@ -1012,7 +1012,7 @@ footer a {
 
 /* MEDIA QUERIES MAX WIDTH 380PX */
     
-@media screen and (max-device-width : 380px)
+@media all and (max-width : 380px)
   {
     
     body {

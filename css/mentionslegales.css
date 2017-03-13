@@ -402,7 +402,7 @@ footer a {
 
 /* MEDIA QUERIES MAX WIDTH 1100px */
 
-@media screen and (max-device-width : 1100px)
+@media all and (max-width : 1100px)
   {
     body {
         overflow-x: hidden;
@@ -511,7 +511,7 @@ footer a {
 
 /* MEDIA QUERIES MAX WIDTH 780px */
 
-@media screen and (max-device-width : 780px)
+@media all and (max-width : 780px)
   {
 
     body {
@@ -701,7 +701,7 @@ footer a {
 
 /* MEDIA QUERIES MAX WIDTH 380px */
 
-@media screen and (max-device-width : 380px) 
+@media all and (max-width : 380px) 
   {
   
     body {
