@@ -5,6 +5,9 @@
 Informations :
 -------------
 
+Google Drive : https://drive.google.com/drive/folders/0B3sZcL_ACIwzbWxzTEFCOGJjZFE?usp=sharing
+Trello : https://trello.com/b/vjzzq68J/dev
+
 > **Note:**
 
 > - Made with ![Language](https://img.shields.io/badge/Language-HTML-e44b23.svg) ![Language](https://img.shields.io/badge/Language-CSS-563d7c.svg) ![Language](https://img.shields.io/badge/Language-Javascript-f1e05a.svg) ![Language](https://img.shields.io/badge/Language-Jquery-orange.svg).
